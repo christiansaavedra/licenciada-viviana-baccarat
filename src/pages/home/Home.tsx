@@ -1,10 +1,13 @@
 import Hero from "../../components/hero/Hero";
+import Services from "../../components/page-sections/home/services/Services";
+import About from "../about/About";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      {/* We'll add more sections here later */}
+      <About />
+      <Services />
     </>
   );
 };

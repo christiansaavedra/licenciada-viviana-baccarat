@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+}
+
+.text_container {
+  text-align: justify;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.75rem;
+  padding: 4rem;
+}
+
+.text {
+  font-size: var(--font-body-size-md);
+}
+.video_container {
+  flex: 1;
+  height: 100%;
+  width: 450px;
+}
+.video {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}

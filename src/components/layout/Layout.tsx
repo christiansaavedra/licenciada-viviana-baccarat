@@ -8,6 +8,10 @@ const Layout = () => {
       <header className={styles.header}>
         <div className="container">
           <nav className={styles.nav}>
+            <div className={styles.logo}>
+              <h1></h1>
+              <p>Psicología y Sexología Clínica</p>
+            </div>
             <ul className={styles.navLinks}>
               <li>
                 <a href="/">Inicio</a>

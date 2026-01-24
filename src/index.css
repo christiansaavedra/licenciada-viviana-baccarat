@@ -26,6 +26,12 @@
   /* Typography */
   --font-heading: "Spinnaker", sans-serif;
   --font-body: "League Spartan", sans-serif;
+  --font-heading-lg: 4.5rem;
+  --font-heading-md: 2.5rem;
+  --font-heading-sm: 1.75rem;
+
+  --font-body-size-sm: 1rem;
+  --font-body-size-md: 1.5rem;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,6 +55,10 @@ h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
+}
+
+p {
+  font-family: var(--font-body);
 }
 
 a {

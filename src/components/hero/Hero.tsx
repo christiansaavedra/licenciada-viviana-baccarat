@@ -19,7 +19,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Lic. Viviana Baccarat
+            Espacio de Terapia Sexual
           </motion.h1>
 
           <motion.p
@@ -28,7 +28,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Psicóloga y Sexóloga Clínica
+            Lic. Viviana Baccarat - Psicóloga y Sexóloga Clínica
           </motion.p>
 
           <motion.div
