@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Spinnaker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Vibrant orange & turquoise palette */
+  --color-primary: #ff6b35; /* Vibrant orange - energy & warmth */
+  --color-primary-light: #ff8b5c; /* Light orange */
+  --color-primary-dark: #e55a2b; /* Dark orange */
+  --color-secondary: #00c1b3; /* Bright turquoise - trust & clarity */
+  --color-secondary-light: #4cd6ce; /* Light turquoise */
+  --color-secondary-dark: #009c90; /* Dark turquoise */
+  --color-accent: #ffd166; /* Sunny yellow accent */
+  --color-background: #fdf9f5; /* Warm off-white */
+  --color-background-alt: #f8f4f0; /* Slightly darker warm background */
+  --color-text: #2d3748; /* Dark gray for text */
+  --color-text-light: #718096; /* Medium gray for secondary text */
+  --color-white: #ffffff;
+  --color-light-gray: #d0d0d0;
+  --color-highlight: #ffe8e0; /* Very light orange for highlights */
+
+  /* Typography */
+  --font-heading: "Spinnaker", sans-serif;
+  --font-body: "League Spartan", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--color-primary);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Utility classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+/* Gradient utilities */
+.gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-light) 100%
+  );
+}
+
+.gradient-secondary {
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary) 0%,
+    var(--color-secondary-light) 100%
+  );
+}
+
+.gradient-orange-turquoise {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+}
+
+/* Shadows with color tints */
+.shadow-primary {
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.15);
+}
+
+.shadow-secondary {
+  box-shadow: 0 4px 20px rgba(0, 193, 179, 0.15);
+}
