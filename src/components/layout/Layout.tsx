@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
-import WhatsAppButton from "../whatsapp-button/WhatsappButton";
+import WhatsAppButton from "../whatsapp-button/WhatsAppButton";
 
 const Layout = () => {
   return (
