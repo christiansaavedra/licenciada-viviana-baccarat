@@ -1,0 +1,80 @@
+.page {
+  padding: 4rem 0 6rem;
+  background-color: var(--color-background);
+  min-height: 100vh;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.back:hover {
+  opacity: 0.75;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.updated {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-bottom: 3rem;
+}
+
+.section {
+  margin-bottom: 2.25rem;
+}
+
+.section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+.section p {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.section ul {
+  margin: 0.5rem 0 0.75rem 1.5rem;
+}
+
+.section li {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.75;
+  margin-bottom: 0.25rem;
+}
+
+.section a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.section a:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}

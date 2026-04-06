@@ -5,9 +5,10 @@
 }
 
 .header {
-  background-color: var(--color-light-gray);
-  box-shadow: 0 2px 20px rgba(255, 107, 53, 0.08);
-  padding: 2rem 0;
+  background-color: #ffffff;
+  border-bottom: 3px solid var(--color-primary);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -26,7 +27,7 @@
 }
 
 .logo p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--color-text-light);
 }
 
@@ -95,9 +96,46 @@
   );
 }
 
-.footer p {
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
   text-align: center;
-  opacity: 0.9;
+}
+
+.footerCopy {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.footerLinks a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.footerLinks a:hover {
+  color: #ffffff;
+}
+
+.footerSep {
+  opacity: 0.4;
+}
+
+.footerCity {
+  font-size: 0.825rem;
+  opacity: 0.5;
 }
 
 /* Decorative elements in footer */

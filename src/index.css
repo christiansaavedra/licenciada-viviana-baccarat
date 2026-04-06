@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset anchor scroll to account for sticky navbar */
+:root {
+  --header-height: 100px;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: var(--header-height);
+}
+
 :root {
   /* Vibrant orange & turquoise palette */
   --color-primary: #ff6b35; /* Vibrant orange - energy & warmth */
@@ -20,8 +34,7 @@
   --color-text: #2d3748; /* Dark gray for text */
   --color-text-light: #718096; /* Medium gray for secondary text */
   --color-white: #ffffff;
-  --color-light-gray: #d0d0d0;
-  --color-highlight: #ffe8e0; /* Very light orange for highlights */
+  --color-light-gray: #f0f0f0;
 
   /* Typography */
   --font-heading: "Spinnaker", sans-serif;
@@ -80,11 +93,6 @@ button {
 
 button:hover {
   border-color: var(--color-primary);
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 .container {

@@ -3,155 +3,130 @@
   background-color: var(--color-background);
 }
 
-.section_title {
+.sectionLabel {
   font-size: var(--font-heading-sm);
   color: var(--color-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.section_title_small {
+.sectionTitle {
   font-size: var(--font-heading-md);
   color: var(--color-text);
   margin-bottom: 2rem;
 }
 
-.info_container {
+/* Pills */
+.pills {
   display: flex;
-  justify-content: space-between;
-  gap: 2.5rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
 }
 
-.image_container {
-  flex: 1;
-}
-.image {
-  width: 100%;
-  border-radius: 1.25rem;
-}
-.description_container {
-  flex: 1;
-}
-.description_title {
-  font-size: var(--font-body-size-md);
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.accordionRoot {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.accordionItem {
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  border-radius: 12px;
-  background-color: var(--color-white);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease;
-}
-
-.accordionItem:hover {
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.12);
-}
-
-.accordionHeader {
-  all: unset;
-  display: flex;
-}
-
-.accordionTrigger {
-  all: unset;
-  font-family: var(--font-heading);
-  padding: 1.5rem 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  line-height: 1.3;
-  color: var(--color-text);
-  cursor: pointer;
-  background-color: transparent;
-  transition: background-color 0.2s ease;
-}
-
-.accordionTrigger:hover {
-  background-color: var(--color-highlight);
-}
-
-.accordionTitle {
-  flex: 1;
-  text-align: left;
-  font-weight: 600;
-}
-
-.accordionChevron {
+.pill {
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-primary);
+  background: transparent;
   color: var(--color-primary);
-  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
-  flex-shrink: 0;
-  margin-left: 1rem;
-  width: 24px;
-  height: 24px;
-}
-
-.accordionTrigger[data-state="open"] .accordionChevron {
-  transform: rotate(180deg);
-}
-
-.accordionContent {
-  overflow: hidden;
-  font-family: var(--font-body);
-  color: var(--color-text);
-}
-
-.accordionContent[data-state="open"] {
-  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
-}
-
-.accordionContent[data-state="closed"] {
-  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
-}
-
-.accordionBody {
-  padding: 0 2rem 2rem 2rem;
-}
-
-.quote {
-  font-family: var(--font-body);
-  font-style: italic;
-  font-size: 1.125rem;
-  color: var(--color-secondary);
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-.description {
   font-family: var(--font-body);
   font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+  outline: none;
+}
+
+.pill:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.pill:hover {
+  background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+
+.pillActive {
+  background: var(--color-primary);
+  color: white;
+}
+
+.pillActive:hover {
+  background: var(--color-primary);
+}
+
+/* Content grid */
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Image */
+.imageContainer {
+  width: 100%;
+  height: 460px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f0ece8, #e8e0d8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a89880;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.0625rem;
+}
+
+/* Text */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.areaTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-heading-sm);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.areaText {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
   color: var(--color-text);
-  line-height: 1.7;
+  line-height: 1.75;
   white-space: pre-line;
+  margin: 0;
 }
 
-@keyframes slideDown {
-  from {
-    height: 0;
-  }
-  to {
-    height: var(--radix-accordion-content-height);
-  }
+.servicesSectionAlt {
+  background-color: var(--color-light-gray);
 }
 
-@keyframes slideUp {
-  from {
-    height: var(--radix-accordion-content-height);
-  }
-  to {
-    height: 0;
-  }
+.contentGridReversed {
+  direction: rtl;
+}
+
+.contentGridReversed > * {
+  direction: ltr;
 }
 
 /* Responsive */
@@ -160,30 +135,29 @@
     padding: 60px 0;
   }
 
-  .sectionTitle {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  .pills {
+    gap: 0.5rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.25rem;
+    scrollbar-width: none;
   }
 
-  .accordionTrigger {
-    padding: 1.25rem 1.5rem;
-    font-size: 1.25rem;
+  .pills::-webkit-scrollbar {
+    display: none;
   }
 
-  .accordionBody {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+  .pill {
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
-  .quote {
-    font-size: 1rem;
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 
-  .description {
-    font-size: 0.95rem;
-  }
-
-  .accordionChevron {
-    width: 20px;
-    height: 20px;
+  .imageContainer {
+    height: 280px;
   }
 }

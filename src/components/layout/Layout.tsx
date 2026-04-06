@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 import WhatsAppButton from "../whatsapp-button/WhatsappButton";
 
@@ -9,39 +9,46 @@ const Layout = () => {
         <div className="container">
           <nav className={styles.nav}>
             <div className={styles.logo}>
-              <h1></h1>
-              <p>Psicología y Sexología Clínica</p>
+              <h1>Lic. Viviana Baccarat</h1>
+              <p>Psicología · Sexología Clínica · Manejo del Estrés</p>
             </div>
             <ul className={styles.navLinks}>
-              <li>
-                <a href="/">Inicio</a>
-              </li>
-              <li>
-                <a href="/sobre-mi">Sobre Mí</a>
-              </li>
-              <li>
-                <a href="/servicios">Servicios</a>
-              </li>
-              <li>
-                <a href="/contacto">Contacto</a>
-              </li>
+              <li><a href="#sobre-mi">Sobre mí</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#formacion">Formación</a></li>
+              <li><a href="#faq">Preguntas</a></li>
+              <li><a href="#contacto">Contacto</a></li>
             </ul>
           </nav>
         </div>
       </header>
+
       <main>
         <Outlet />
       </main>
+
       <footer className={styles.footer}>
-        <WhatsAppButton
-          phoneNumber="5491155936542"
-          defaultMessage="Hola, vi tu página web y me interesa agendar una cita"
-        />
+        <WhatsAppButton />
         <div className="container">
-          <p>
-            © {new Date().getFullYear()} Lic. Viviana - Psicóloga y Sexóloga
-            Clínica
-          </p>
+          <div className={styles.footerContent}>
+            <p className={styles.footerCopy}>
+              © {new Date().getFullYear()} Lic. Viviana Baccarat — Psicóloga M.N. 56769
+            </p>
+            <p className={styles.footerLinks}>
+              <Link to="/politica-privacidad">Política de Privacidad</Link>
+              <span className={styles.footerSep}>|</span>
+              <Link to="/politica-cookies">Política de Cookies</Link>
+              <span className={styles.footerSep}>|</span>
+              <a
+                href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Defensa de las y los Consumidores
+              </a>
+            </p>
+            <p className={styles.footerCity}>Buenos Aires, Argentina</p>
+          </div>
         </div>
       </footer>
     </div>

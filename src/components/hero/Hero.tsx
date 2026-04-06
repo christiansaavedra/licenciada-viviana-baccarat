@@ -28,7 +28,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Lic. Viviana Baccarat - Psicóloga y Sexóloga Clínica
+            Lic. Viviana Baccarat — Psicóloga, Sexóloga Clínica y especialista
+            en Manejo del Estrés
           </motion.p>
 
           <motion.div
@@ -38,8 +39,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p>
-              Te acompaño en tu camino hacia el bienestar emocional y sexual. Un
-              espacio seguro donde explorar, comprender y transformar.
+              Psicoterapia sexual con abordaje del estrés. Para quienes
+              atraviesan dificultades en el deseo, la respuesta del cuerpo o la
+              conexión de pareja. Atención online para todo el país y el
+              exterior.
             </p>
           </motion.div>
 
@@ -49,24 +52,26 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <a href="/contacto" className={styles.primaryButton}>
-              Solicitar Consulta
+            <a href="#contacto" className={styles.primaryButton}>
+              Solicitar consulta
             </a>
-            <a href="/servicios" className={styles.secondaryButton}>
-              Conoce mis Servicios
+            <a href="#servicios" className={styles.secondaryButton}>
+              Conocé los servicios
             </a>
           </motion.div>
         </motion.div>
 
         <motion.div
-          className={styles.imageContainer}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className={styles.imagePlaceholder}>
-            <img src={ProfilePic} className={styles.profile_pic} />
-          </div>
+          <img
+            src={ProfilePic}
+            className={styles.profile_pic}
+            alt="Lic. Viviana Baccarat M.N 56769 - Especialista en Terapia Psicosexual y Abordaje
+del Estrés con atención online e internacional."
+          />
         </motion.div>
       </div>
 

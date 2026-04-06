@@ -1,0 +1,140 @@
+.section {
+  padding: 80px 0;
+  background-color: var(--color-background);
+}
+
+.sectionLabel {
+  font-size: var(--font-heading-sm);
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: var(--font-heading-md);
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+
+/* Intro */
+.introBlock {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.intro {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: var(--color-text);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.intro:last-child {
+  margin-bottom: 0;
+}
+
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--color-white, #fff);
+  border-left: 3px solid var(--color-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cardTitle {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.35;
+}
+
+.cardInstitution {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  opacity: 0.6;
+  line-height: 1.4;
+}
+
+/* Logos */
+.logosSection {
+  border-top: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+  padding-top: 2rem;
+}
+
+.logosLabel {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+  opacity: 0.45;
+  margin-bottom: 1rem;
+}
+
+.logos {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.logoBox {
+  width: 180px;
+  height: 90px;
+  border-radius: 10px;
+  border: 1.5px dashed color-mix(in srgb, var(--color-primary) 25%, transparent);
+  background: color-mix(in srgb, var(--color-primary) 3%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logoImage {
+  max-width: 80%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.logoPlaceholder {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--color-text);
+  opacity: 0.35;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .logoBox {
+    flex: 1;
+    min-width: 120px;
+  }
+}

@@ -1,0 +1,114 @@
+.section {
+  padding: 80px 0;
+  background-color: var(--color-background-alt);
+}
+
+.sectionLabel {
+  font-size: var(--font-heading-sm);
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: var(--font-heading-md);
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+}
+
+.accordionRoot {
+  max-width: 760px;
+}
+
+.accordionItem {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+}
+
+.accordionItem:first-child {
+  border-top: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+}
+
+.accordionHeader {
+  all: unset;
+  display: flex;
+}
+
+.accordionTrigger {
+  all: unset;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.accordionTrigger:hover {
+  color: var(--color-primary);
+}
+
+.accordionTrigger[data-state="open"] {
+  color: var(--color-primary);
+}
+
+.chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  transition: transform 280ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.accordionTrigger[data-state="open"] .chevron {
+  transform: rotate(180deg);
+}
+
+.accordionContent {
+  overflow: hidden;
+}
+
+.accordionContent[data-state="open"] {
+  animation: slideDown 280ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.accordionContent[data-state="closed"] {
+  animation: slideUp 280ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.accordionBody {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  padding-bottom: 1.25rem;
+  margin: 0;
+}
+
+@keyframes slideDown {
+  from { height: 0; }
+  to   { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes slideUp {
+  from { height: var(--radix-accordion-content-height); }
+  to   { height: 0; }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .accordionTrigger {
+    font-size: 1rem;
+  }
+
+  .accordionBody {
+    font-size: 1rem;
+  }
+}
