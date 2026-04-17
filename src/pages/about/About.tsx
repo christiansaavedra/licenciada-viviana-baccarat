@@ -28,6 +28,19 @@ const About = () => {
             </p>
           </div>
         </div>
+
+        <details className={styles.transcript}>
+          <summary className={styles.transcriptToggle}>
+            Ver transcripción del video
+          </summary>
+          <div className={styles.transcriptContent}>
+            {/* ─── REEMPLAZAR con la transcripción real del video ─── */}
+            <p>
+              [Transcripción pendiente. Reemplazar este texto con el contenido
+              hablado en el video "Sobre mí".]
+            </p>
+          </div>
+        </details>
       </div>
     </section>
   );

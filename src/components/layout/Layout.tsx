@@ -5,12 +5,19 @@ import clsx from "clsx";
 import styles from "./Layout.module.css";
 import WhatsAppButton from "../whatsapp-button/WhatsAppButton";
 
-const navItems = [
+type NavItem = {
+  label: string;
+  id?: string; // anchor dentro de Home
+  path?: string; // ruta independiente
+};
+
+const navItems: NavItem[] = [
   { label: "Sobre mí", id: "sobre-mi" },
   { label: "Servicios", id: "servicios" },
   { label: "Formación", id: "formacion" },
   { label: "Preguntas", id: "faq" },
   { label: "Contacto", id: "contacto" },
+  { label: "Blog", path: "/blog" },
 ];
 
 const Layout = () => {
@@ -18,7 +25,7 @@ const Layout = () => {
   const { pathname } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleNavClick = (
+  const handleSectionClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     sectionId: string,
   ) => {
@@ -68,11 +75,23 @@ const Layout = () => {
                 isMenuOpen && styles.navLinksOpen,
               )}
             >
-              {navItems.map(({ label, id }) => (
-                <li key={id}>
-                  <a href={`#${id}`} onClick={(e) => handleNavClick(e, id)}>
-                    {label}
-                  </a>
+              {navItems.map((item) => (
+                <li key={item.label}>
+                  {item.path ? (
+                    <Link
+                      to={item.path}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={`#${item.id}`}
+                      onClick={(e) => handleSectionClick(e, item.id!)}
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
