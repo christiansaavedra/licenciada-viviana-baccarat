@@ -5,6 +5,7 @@ import PoliticaPrivacidad from "./pages/politica-privacidad/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/politica-cookies/PoliticaCookies";
 import Blog from "./pages/blog/Blog";
 import Article from "./pages/blog/Article";
+import NotFound from "./pages/not-found/NotFound";
 import ScrollToTop from "./components/scroll-to-top/ScrollToTop";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<Article />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

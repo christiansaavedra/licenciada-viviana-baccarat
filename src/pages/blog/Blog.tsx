@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { articles } from "./articlesData";
+import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs";
 import styles from "./Blog.module.css";
+
+const BLOG_CRUMBS = [
+  { label: "Inicio", to: "/" },
+  { label: "Blog" },
+];
 
 const formatDate = (iso: string) => {
   const d = new Date(iso);
@@ -15,6 +21,7 @@ const Blog = () => {
   return (
     <div className={styles.page}>
       <div className="container">
+        <Breadcrumbs crumbs={BLOG_CRUMBS} />
         <header className={styles.header}>
           <h1 className={styles.title}>Blog</h1>
           <p className={styles.subtitle}>
