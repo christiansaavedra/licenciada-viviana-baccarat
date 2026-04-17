@@ -30,7 +30,12 @@ div[id] {
   --color-secondary-dark: #009c90; /* Dark turquoise */
   --color-accent: #ffd166; /* Sunny yellow accent */
   --color-background: #fdf9f5; /* Warm off-white */
-  --color-background-alt: #f8f4f0; /* Slightly darker warm background */
+  --color-background-alt: #f7f3f0; /* Slightly darker warm background */
+  --color-background-gradient: linear-gradient(
+    135deg,
+    var(--color-white) 0%,
+    var(--color-white) 100%
+  );
   --color-text: #2d3748; /* Dark gray for text */
   --color-text-light: #718096; /* Medium gray for secondary text */
   --color-white: #ffffff;

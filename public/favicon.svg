@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="64" height="64" rx="14" fill="#ff6b35"/>
+  <!-- VB letters -->
+  <text
+    x="32"
+    y="45"
+    text-anchor="middle"
+    font-family="'League Spartan', sans-serif"
+    font-size="27"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="1.5"
+  >VB</text>
+</svg>

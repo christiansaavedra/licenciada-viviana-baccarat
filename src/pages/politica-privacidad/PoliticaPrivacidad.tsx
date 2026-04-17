@@ -15,7 +15,7 @@ const PoliticaPrivacidad = () => {
           <p>
             Lic. Viviana Baccarat — Psicóloga y Sexóloga Clínica (M.N. 56769),
             con domicilio en la Ciudad Autónoma de Buenos Aires, Argentina.
-            Correo de contacto: <a href="mailto:vivianabaccarat@gmail.com">vivianabaccarat@gmail.com</a>
+            Correo de contacto: <a href="mailto:licenciadavivianabaccarat@gmail.com">licenciadavivianabaccarat@gmail.com</a>
           </p>
         </section>
 
@@ -89,7 +89,7 @@ const PoliticaPrivacidad = () => {
           </ul>
           <p>
             Para ejercer estos derechos, puede escribir a{" "}
-            <a href="mailto:vivianabaccarat@gmail.com">vivianabaccarat@gmail.com</a>{" "}
+            <a href="mailto:licenciadavivianabaccarat@gmail.com">licenciadavivianabaccarat@gmail.com</a>{" "}
             indicando su nombre completo y el derecho que desea ejercer. Se responderá
             dentro de los plazos previstos por la normativa vigente.
           </p>

@@ -28,8 +28,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Lic. Viviana Baccarat — Psicóloga, Sexóloga Clínica y especialista
-            en Manejo del Estrés
+            Lic. Viviana Baccarat · M.N. 56769 — Psicóloga, Sexóloga Clínica y
+            especialista en Gestión del Estrés
           </motion.p>
 
           <motion.div
@@ -39,10 +39,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p>
-              Psicoterapia sexual con abordaje del estrés. Para quienes
-              atraviesan dificultades en el deseo, la respuesta del cuerpo o la
-              conexión de pareja. Atención online para todo el país y el
-              exterior.
+              Cuando el estrés toma el control, el deseo y la respuesta sexual
+              se ven afectados. Un espacio para comprender lo que te pasa y
+              recuperar el placer, más allá de las exigencias y el rendimiento.
             </p>
           </motion.div>
 
@@ -62,6 +61,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
+          className={styles.imageWrapper}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}

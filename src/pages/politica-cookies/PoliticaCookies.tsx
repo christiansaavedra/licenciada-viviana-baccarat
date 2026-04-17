@@ -118,8 +118,8 @@ const PoliticaCookies = () => {
           <h2>6. Contacto</h2>
           <p>
             Ante cualquier consulta sobre el uso de cookies, podés escribir a{" "}
-            <a href="mailto:vivianabaccarat@gmail.com">
-              vivianabaccarat@gmail.com
+            <a href="mailto:licenciadavivianabaccarat@gmail.com">
+              licenciadavivianabaccarat@gmail.com
             </a>
             .
           </p>

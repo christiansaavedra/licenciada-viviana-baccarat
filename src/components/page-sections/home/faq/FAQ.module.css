@@ -1,6 +1,6 @@
 .section {
   padding: 80px 0;
-  background-color: var(--color-background-alt);
+  background-color: var(var(--color-background-gradient));
 }
 
 .sectionLabel {
@@ -20,7 +20,8 @@
 }
 
 .accordionItem {
-  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-text) 12%, transparent);
 }
 
 .accordionItem:first-child {
@@ -83,20 +84,28 @@
 .accordionBody {
   font-family: var(--font-body);
   font-size: 1.3rem;
-  color: var(--color-text-light);
+  color: var(--color-text);
   line-height: 1.75;
   padding-bottom: 1.25rem;
   margin: 0;
 }
 
 @keyframes slideDown {
-  from { height: 0; }
-  to   { height: var(--radix-accordion-content-height); }
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
 }
 
 @keyframes slideUp {
-  from { height: var(--radix-accordion-content-height); }
-  to   { height: 0; }
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
 }
 
 @media (max-width: 768px) {

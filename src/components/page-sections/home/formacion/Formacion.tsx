@@ -61,19 +61,19 @@ const Formacion = () => {
   return (
     <section className={styles.section} id="formacion">
       <div className="container">
-        <h2 className={styles.sectionLabel}>Sobre mí</h2>
+        <h2 className={styles.sectionLabel}>Formación</h2>
         <h3 className={styles.sectionTitle}>
-          Mi formación y respaldo académico
+          Mi trayectoria y respaldo académico
         </h3>
 
         <div className={styles.introBlock}>
           <p className={styles.intro}>
             Cuento con una especialización universitaria de{" "}
             <strong>
-              Postgrado certificada por la Western Europe University y la
+              posgrado certificada por la Western Europe University y la
               Facultad de Medicina Integrativa Regenera (Barcelona, España)
             </strong>
-            , con reconocimiento europeo (10 créditos ECTS).
+            , con reconocimiento europeo.
           </p>
           <p className={styles.intro}>
             Esta formación me permite integrar la Psicología con la{" "}

@@ -11,7 +11,7 @@ const disfuncionesData = [
     imagePosition: "center top",
     imageAlt:
       "Tratamiento para la falta de deseo sexual – Lic. Viviana Baccarat",
-    text: "Cuando el deseo disminuye o desaparece, la experiencia sexual puede volverse distante o poco conectada. Este abordaje terapéutico permite comprender qué factores —como el estrés, la ansiedad o la exigencia— están interfiriendo, favoreciendo la **recuperación del interés** y una vivencia más libre y genuina de la sexualidad.",
+    text: "Cuando el deseo disminuye o desaparece, la experiencia sexual puede volverse distante o poco conectada. El abordaje terapéutico permite comprender qué factores —como el estrés, la ansiedad o la exigencia— están interfiriendo, favoreciendo la **recuperación del interés** y una vivencia más libre y genuina de la sexualidad.",
   },
   {
     id: "eyaculacion-precoz",
@@ -20,7 +20,7 @@ const disfuncionesData = [
     imagePosition: "center -8rem",
     imageAlt:
       "Especialista en eyaculación precoz en Belgrano y consulta virtual – Lic. Viviana Baccarat",
-    text: 'Es la falta de control sobre el reflejo eyaculatorio debido a un umbral de excitabilidad bajo. No se trata solo de cuánto tiempo dura, sino de la falta de regulación de la respuesta corporal ante la estimulación.\n\nLa terapia no busca "aguantar", sino **reentrenar la respuesta corporal** y el registro de sensaciones. El objetivo es que el control deje de ser un esfuerzo y se convierta en una capacidad natural.',
+    text: "Suele vivirse como una pérdida de control: el cuerpo responde antes de lo que uno quisiera y eso genera frustración, ansiedad y, muchas veces, evitación. **Más que una cuestión de tiempo**, el punto central es la dificultad para regular cómo responde el cuerpo ante la estimulación.\n\n La terapia no busca 'aguantar', sino reentrenar la respuesta del cuerpo y el registro de las sensaciones. El objetivo es que la regulación deje de ser un esfuerzo y se convierta en una capacidad natural de disfrutar.",
   },
   {
     id: "disfuncion-erectil",
@@ -34,7 +34,7 @@ const disfuncionesData = [
   {
     id: "vaginismo",
     label: "Vaginismo",
-    image: "/servicios/Vginismo (1).jpg",
+    image: "/servicios/VAGINISMO.jpg",
     imagePosition: "center -8rem",
     imageAlt:
       "Tratamiento del vaginismo y tensión pélvica involuntaria - Sexología clínica en Belgrano – Lic. Viviana Baccarat",
@@ -87,10 +87,11 @@ const areasData = [
   {
     id: "estres-ansiedad",
     label: "Estrés y Ansiedad",
-    image: "/servicios/ESTRES (1).jpg",
+    image: "/servicios/ESTRES.jpeg",
+    imagePosition: "center -22rem",
     imageAlt:
       "Terapia para ansiedad y estrés con abordaje psicológico integral – Lic. Viviana Baccarat",
-    text: "Cuando el estrés se vuelve sostenido, el cuerpo permanece en alerta y afecta el descanso, el ánimo y la respuesta sexual. Este abordaje terapéutico permite comprender cómo se sostiene esa activación y trabajar en su regulación, favoreciendo una disminución de la tensión y la **recuperación del equilibrio físico y emocional**.",
+    text: "Cuando el estrés se vuelve sostenido, el cuerpo permanece en alerta y afecta el descanso, el ánimo y la respuesta sexual. \n\nEl abordaje terapéutico permite comprender cómo se sostiene esa activación y trabajar en su regulación, favoreciendo una disminución de la tensión y la recuperación del equilibrio físico y emocional.",
   },
   {
     id: "practica-tai",
@@ -103,13 +104,15 @@ const areasData = [
 ];
 
 const renderText = (text: string) =>
-  text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
-    part.startsWith("**") && part.endsWith("**") ? (
-      <strong key={i}>{part.slice(2, -2)}</strong>
-    ) : (
-      part
-    ),
-  );
+  text
+    .split(/(\*\*.*?\*\*)/g)
+    .map((part, i) =>
+      part.startsWith("**") && part.endsWith("**") ? (
+        <strong key={i}>{part.slice(2, -2)}</strong>
+      ) : (
+        part
+      ),
+    );
 
 const contentVariants = {
   enter: { opacity: 0, y: 12 },
@@ -138,7 +141,7 @@ const Services = () => {
       <section className={styles.servicesSection} id="servicios">
         <div className="container">
           <h2 className={styles.sectionLabel}>Servicios</h2>
-          <h3 className={styles.sectionTitle}>Áreas de atención</h3>
+          <h3 className={styles.sectionTitle}>Servicios y enfoques terapéuticos</h3>
 
           <div className={styles.pills}>
             {areasData.map((area) => (
@@ -189,9 +192,9 @@ const Services = () => {
         className={`${styles.servicesSection} ${styles.servicesSectionAlt}`}
       >
         <div className="container">
-          <h2 className={styles.sectionLabel}>Servicios</h2>
+          <h2 className={styles.sectionLabel}>Motivos de consulta</h2>
           <h3 className={styles.sectionTitle}>
-            Disfunciones sexuales frecuentes
+            Disfunciones y síntomas tratados
           </h3>
 
           <div className={styles.pills}>
@@ -217,7 +220,9 @@ const Services = () => {
             >
               <div className={styles.textContainer}>
                 <h4 className={styles.areaTitle}>{activeDisfuncion.label}</h4>
-                <p className={styles.areaText}>{renderText(activeDisfuncion.text)}</p>
+                <p className={styles.areaText}>
+                  {renderText(activeDisfuncion.text)}
+                </p>
               </div>
 
               <div className={styles.imageContainer}>

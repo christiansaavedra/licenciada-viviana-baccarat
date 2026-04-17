@@ -1,6 +1,6 @@
 .section {
   padding: 80px 0;
-  background-color: var(--color-background);
+  background-color: var(--color-background-alt);
 }
 
 .sectionLabel {

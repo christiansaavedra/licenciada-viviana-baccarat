@@ -14,24 +14,17 @@ const About = () => {
 
           <div className={styles.textContainer}>
             <p className={styles.text}>
-              Experiencia clínica, formación constante y una convicción:{" "}
-              <strong>la sexualidad también se habita con la palabra.</strong>
-            </p>
-            <p className={styles.text}>
-              Soy Licenciada en Psicología, Sexóloga Clínica y especialista en
-              Gestión del Estrés. Trabajo con personas y parejas que atraviesan
-              dificultades en su vida sexual —en el deseo, la respuesta del
-              cuerpo o la conexión con el otro— desde una escucha atenta,{" "}
-              <strong>sin juicios y con rigor clínico</strong>.
-            </p>
-            <p className={styles.text}>
-              Este espacio está pensado para alojar lo que muchas veces cuesta
-              decir: cuando el deseo se vuelve confuso, el cuerpo no responde
-              como se espera o ciertas conductas empiezan a pesar más de lo que
-              deberían.{" "}
+              Acompaño a personas y parejas que buscan{" "}
               <strong>
-                Un lugar para entender qué está pasando y empezar a trabajarlo.
+                mejorar su salud sexual y gestionar el estrés y la ansiedad
               </strong>
+              , desde una mirada clínica que entiende el deseo como parte del
+              equilibrio emocional.
+            </p>
+            <p className={styles.text}>
+              Trabajo con herramientas precisas para{" "}
+              <strong>resolver lo que interfiere en el placer</strong> y ayudarte
+              a <strong>recuperar el bienestar y la satisfacción</strong>.
             </p>
           </div>
         </div>

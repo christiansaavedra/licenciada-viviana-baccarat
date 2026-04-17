@@ -36,8 +36,11 @@
   color: var(--color-text);
   padding: 14px 36px 14px 16px;
   border-radius: 10px;
+
   max-width: 220px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(0, 0, 0, 0.06);
   animation: popoverIn 0.25s ease;
 }
 
@@ -82,7 +85,9 @@
   cursor: pointer;
   color: var(--color-text-light);
   padding: 0;
-  transition: background 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s;
   outline: none;
 }
 
@@ -155,11 +160,10 @@
   }
 
   .popoverContent {
-    max-width: 190px;
     font-size: 0.9rem;
+    bottom: 1rem;
   }
 }
-
 
 /* Dark mode support (optional) */
 @media (prefers-color-scheme: dark) {
