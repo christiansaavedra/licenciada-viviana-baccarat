@@ -79,7 +79,7 @@ const areasData = [
   {
     id: "terapia-pareja",
     label: "Terapia de Pareja",
-    image: "/servicios/pareja.jpg",
+    image: "/servicios/PAREJA.jpg",
     imageAlt:
       "Terapia de pareja para dificultades sexuales, falta de deseo y conflictos en la relación – Lic. Viviana Baccarat",
     text: "Cuando la comunicación se dificulta o el deseo se apaga, el vínculo puede volverse tenso, distante o repetitivo. La terapia de pareja permite comprender qué está generando esa desconexión —ya sea en la comunicación, la intimidad o la vida sexual— y trabajar sobre los patrones que la sostienen. El objetivo es **reducir la tensión, reconstruir el encuentro** y recuperar una forma más genuina y placentera de estar juntos.",
@@ -141,7 +141,9 @@ const Services = () => {
       <section className={styles.servicesSection} id="servicios">
         <div className="container">
           <h2 className={styles.sectionLabel}>Servicios</h2>
-          <h3 className={styles.sectionTitle}>Servicios y enfoques terapéuticos</h3>
+          <h3 className={styles.sectionTitle}>
+            Servicios y enfoques terapéuticos
+          </h3>
 
           <div className={styles.pills}>
             {areasData.map((area) => (
