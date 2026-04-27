@@ -56,7 +56,7 @@ const Layout = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               <h1>Lic. Viviana Baccarat</h1>
-              <p>Psicología · Sexología Clínica · Gestión del Estrés</p>
+              <p>Psicología · Sexología · Gestión del Estrés</p>
             </Link>
 
             <button

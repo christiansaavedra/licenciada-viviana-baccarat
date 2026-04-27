@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import clsx from "clsx";
-import ProfilePic from "../../assets/images/viviana_baccarat.jpg";
+import ProfilePic from "../../../public/viviana_baccarat.jpg";
+import ProfilePicSquare from "../../../public/viviana_baccarat_square.jpg";
+import { useViewport } from "../../common/hooks/useViewport";
 
 const Hero = () => {
+  const { isMobile } = useViewport();
   return (
     <section className={styles.hero}>
       <div className={clsx("container", styles.container)}>
@@ -39,9 +42,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p>
-              Cuando el estrés toma el control, el deseo y la respuesta sexual
-              se ven afectados. Un espacio para comprender lo que te pasa y
-              recuperar el placer, más allá de las exigencias y el rendimiento.
+              Entender lo que te pasa es el primer paso para recuperar el
+              bienestar. Aquí exploramos los motivos y los caminos para
+              abordarlos.
             </p>
           </motion.div>
 
@@ -67,7 +70,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <img
-            src={ProfilePic}
+            src={isMobile ? ProfilePicSquare : ProfilePic}
             className={styles.profile_pic}
             alt="Lic. Viviana Baccarat M.N 56769 - Especialista en Terapia Psicosexual y Abordaje
 del Estrés con atención online e internacional."

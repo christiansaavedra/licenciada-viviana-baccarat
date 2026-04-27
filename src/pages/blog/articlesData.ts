@@ -22,9 +22,9 @@ export const articles: Article[] = [
     author: "Lic. Viviana Baccarat",
     date: "2026-04-17",
     readTime: "5 min",
-    image: "/servicios/FALTA DESEO.jpg",
+    image: "/blog/CORTISOL_HORIZONTAL.jpg",
     imageAlt:
-      "Cortisol y caída del deseo sexual — abordaje clínico por Lic. Viviana Baccarat",
+      "Foto de interruptor: falta de deseo sexual, abordaje clínico por Lic. Viviana Baccarat, sexóloga clínica.",
     content: [
       "Muchas personas llegan a consulta diciendo «quiero desear, pero no pasa nada». Detrás de esa frase hay frustración, culpa, y la sensación de que algo en uno mismo está fallando. Lo que en realidad sucede es que el cuerpo entró en un modo biológico donde el deseo, literalmente, no tiene cabida.",
       "El cortisol es la hormona central de la respuesta al estrés. Cuando el cerebro detecta una amenaza —real o simbólica— el eje hipotálamo-hipófisis-suprarrenal la libera para preparar al cuerpo para actuar. En dosis cortas es útil e incluso adaptativa. El problema aparece cuando el estrés se cronifica —trabajo, hiperconectividad, conflictos sostenidos, exigencias múltiples— y el cortisol permanece elevado de forma sostenida.",
@@ -43,9 +43,9 @@ export const articles: Article[] = [
     author: "Lic. Viviana Baccarat",
     date: "2026-04-15",
     readTime: "5 min",
-    image: "/servicios/PORNOGRAFIA.jpg",
+    image: "/blog/DOPAMINA_HORIZONTAL.jpg",
     imageAlt:
-      "Impacto de la pornografía en el deseo real — consulta sexológica con Lic. Viviana Baccarat",
+      "Imagen de rostro y luz: adicción a la pornografía — consulta sexológica con Lic. Viviana Baccarat",
     content: [
       "La pornografía online está diseñada para retener la atención. Cada click, cada nueva escena, cada cambio de estímulo, dispara una liberación de dopamina —el neurotransmisor de la anticipación y la recompensa. El cerebro aprende muy rápidamente que ese estímulo es fácil, intenso y siempre disponible.",
       "El punto importante es que el problema no es moral: es neurobiológico. La dopamina opera sobre principios de novedad e intensidad. Cuando el sistema se expone de forma repetida a estímulos muy altos, recalibra sus umbrales: lo que antes activaba, ahora necesita más para generar la misma respuesta. El encuentro real —con su ritmo humano, sus pausas, su imperfección— queda por debajo del nuevo umbral.",
@@ -64,9 +64,9 @@ export const articles: Article[] = [
     author: "Lic. Viviana Baccarat",
     date: "2026-04-12",
     readTime: "5 min",
-    image: "/servicios/DISFUNCION ERECTIL (1).jpg",
+    image: "/blog/RELOJ_HORIZONTAL.jpg",
     imageAlt:
-      "Ansiedad de desempeño y disfunción eréctil — terapia sexual Lic. Viviana Baccarat",
+      "Imagen de reloj: estrés y disfunción eréctil — terapia sexual Lic. Viviana Baccarat",
     content: [
       "Hay un error silencioso que atraviesa gran parte de las consultas por dificultades sexuales: intentar controlar con la mente un proceso que pertenece al cuerpo. Cuanto más se quiere «hacer bien», menos responde el cuerpo. Cuanto más se vigila la erección, la lubricación o el orgasmo, más se bloquean.",
       "La respuesta sexual es una función del sistema nervioso autónomo —la parte que no controlamos voluntariamente. Igual que la digestión o el latido cardíaco, depende de un estado fisiológico, no de una decisión consciente. Cuando intentamos dirigirla desde la voluntad, activamos justamente el circuito contrario al que permitiría que suceda: el de la alerta.",

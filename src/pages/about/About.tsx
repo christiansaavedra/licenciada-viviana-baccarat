@@ -34,10 +34,9 @@ const About = () => {
             Ver transcripción del video
           </summary>
           <div className={styles.transcriptContent}>
-            {/* ─── REEMPLAZAR con la transcripción real del video ─── */}
+           
             <p>
-              [Transcripción pendiente. Reemplazar este texto con el contenido
-              hablado en el video "Sobre mí".]
+            ¿Sentís que algo en tu sexualidad cambió y no sabés por qué? El cuerpo habla cuando las emociones no encuentran palabras. Soy psicóloga, diplomada en terapias sexuales. Trabajo con un enfoque que integra el psicoanálisis y la terapia sexual. Acompaño a personas y parejas que desean comprender lo que les pasa y reencontrarse con su deseo. Si algo de esto te resuena, este puede ser tu primer paso. No dudes en consultarme.
             </p>
           </div>
         </details>

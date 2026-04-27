@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./Services.module.css";
-import TerapiaSexualImage from "../../../../assets/images/terapia_sexual_individual.jpg";
+import TerapiaSexualImage from "../../../../../public/servicios/terapia_sexual_individual.jpg";
 
 const disfuncionesData = [
   {
     id: "falta-deseo",
     label: "Falta de deseo",
     image: "/servicios/FALTA DESEO.jpg",
-    imagePosition: "center top",
+    imagePosition: "top",
     imageAlt:
       "Tratamiento para la falta de deseo sexual – Lic. Viviana Baccarat",
     text: "Cuando el deseo disminuye o desaparece, la experiencia sexual puede volverse distante o poco conectada. El abordaje terapéutico permite comprender qué factores —como el estrés, la ansiedad o la exigencia— están interfiriendo, favoreciendo la **recuperación del interés** y una vivencia más libre y genuina de la sexualidad.",
@@ -17,7 +17,7 @@ const disfuncionesData = [
     id: "eyaculacion-precoz",
     label: "Eyaculación Precoz",
     image: "/servicios/Eyaculacion precoz.jpg",
-    imagePosition: "center -8rem",
+    imagePosition: "top",
     imageAlt:
       "Especialista en eyaculación precoz en Belgrano y consulta virtual – Lic. Viviana Baccarat",
     text: "Suele vivirse como una pérdida de control: el cuerpo responde antes de lo que uno quisiera y eso genera frustración, ansiedad y, muchas veces, evitación. **Más que una cuestión de tiempo**, el punto central es la dificultad para regular cómo responde el cuerpo ante la estimulación.\n\n La terapia no busca 'aguantar', sino reentrenar la respuesta del cuerpo y el registro de las sensaciones. El objetivo es que la regulación deje de ser un esfuerzo y se convierta en una capacidad natural de disfrutar.",
@@ -26,7 +26,6 @@ const disfuncionesData = [
     id: "disfuncion-erectil",
     label: "Disfunción Eréctil",
     image: "/servicios/DISFUNCION ERECTIL (1).jpg",
-    imagePosition: "center -6rem",
     imageAlt:
       "Especialista en disfunción eréctil - Terapia psicosexual online y presencial en Belgrano – Lic. Viviana Baccarat",
     text: 'Es la dificultad para lograr o mantener una erección satisfactoria. Su origen puede ser orgánico o psicológico, pero el miedo a "no cumplir" suele agravar el síntoma al bloquear la respuesta natural.\n\nEl tratamiento se enfoca en eliminar la **ansiedad por el desempeño** y el estrés asociado, permitiendo que la erección vuelva a ser un proceso fluido y espontáneo.',
@@ -35,7 +34,6 @@ const disfuncionesData = [
     id: "vaginismo",
     label: "Vaginismo",
     image: "/servicios/VAGINISMO.jpg",
-    imagePosition: "center -8rem",
     imageAlt:
       "Tratamiento del vaginismo y tensión pélvica involuntaria - Sexología clínica en Belgrano – Lic. Viviana Baccarat",
     text: "Es el espasmo involuntario de los músculos del suelo pélvico que bloquea la penetración, el uso de tampones o exámenes médicos. Actúa como un **mecanismo de defensa** que no responde al control voluntario.\n\nIntegramos el registro corporal y el manejo de la ansiedad para desactivar la respuesta de tensión de forma progresiva, recuperando el bienestar y el placer.",
@@ -44,6 +42,7 @@ const disfuncionesData = [
     id: "dispareunia",
     label: "Dispareunia",
     image: "/servicios/DISPAREUNIA.jpg",
+    imagePosition: "top",
     imageAlt:
       "Especialista en dispareunia y coito doloroso - Terapia psicosexual virtual e internacional – Lic. Viviana Baccarat",
     text: "Es el dolor genital persistente que se manifiesta antes, durante o después del encuentro sexual. Su presencia activa una respuesta de protección que genera tensión y evitación, afectando el deseo y el vínculo con el cuerpo.\n\nIdentificamos el origen del malestar para **romper el ciclo de dolor y ansiedad**, recuperando el bienestar y una sexualidad plena.",
@@ -52,7 +51,7 @@ const disfuncionesData = [
     id: "anorgasmia",
     label: "Anorgasmia",
     image: "/servicios/ANORGASMIA.jpg",
-    imagePosition: "center -4rem",
+    imagePosition: "top",
     imageAlt:
       "Tratamiento para la anorgasmia y dificultades para alcanzar el orgasmo – Lic. Viviana Baccarat",
     text: 'Es la dificultad persistente para alcanzar el orgasmo a pesar de una excitación adecuada. Suele estar vinculada a la ansiedad y al hecho de "observarse" en lugar de sentir, bloqueando la entrega al placer.\n\nReducimos la autoexigencia y ampliamos el registro sensorial para que el orgasmo surja como una **respuesta natural**, liberando la presión y la ansiedad del proceso.',
@@ -79,7 +78,8 @@ const areasData = [
   {
     id: "terapia-pareja",
     label: "Terapia de Pareja",
-    image: "/servicios/PAREJA.jpg",
+    image: "/servicios/pareja.jpg",
+    imagePosition: "top",
     imageAlt:
       "Terapia de pareja para dificultades sexuales, falta de deseo y conflictos en la relación – Lic. Viviana Baccarat",
     text: "Cuando la comunicación se dificulta o el deseo se apaga, el vínculo puede volverse tenso, distante o repetitivo. La terapia de pareja permite comprender qué está generando esa desconexión —ya sea en la comunicación, la intimidad o la vida sexual— y trabajar sobre los patrones que la sostienen. El objetivo es **reducir la tensión, reconstruir el encuentro** y recuperar una forma más genuina y placentera de estar juntos.",
@@ -88,7 +88,6 @@ const areasData = [
     id: "estres-ansiedad",
     label: "Estrés y Ansiedad",
     image: "/servicios/ESTRES.jpeg",
-    imagePosition: "center -22rem",
     imageAlt:
       "Terapia para ansiedad y estrés con abordaje psicológico integral – Lic. Viviana Baccarat",
     text: "Cuando el estrés se vuelve sostenido, el cuerpo permanece en alerta y afecta el descanso, el ánimo y la respuesta sexual. \n\nEl abordaje terapéutico permite comprender cómo se sostiene esa activación y trabajar en su regulación, favoreciendo una disminución de la tensión y la recuperación del equilibrio físico y emocional.",

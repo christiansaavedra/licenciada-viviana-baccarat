@@ -1,8 +1,8 @@
 import styles from "./Formacion.module.css";
-import logoUCES from "../../../../assets/images/logos/UCES.png";
-import logoSLAMS from "../../../../assets/images/logos/SLAMS.png";
-import logoAASES from "../../../../assets/images/logos/AASES.jpg";
-import logoWestern from "../../../../assets/images/logos/WESTERNEUROPE.png";
+import logoUCES from "../../../../../public/logos/UCES.png";
+import logoSLAMS from "../../../../../public/logos/SLAMS.png";
+import logoAASES from "../../../../../public/logos/AASES.jpg";
+import logoWestern from "../../../../../public/logos/WESTERNEUROPE.png";
 
 const formaciones = [
   {
