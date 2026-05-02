@@ -36,7 +36,7 @@ div[id] {
     var(--color-white) 0%,
     var(--color-white) 100%
   );
-  --color-text: #2d3748; /* Dark gray for text */
+  --color-text: #4c505a; /* Dark gray for text */
   --color-text-light: #718096; /* Medium gray for secondary text */
   --color-white: #ffffff;
   --color-light-gray: #f0f0f0;

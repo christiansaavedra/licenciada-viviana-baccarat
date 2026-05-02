@@ -16,14 +16,15 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h1
-            className={styles.title}
+          <motion.div
+            className={styles.title_container}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Espacio de Terapia Sexual
-          </motion.h1>
+            <h1 className={styles.title}>Sexualidad en Foco</h1>
+            <h1 className={styles.title}>Terapia Sexual</h1>
+          </motion.div>
 
           <motion.p
             className={styles.subtitle}
@@ -41,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <p>
+            <p className={styles.description_paragraph}>
               Entender lo que te pasa es el primer paso para recuperar el
               bienestar. Aquí exploramos los motivos y los caminos para
               abordarlos.

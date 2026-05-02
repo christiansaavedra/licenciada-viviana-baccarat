@@ -85,9 +85,9 @@ export const articles: Article[] = [
     author: "Lic. Viviana Baccarat",
     date: "2026-04-11",
     readTime: "5 min",
-    image: "/servicios/PAREJA.jpg",
+    image: "/blog/AFRODISIACO_HORZONTAL.jpg",
     imageAlt:
-      "Seguridad emocional en la pareja y su impacto en la sexualidad — Lic. Viviana Baccarat",
+      "Foto de nudo Ansiedad de desempeño, miedo al fracaso y ansiedad sexual, Lic. Viviana Baccarat, sexóloga clínica",
     content: [
       "Hay algo que ninguna técnica, ningún juguete ni ninguna sustancia puede reemplazar: la sensación de estar a salvo. La seguridad emocional es el afrodisíaco invisible, el que activa el sistema nervioso parasimpático —el responsable de la excitación, la entrega y la conexión.",
       "El cuerpo humano tiene un sistema interno de detección de seguridad, lo que el Dr. Stephen Porges llamó «neurocepción». Evalúa constantemente el entorno y el vínculo sin que lo advirtamos. Cuando percibe señales de amenaza (una mirada esquiva, un tono de voz, una crítica sutil, un conflicto no resuelto), inhibe automáticamente las funciones de conexión y receptividad. La sexualidad entra en ese grupo.",
@@ -107,9 +107,9 @@ export const articles: Article[] = [
     author: "Lic. Viviana Baccarat",
     date: "2026-04-10",
     readTime: "5 min",
-    image: "/servicios/ESTRES.jpeg",
+    image: "/blog/VELAS_HORIZONTAL.jpg",
     imageAlt:
-      "Persona reflexionando — abordaje del estrés crónico y su impacto en la sexualidad",
+      "Imagen de vela: ansiedad sexual y falta de deseo, Lic. Viviana Baccarat, sexóloga clínica.",
     content: [
       "Vivimos en una época en la que el estrés se ha naturalizado. Dormir poco, responder mensajes a cualquier hora, sostener múltiples roles y exigencias: todo eso deja marcas en el cuerpo que, tarde o temprano, aparecen en la esfera íntima. El deseo se apaga, la respuesta sexual se vuelve inconsistente, y muchas personas llegan a consulta con la sensación de que algo está fallando en ellas, cuando en realidad lo que falla es el contexto en el que intentan desear.",
       "Desde la perspectiva de la biología del estrés, el sistema nervioso autónomo tiene dos modos principales: uno de activación (asociado al rendimiento, la alerta y la supervivencia) y otro de recuperación (vinculado al descanso, la digestión y también a la sexualidad). Cuando el estrés se vuelve crónico, el cuerpo permanece en modo de alerta la mayor parte del tiempo, y el acceso al modo de recuperación se reduce. La sexualidad requiere presencia, entrega, conexión con las sensaciones — todas funciones del segundo modo.",
@@ -119,24 +119,26 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "el-gimnasio-de-la-atencion",
-    title: "El gimnasio de la atención",
-    subtitle:
-      "Cómo el mindfulness entrena a tu sistema nervioso para habitar el presente y potenciar el placer sensorial.",
+    slug: "el-cuerpo-tiene-memoria",
+    title:
+      "El cuerpo tiene memoria: Por qué la seguridad interna es la llave del placer",
+    subtitle: 'El "freno" invisible: El Nervio Vago',
     excerpt:
-      "El placer requiere atención, y la atención se entrena. Mindfulness no es una moda: es un trabajo medible sobre el sistema nervioso que mejora el registro sensorial, reduce la ansiedad y amplía la capacidad de disfrute.",
+      "Tu cuerpo tiene memoria de cada vez que no se sintió seguro. El nervio vago es el guardián que decide si tu sexualidad puede fluir o si debe protegerte. Cuando recuperas esa seguridad interna, el deseo vuelve naturalmente.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-08",
-    readTime: "4 min",
-    image: "/servicios/PRACTICA TAI.jpg",
+    readTime: "5 min",
+    image: "/blog/NERVIO_VAGO_HORIZONTAL.jpg",
     imageAlt:
-      "Mindfulness y conciencia corporal aplicada a la sexualidad — Lic. Viviana Baccarat",
+      "Foto: Ondas de agua: Entrenar la calma: el gimnasio del sistema nervioso — Lic. Viviana Baccarat",
     content: [
-      "El placer requiere atención. Parece obvio, pero es uno de los desafíos más grandes de esta época: la mayoría vive con la atención dispersa, fragmentada, saltando de estímulo en estímulo. Y una mente ausente durante el encuentro sexual percibe menos, se entrega menos y se satisface menos.",
-      "Mindfulness —la práctica de atención plena— no es una moda ni una técnica espiritual. Es un entrenamiento medible del sistema nervioso que fortalece la capacidad de sostener la atención, regular la respuesta al estrés y habitar el presente sin ser arrastrado por el pensamiento.",
-      "En el ámbito sexual esto se traduce en algo muy concreto: más registro sensorial, menos autoevaluación mental, más capacidad de disfrutar el proceso en lugar de apuntar a un final. Distintos estudios muestran que la práctica sostenida mejora el deseo, reduce la ansiedad de desempeño y aumenta la satisfacción reportada.",
-      "No se trata de meditar durante el sexo. Se trata de entrenar al cerebro, fuera del encuentro, para volver al presente cuando se distrae. Con el tiempo ese músculo atencional se activa también en la intimidad: cuando aparece un pensamiento evaluador, la mente sabe cómo regresar al cuerpo, a la sensación, al contacto.",
-      "Este tipo de entrenamiento se integra muy bien al abordaje terapéutico de las dificultades sexuales. Complementa el trabajo cognitivo y relacional con una intervención directa sobre la atención y el cuerpo, que es donde ocurre el placer. No es un extra: es una de las herramientas más potentes para recuperar el disfrute.",
+      "Muchas veces, en la consulta, escucho una frase recurrente: «Mi cabeza tiene ganas, pero mi cuerpo no me acompaña». Sentís un bloqueo, una tensión que impide la entrega o una desconexión que aparece justo en el momento del encuentro.",
+      "La ciencia actual nos explica que esto no es falta de voluntad ni de amor: es tu sistema nervioso tratando de protegerte.",
+      "Imaginate que tenés un interruptor interno que decide si tu cuerpo está en modo «defensa» o en modo «conexión». Ese interruptor es el nervio vago. Cuando el estrés, el cansancio o el miedo al desempeño se vuelven crónicos, el cuerpo se pone «en guardia». En ese estado de alerta, la respuesta sexual se apaga porque la biología prioriza la supervivencia sobre el disfrute. Es así como aparecen las dificultades con la erección, la falta de lubricación o la tensión muscular dolorosa.",
+      "Si bien la terapia ayuda a entender el «porqué», a veces la mente comprende pero el cuerpo sigue rígido. Por eso, integramos la práctica de Osteo Tai, una técnica que fusiona la precisión de la osteopatía con la fluidez rítmica del masaje tailandés.",
+      "A diferencia de un masaje convencional, aquí no solo trabajamos sobre el tejido; buscamos enviarle señales claras a tu sistema nervioso de que está a salvo. Al trabajar profundamente sobre las fascias y el ritmo respiratorio, logramos desactivar la alarma: reducimos los niveles de cortisol para que el cuerpo baje la guardia.",
+      "También recuperamos la sensibilidad: volvés a registrar sensaciones placenteras que el estrés había «anestesiado». Y desbloqueamos la pelvis: liberamos tensiones crónicas en la zona del diafragma y el suelo pélvico, donde solemos alojar las emociones no procesadas.",
+      "Cambiar la mirada es fundamental: el placer no es algo que debas «lograr», sino algo que ocurre cuando el cuerpo se siente seguro. Cuando el nervio vago recupera su tono, el deseo deja de ser una tarea pendiente y vuelve a ser lo que siempre debió ser: un proceso natural, fluido y presente.",
     ],
   },
   {
@@ -149,9 +151,9 @@ export const articles: Article[] = [
     author: "Lic. Viviana Baccarat",
     date: "2026-04-05",
     readTime: "5 min",
-    image: "/servicios/Eyaculacion precoz.jpg",
+    image: "/blog/PIEDRAS_HORIZONTAL.jpg",
     imageAlt:
-      "Eyaculación precoz y ventana de tolerancia — abordaje clínico Lic. Viviana Baccarat",
+      "Piedras en equilibrio: tratamiento de eyaculación precoz, Lic. Viviana Baccarat, sexóloga clínica.",
     content: [
       "Uno de los motivos de consulta más frecuentes en sexología clínica es la eyaculación precoz. Suele vivirse como una falla del autocontrol, pero la explicación más precisa viene de la teoría polivagal: se trata de un sistema nervioso que pierde la capacidad de sostener la activación dentro de su «ventana de tolerancia».",
       "Todos tenemos una ventana de tolerancia: el rango de activación en el que el cuerpo puede estar alerta, conectado y funcionando bien. Si la intensidad del estímulo excede ese rango, el sistema se desborda —descarga, se bloquea o se congela. La eyaculación precoz es, en muchos casos, esa descarga cuando la ventana es estrecha.",
@@ -170,9 +172,9 @@ export const articles: Article[] = [
     author: "Lic. Viviana Baccarat",
     date: "2026-04-03",
     readTime: "5 min",
-    image: "/servicios/ANORGASMIA.jpg",
+    image: "/blog/PELEA_CAMA_HORIZONTAL.jpg",
     imageAlt:
-      "Conflicto de pareja y su impacto en la vida sexual — terapia con Lic. Viviana Baccarat",
+      "Foto de pareja: crisis de pareja y falta de sexo — terapia con Lic. Viviana Baccarat",
     content: [
       "Hay parejas que llegan a consulta sorprendidas: «Nos llevamos bien, nos queremos, pero el sexo dejó de funcionar». Al revisar el contexto aparecen peleas recurrentes que nunca terminan de cerrarse, temas que se evitan, desacuerdos que se acumulan. El cuerpo lleva cuenta de todo eso aunque la mente diga que «ya pasó».",
       "Una discusión no resuelta deja una huella bioquímica concreta. El cortisol y la adrenalina, liberados durante el conflicto, pueden permanecer elevados durante horas —y en algunos sistemas, días. El sistema nervioso interpreta a la pareja como una fuente de amenaza intermitente, y eso cambia todo el registro del encuentro íntimo.",

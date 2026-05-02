@@ -42,8 +42,7 @@ const Contact = () => {
             <h3 className={styles.sectionTitle}>¿Hablamos?</h3>
             <p className={styles.infoText}>
               Si querés agendar una sesión o hacer una consulta, podés
-              escribirme por WhatsApp, reservar tu turno online o
-              completar el formulario.
+              escribirme por WhatsApp o completar el formulario.
             </p>
 
             <ul className={styles.contactList}>
@@ -67,7 +66,7 @@ const Contact = () => {
                   licenciadavivianabaccarat@gmail.com
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://calendly.com/licenciadavivianabaccarat/sesion-con-la-lic-viviana-baccarat"
                   target="_blank"
@@ -77,7 +76,7 @@ const Contact = () => {
                   <CalendarIcon />
                   Reservar turno online
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

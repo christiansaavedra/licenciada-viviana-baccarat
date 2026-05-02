@@ -10,7 +10,7 @@ const disfuncionesData = [
     image: "/servicios/FALTA DESEO.jpg",
     imagePosition: "top",
     imageAlt:
-      "Tratamiento para la falta de deseo sexual – Lic. Viviana Baccarat",
+      "Foto: mujer con brazos cruzados. Tratamiento para la falta de deseo sexual y bajo libido, Lic. Viviana Baccarat, Argentina.",
     text: "Cuando el deseo disminuye o desaparece, la experiencia sexual puede volverse distante o poco conectada. El abordaje terapéutico permite comprender qué factores —como el estrés, la ansiedad o la exigencia— están interfiriendo, favoreciendo la **recuperación del interés** y una vivencia más libre y genuina de la sexualidad.",
   },
   {
@@ -19,7 +19,7 @@ const disfuncionesData = [
     image: "/servicios/Eyaculacion precoz.jpg",
     imagePosition: "top",
     imageAlt:
-      "Especialista en eyaculación precoz en Belgrano y consulta virtual – Lic. Viviana Baccarat",
+      "Foto: hombre joven. Tratamiento de la eyaculación precoz y control de la excitación, Lic. Viviana Baccarat, Argentina",
     text: "Suele vivirse como una pérdida de control: el cuerpo responde antes de lo que uno quisiera y eso genera frustración, ansiedad y, muchas veces, evitación. **Más que una cuestión de tiempo**, el punto central es la dificultad para regular cómo responde el cuerpo ante la estimulación.\n\n La terapia no busca 'aguantar', sino reentrenar la respuesta del cuerpo y el registro de las sensaciones. El objetivo es que la regulación deje de ser un esfuerzo y se convierta en una capacidad natural de disfrutar.",
   },
   {
@@ -27,7 +27,7 @@ const disfuncionesData = [
     label: "Disfunción Eréctil",
     image: "/servicios/DISFUNCION ERECTIL (1).jpg",
     imageAlt:
-      "Especialista en disfunción eréctil - Terapia psicosexual online y presencial en Belgrano – Lic. Viviana Baccarat",
+      "Foto: hombre joven de perfil. Tratamiento de la disfunción eréctil y ansiedad por el desempeño, Lic. Viviana Baccarat, sexóloga clínica.",
     text: 'Es la dificultad para lograr o mantener una erección satisfactoria. Su origen puede ser orgánico o psicológico, pero el miedo a "no cumplir" suele agravar el síntoma al bloquear la respuesta natural.\n\nEl tratamiento se enfoca en eliminar la **ansiedad por el desempeño** y el estrés asociado, permitiendo que la erección vuelva a ser un proceso fluido y espontáneo.',
   },
   {
@@ -35,7 +35,7 @@ const disfuncionesData = [
     label: "Vaginismo",
     image: "/servicios/VAGINISMO.jpg",
     imageAlt:
-      "Tratamiento del vaginismo y tensión pélvica involuntaria - Sexología clínica en Belgrano – Lic. Viviana Baccarat",
+      "Foto: mujer con brazos cruzados. Tratamiento del vaginismo y tensión pélvica involuntaria - Sexología clínica en Belgrano – Lic. Viviana Baccarat",
     text: "Es el espasmo involuntario de los músculos del suelo pélvico que bloquea la penetración, el uso de tampones o exámenes médicos. Actúa como un **mecanismo de defensa** que no responde al control voluntario.\n\nIntegramos el registro corporal y el manejo de la ansiedad para desactivar la respuesta de tensión de forma progresiva, recuperando el bienestar y el placer.",
   },
   {
@@ -44,7 +44,7 @@ const disfuncionesData = [
     image: "/servicios/DISPAREUNIA.jpg",
     imagePosition: "top",
     imageAlt:
-      "Especialista en dispareunia y coito doloroso - Terapia psicosexual virtual e internacional – Lic. Viviana Baccarat",
+      "Foto: mujer angustiada. Abordaje con la especialista en dispareunia y coito doloroso - Terapia psicosexual virtual e internacional – Lic. Viviana Baccarat",
     text: "Es el dolor genital persistente que se manifiesta antes, durante o después del encuentro sexual. Su presencia activa una respuesta de protección que genera tensión y evitación, afectando el deseo y el vínculo con el cuerpo.\n\nIdentificamos el origen del malestar para **romper el ciclo de dolor y ansiedad**, recuperando el bienestar y una sexualidad plena.",
   },
   {
@@ -53,7 +53,7 @@ const disfuncionesData = [
     image: "/servicios/ANORGASMIA.jpg",
     imagePosition: "top",
     imageAlt:
-      "Tratamiento para la anorgasmia y dificultades para alcanzar el orgasmo – Lic. Viviana Baccarat",
+      "Foto: mujer introspectiva. Tratamiento de la anorgasmia y ansiedad por el placer, Lic. Viviana Baccarat, sexóloga clínica. ",
     text: 'Es la dificultad persistente para alcanzar el orgasmo a pesar de una excitación adecuada. Suele estar vinculada a la ansiedad y al hecho de "observarse" en lugar de sentir, bloqueando la entrega al placer.\n\nReducimos la autoexigencia y ampliamos el registro sensorial para que el orgasmo surja como una **respuesta natural**, liberando la presión y la ansiedad del proceso.',
   },
   {
@@ -61,7 +61,7 @@ const disfuncionesData = [
     label: "Pornografía y sexualidad",
     image: "/servicios/PORNOGRAFIA.jpg",
     imageAlt:
-      "Impacto de la pornografía en el deseo y la respuesta sexual real - Consulta sexológica en Belgrano y Online – Lic. Viviana Baccarat",
+      "Foto: Imagen de rostro y luz: adicción a la pornografía y secuestro de la dopamina, Lic. Viviana Baccarat, sexóloga clínica.",
     text: "El consumo frecuente puede generar una **dependencia del estímulo visual**, habituando el deseo a la intensidad de una pantalla y dificultando la respuesta ante el encuentro real.\n\nReentrenamos la sensibilidad y la conexión con los sentidos para recuperar una sexualidad consciente y compartida.",
   },
 ];
@@ -98,7 +98,7 @@ const areasData = [
     image: "/servicios/PRACTICA TAI.jpg",
     imageAlt:
       "Práctica Tai para la regulación del sistema nervioso y conciencia corporal en sexología – Lic. Viviana Baccarat",
-    text: "Una herramienta corporal para reducir el estrés y los estados de alerta, facilitando la conexión con lo que el cuerpo siente. Es un recurso de **regulación emocional y conciencia corporal** específicamente diseñado para complementar el tratamiento de la ansiedad y las dificultades sexuales.\n\n(Recurso complementario al tratamiento principal, coordinado por un profesional externo especializado).",
+    text: "¿Sentís tu cuerpo en modo defensa?  Como parte de nuestro abordaje integral, incorporamos la **práctica Tai**: una terapia que une la suavidad de la osteopatía con el ritmo del masaje tailandés. No buscamos solo 'relajar', sino decirle a tu sistema nervioso que está a salvo. Al recuperar la seguridad corporal, el deseo deja de ser un esfuerzo y vuelve a ser un proceso natural y fluido. \n\n (Recurso opcional coordinado por un profesional externo especializado).",
   },
 ];
 
