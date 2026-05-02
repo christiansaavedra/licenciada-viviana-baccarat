@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./Services.module.css";
-import TerapiaSexualImage from "../../../../../public/servicios/terapia_sexual_individual.jpg";
+import TerapiaSexualImage from "/servicios/terapia_sexual_individual.jpg";
 
 const disfuncionesData = [
   {
