@@ -28,6 +28,9 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
 }
 
 .embla {
@@ -57,7 +60,7 @@
 .card {
   background: var(--color-white);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -66,6 +69,10 @@
     0 0 0 1px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.25s ease;
   height: 100%;
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
 }
 
 /* ── Quote icon ── */
@@ -132,6 +139,7 @@
   cursor: pointer;
   transition: all 0.25s ease;
   flex-shrink: 0;
+  padding: 0;
 }
 
 .controlButton:hover:not(:disabled) {
@@ -171,7 +179,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .section {
     padding: 50px 0;
   }
@@ -182,18 +190,36 @@
 
   .embla {
     max-width: 100%;
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .carouselContainer {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
   }
 
   .controlButton {
     width: 40px;
     height: 40px;
+    flex: 0 0 auto;
   }
 
   .prevButton {
-    left: -50px;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    transform: none;
   }
 
   .nextButton {
-    right: -50px;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    transform: none;
   }
 }

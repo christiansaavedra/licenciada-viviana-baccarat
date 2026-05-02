@@ -17,14 +17,15 @@ const About = () => {
               Acompaño a personas y parejas que buscan{" "}
               <strong>
                 mejorar su salud sexual y gestionar el estrés y la ansiedad
-              </strong>
-              , desde una mirada clínica que entiende el deseo como parte del
+              </strong>{" "}
+              desde una mirada clínica que entiende el deseo como parte del
               equilibrio emocional.
             </p>
             <p className={styles.text}>
               Trabajo con herramientas precisas para{" "}
-              <strong>resolver lo que interfiere en el placer</strong> y ayudarte
-              a <strong>recuperar el bienestar y la satisfacción</strong>.
+              <strong>resolver lo que interfiere en el placer</strong> y
+              ayudarte a{" "}
+              <strong>recuperar el bienestar y la satisfacción</strong>.
             </p>
           </div>
         </div>
@@ -34,9 +35,14 @@ const About = () => {
             Ver transcripción del video
           </summary>
           <div className={styles.transcriptContent}>
-           
             <p>
-            ¿Sentís que algo en tu sexualidad cambió y no sabés por qué? El cuerpo habla cuando las emociones no encuentran palabras. Soy psicóloga, diplomada en terapias sexuales. Trabajo con un enfoque que integra el psicoanálisis y la terapia sexual. Acompaño a personas y parejas que desean comprender lo que les pasa y reencontrarse con su deseo. Si algo de esto te resuena, este puede ser tu primer paso. No dudes en consultarme.
+              ¿Sentís que algo en tu sexualidad cambió y no sabés por qué? El
+              cuerpo habla cuando las emociones no encuentran palabras. Soy
+              psicóloga, diplomada en terapias sexuales. Trabajo con un enfoque
+              que integra el psicoanálisis y la terapia sexual. Acompaño a
+              personas y parejas que desean comprender lo que les pasa y
+              reencontrarse con su deseo. Si algo de esto te resuena, este puede
+              ser tu primer paso. No dudes en consultarme.
             </p>
           </div>
         </details>

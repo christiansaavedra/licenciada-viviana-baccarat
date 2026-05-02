@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Fade from "embla-carousel-fade";
+import { useViewport } from "../../../../common/hooks/useViewport";
 import styles from "./Testimonials.module.css";
 
 const testimonios = [
@@ -88,6 +89,7 @@ const QuoteIcon = () => (
 );
 
 const Testimonials = () => {
+  const { isMobile } = useViewport();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Fade()]);
   const prevButtonRef = useRef<HTMLButtonElement>(null);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
@@ -118,10 +120,11 @@ const Testimonials = () => {
   const scrollPrev = () => emblaApi?.scrollPrev();
   const scrollNext = () => emblaApi?.scrollNext();
 
-  // Group testimonials into slides of 3 for desktop, 1 for mobile
+  // Group testimonials: 1 per slide on mobile, 3 per slide on desktop
+  const itemsPerSlide = isMobile ? 1 : 3;
   const groupedTestimonials = [];
-  for (let i = 0; i < testimonios.length; i += 3) {
-    groupedTestimonials.push(testimonios.slice(i, i + 3));
+  for (let i = 0; i < testimonios.length; i += itemsPerSlide) {
+    groupedTestimonials.push(testimonios.slice(i, i + itemsPerSlide));
   }
 
   return (
