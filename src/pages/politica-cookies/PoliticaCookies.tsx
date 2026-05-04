@@ -8,7 +8,7 @@ const PoliticaCookies = () => {
         <Link to="/" className={styles.back}>← Volver al inicio</Link>
 
         <h1 className={styles.title}>Política de Cookies</h1>
-        <p className={styles.updated}>Última actualización: abril de 2025</p>
+        <p className={styles.updated}>Última actualización: mayo de 2026</p>
 
         <section className={styles.section}>
           <h2>1. ¿Qué son las cookies?</h2>
@@ -22,10 +22,12 @@ const PoliticaCookies = () => {
         <section className={styles.section}>
           <h2>2. ¿Este sitio utiliza cookies?</h2>
           <p>
-            Este sitio web es una aplicación de una sola página (SPA) que{" "}
-            <strong>no establece cookies propias</strong> de seguimiento,
-            publicidad ni analítica. No se utiliza Google Analytics, Facebook
-            Pixel ni ninguna otra herramienta de seguimiento de terceros.
+            Este sitio web utiliza <strong>Google Analytics</strong> para analizar
+            el tráfico y el comportamiento de los usuarios de forma anónima. Google
+            Analytics establece cookies para recopilar información sobre cómo los
+            visitantes interactúan con el sitio, como páginas visitadas, tiempo de
+            permanencia y fuente de tráfico. Esta información se utiliza únicamente
+            para mejorar la experiencia del usuario y optimizar el contenido.
           </p>
           <p>
             El formulario de contacto utiliza el servicio{" "}
@@ -40,6 +42,10 @@ const PoliticaCookies = () => {
               política de privacidad de EmailJS
             </a>
             .
+          </p>
+          <p>
+            No se utilizan cookies de publicidad ni se comparten datos con terceros
+            para fines comerciales.
           </p>
         </section>
 

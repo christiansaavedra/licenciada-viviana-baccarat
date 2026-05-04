@@ -5,17 +5,22 @@ const PoliticaPrivacidad = () => {
   return (
     <div className={styles.page}>
       <div className="container">
-        <Link to="/" className={styles.back}>← Volver al inicio</Link>
+        <Link to="/" className={styles.back}>
+          ← Volver al inicio
+        </Link>
 
         <h1 className={styles.title}>Política de Privacidad</h1>
-        <p className={styles.updated}>Última actualización: abril de 2025</p>
+        <p className={styles.updated}>Última actualización: mayo de 2026</p>
 
         <section className={styles.section}>
           <h2>1. Responsable del tratamiento</h2>
           <p>
             Lic. Viviana Baccarat — Psicóloga y Sexóloga Clínica (M.N. 56769),
             con domicilio en la Ciudad Autónoma de Buenos Aires, Argentina.
-            Correo de contacto: <a href="mailto:licenciadavivianabaccarat@gmail.com">licenciadavivianabaccarat@gmail.com</a>
+            Correo de contacto:{" "}
+            <a href="mailto:licenciadavivianabaccarat@gmail.com">
+              licenciadavivianabaccarat@gmail.com
+            </a>
           </p>
         </section>
 
@@ -23,17 +28,21 @@ const PoliticaPrivacidad = () => {
           <h2>2. Marco legal aplicable</h2>
           <p>
             El tratamiento de los datos personales se rige por la{" "}
-            <strong>Ley N.° 25.326 de Protección de los Datos Personales</strong> de
-            la República Argentina y sus normas reglamentarias, así como por las
-            disposiciones de la{" "}
-            <strong>Agencia de Acceso a la Información Pública (AAIP)</strong>, autoridad
-            de aplicación en la materia.
+            <strong>
+              Ley N.° 25.326 de Protección de los Datos Personales
+            </strong>{" "}
+            de la República Argentina y sus normas reglamentarias, así como por
+            las disposiciones de la{" "}
+            <strong>Agencia de Acceso a la Información Pública (AAIP)</strong>,
+            autoridad de aplicación en la materia.
           </p>
         </section>
 
         <section className={styles.section}>
           <h2>3. Datos que se recopilan</h2>
-          <p>A través del formulario de contacto de este sitio web se recopilan:</p>
+          <p>
+            A través del formulario de contacto de este sitio web se recopilan:
+          </p>
           <ul>
             <li>Nombre y apellido</li>
             <li>Número de teléfono / WhatsApp</li>
@@ -41,10 +50,10 @@ const PoliticaPrivacidad = () => {
             <li>Mensaje o consulta libre</li>
           </ul>
           <p>
-            No se recopilan datos sensibles (en los términos del art. 2 de la Ley 25.326)
-            a través del formulario web. Cualquier información de carácter clínico es
-            tratada exclusivamente en el marco de la relación terapéutica y con estricta
-            confidencialidad profesional.
+            No se recopilan datos sensibles (en los términos del art. 2 de la
+            Ley 25.326) a través del formulario web. Cualquier información de
+            carácter clínico es tratada exclusivamente en el marco de la
+            relación terapéutica y con estricta confidencialidad profesional.
           </p>
         </section>
 
@@ -53,7 +62,10 @@ const PoliticaPrivacidad = () => {
           <p>Los datos recabados se utilizan exclusivamente para:</p>
           <ul>
             <li>Responder a la consulta enviada y coordinar turnos.</li>
-            <li>Comunicaciones directamente relacionadas con el servicio solicitado.</li>
+            <li>
+              Comunicaciones directamente relacionadas con el servicio
+              solicitado.
+            </li>
           </ul>
           <p>No se utilizan para fines de marketing ni se ceden a terceros.</p>
         </section>
@@ -61,19 +73,52 @@ const PoliticaPrivacidad = () => {
         <section className={styles.section}>
           <h2>5. Almacenamiento y seguridad</h2>
           <p>
-            Los mensajes enviados a través del formulario son transmitidos mediante{" "}
-            <strong>EmailJS</strong>, un servicio de terceros que actúa como encargado
-            de tratamiento. EmailJS no almacena el contenido de los mensajes de forma
-            permanente. Se aplican medidas técnicas razonables para proteger la
-            información durante la transmisión.
+            Los mensajes enviados a través del formulario son transmitidos
+            mediante <strong>EmailJS</strong>, un servicio de terceros que actúa
+            como encargado de tratamiento. EmailJS no almacena el contenido de
+            los mensajes de forma permanente. Se aplican medidas técnicas
+            razonables para proteger la información durante la transmisión.
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2>6. Derechos del titular</h2>
+          <h2>6. Herramientas de análisis web</h2>
           <p>
-            De conformidad con el art. 14 y siguientes de la Ley 25.326, toda persona
-            tiene derecho a:
+            Este sitio utiliza <strong>Google Analytics</strong>, un servicio de
+            análisis web proporcionado por Google LLC. Google Analytics utiliza
+            cookies para recopilar información anónima sobre el uso del sitio,
+            como páginas visitadas, tiempo de permanencia y fuente de tráfico.
+            Esta información se utiliza exclusivamente para mejorar el sitio y
+            optimizar la experiencia del usuario.
+          </p>
+          <p>
+            Los datos recopilados por Google Analytics se procesan de acuerdo
+            con la{" "}
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Política de Privacidad de Google
+            </a>
+            . Podés optar por no participar en el seguimiento de Google
+            Analytics instalando el{" "}
+            <a
+              href="https://tools.google.com/dlpage/gaoptout"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              complemento de inhabilitación para navegadores
+            </a>
+            .
+          </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2>7. Derechos del titular</h2>
+          <p>
+            De conformidad con el art. 14 y siguientes de la Ley 25.326, toda
+            persona tiene derecho a:
           </p>
           <ul>
             <li>
@@ -83,15 +128,17 @@ const PoliticaPrivacidad = () => {
               <strong>Rectificar</strong> datos inexactos o incompletos.
             </li>
             <li>
-              <strong>Suprimir</strong> sus datos cuando no exista obligación legal de
-              conservarlos.
+              <strong>Suprimir</strong> sus datos cuando no exista obligación
+              legal de conservarlos.
             </li>
           </ul>
           <p>
             Para ejercer estos derechos, puede escribir a{" "}
-            <a href="mailto:licenciadavivianabaccarat@gmail.com">licenciadavivianabaccarat@gmail.com</a>{" "}
-            indicando su nombre completo y el derecho que desea ejercer. Se responderá
-            dentro de los plazos previstos por la normativa vigente.
+            <a href="mailto:licenciadavivianabaccarat@gmail.com">
+              licenciadavivianabaccarat@gmail.com
+            </a>{" "}
+            indicando su nombre completo y el derecho que desea ejercer. Se
+            responderá dentro de los plazos previstos por la normativa vigente.
           </p>
           <p>
             Asimismo, tiene derecho a presentar una reclamación ante la{" "}
@@ -107,20 +154,20 @@ const PoliticaPrivacidad = () => {
         </section>
 
         <section className={styles.section}>
-          <h2>7. Conservación de los datos</h2>
+          <h2>8. Conservación de los datos</h2>
           <p>
-            Los datos de contacto se conservan únicamente durante el tiempo necesario
-            para atender la consulta. No se mantiene ninguna base de datos de usuarios
-            o pacientes en el sitio web.
+            Los datos de contacto se conservan únicamente durante el tiempo
+            necesario para atender la consulta. No se mantiene ninguna base de
+            datos de usuarios o pacientes en el sitio web.
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2>8. Modificaciones</h2>
+          <h2>9. Modificaciones</h2>
           <p>
-            Esta política puede actualizarse para reflejar cambios normativos o en el
-            funcionamiento del sitio. La fecha de última actualización figura al inicio
-            del documento.
+            Esta política puede actualizarse para reflejar cambios normativos o
+            en el funcionamiento del sitio. La fecha de última actualización
+            figura al inicio del documento.
           </p>
         </section>
       </div>
