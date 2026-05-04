@@ -135,6 +135,10 @@
     padding: 50px 0;
   }
 
+  .areaText {
+    font-size: var(--text-size-sm);
+  }
+
   .pills {
     gap: 0.5rem;
     flex-wrap: wrap;

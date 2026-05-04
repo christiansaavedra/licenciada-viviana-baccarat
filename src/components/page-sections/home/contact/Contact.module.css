@@ -195,6 +195,16 @@
     padding: 50px 0;
   }
 
+  .infoText,
+  .contactLink,
+  .input,
+  .textarea,
+  .submitButton,
+  .successMsg,
+  .errorMsg {
+    font-size: var(--text-size-sm);
+  }
+
   .submitButton {
     width: 100%;
   }

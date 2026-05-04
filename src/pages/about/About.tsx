@@ -10,7 +10,10 @@ const About = () => {
         <h3 className={styles.sectionTitle}>Conocé mi enfoque</h3>
 
         <div className={styles.grid}>
-          <VideoPlayer src={VideoSrc} />
+          <VideoPlayer
+            src={VideoSrc}
+            transcript="¿Sentís que algo en tu sexualidad cambió y no sabés por qué? El cuerpo habla cuando las emociones no encuentran palabras. Soy psicóloga, diplomada en terapias sexuales. Trabajo con un enfoque que integra el psicoanálisis y la terapia sexual. Acompaño a personas y parejas que desean comprender lo que les pasa y reencontrarse con su deseo. Si algo de esto te resuena, este puede ser tu primer paso. No dudes en consultarme."
+          />
 
           <div className={styles.textContainer}>
             <p className={styles.text}>
@@ -29,23 +32,6 @@ const About = () => {
             </p>
           </div>
         </div>
-
-        <details className={styles.transcript}>
-          <summary className={styles.transcriptToggle}>
-            Ver transcripción del video
-          </summary>
-          <div className={styles.transcriptContent}>
-            <p>
-              ¿Sentís que algo en tu sexualidad cambió y no sabés por qué? El
-              cuerpo habla cuando las emociones no encuentran palabras. Soy
-              psicóloga, diplomada en terapias sexuales. Trabajo con un enfoque
-              que integra el psicoanálisis y la terapia sexual. Acompaño a
-              personas y parejas que desean comprender lo que les pasa y
-              reencontrarse con su deseo. Si algo de esto te resuena, este puede
-              ser tu primer paso. No dudes en consultarme.
-            </p>
-          </div>
-        </details>
       </div>
     </section>
   );

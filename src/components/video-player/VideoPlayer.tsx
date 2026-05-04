@@ -4,6 +4,7 @@ import styles from "./VideoPlayer.module.css";
 interface VideoPlayerProps {
   src: string;
   className?: string;
+  transcript?: string;
 }
 
 const formatTime = (seconds: number): string => {
@@ -13,7 +14,7 @@ const formatTime = (seconds: number): string => {
   return `${m}:${s.toString().padStart(2, "0")}`;
 };
 
-const VideoPlayer = ({ src, className }: VideoPlayerProps) => {
+const VideoPlayer = ({ src, className, transcript }: VideoPlayerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
 
@@ -119,6 +120,7 @@ const VideoPlayer = ({ src, className }: VideoPlayerProps) => {
         ref={videoRef}
         src={src}
         className={styles.video}
+        data-transcript={transcript}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
         onPlay={() => {

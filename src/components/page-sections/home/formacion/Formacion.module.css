@@ -129,6 +129,10 @@
     padding: 50px 0;
   }
 
+  .intro {
+    font-size: var(--text-size-sm);
+  }
+
   .cards {
     grid-template-columns: 1fr;
   }

@@ -50,6 +50,7 @@ div[id] {
 
   --font-body-size-sm: 1rem;
   --font-body-size-md: 1.5rem;
+  --text-size-sm: 1.2rem;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

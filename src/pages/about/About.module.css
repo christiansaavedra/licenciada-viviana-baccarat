@@ -125,6 +125,10 @@ details[open] .transcriptToggle::before {
 
   }
 
+  .text {
+    font-size: var(--text-size-sm);
+  }
+
   .sectionTitle {
     font-size: var(--font-heading-sm);
   }

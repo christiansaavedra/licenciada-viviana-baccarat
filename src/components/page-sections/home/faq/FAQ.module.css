@@ -114,10 +114,10 @@
   }
 
   .accordionTrigger {
-    font-size: 1rem;
+    font-size: var(--text-size-sm);
   }
 
   .accordionBody {
-    font-size: 1rem;
+    font-size: var(--text-size-sm);
   }
 }

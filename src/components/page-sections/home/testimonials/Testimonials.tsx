@@ -27,13 +27,6 @@ const testimonios = [
     stars: 5,
   },
   {
-    id: 4,
-    text: "Viviana ha sido una guía excepcional. Desde el primer encuentro me hizo sentir escuchado y creó un espacio seguro para abrirme. Su calidez humana y claridad para explicar conceptos me ayudaron mucho. Gracias a su acompañamiento, avanzo con confianza y sus herramientas me recuerdan que el cambio es posible.",
-    author: "Paciente (anónimo/a)",
-    service: "Terapia Sexual Individual",
-    stars: 5,
-  },
-  {
     id: 5,
     text: "Las sesiones de Osteo Tai me hicieron consciente de que vivía en alerta constante. Fue un complemento excelente que me ayudó a bajar las defensas y sentirme más seguro. Aprendí a escuchar mi cuerpo y estar presente en mis sensaciones",
     author: "Marcelo",
