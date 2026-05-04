@@ -1,0 +1,15 @@
+{
+  "name": "Sexualidad en Foco",
+  "short_name": "Sexualidad",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ff6b35",
+  "theme_color": "#ff6b35",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   </defs>
   <!-- Background rounded square -->
   <rect width="64" height="64" rx="14" fill="#ff6b35"/>
-  <!-- VB letters -->
+  <!-- SF letters -->
   <text
     x="32"
     y="45"
@@ -16,5 +16,5 @@
     font-weight="700"
     fill="#ffffff"
     letter-spacing="1.5"
-  >VB</text>
+  >SF</text>
 </svg>
