@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://licenciada-viviana-baccarat-o764.vercel.app/sitemap.xml
+Sitemap: https://sexualidadenfoco.com.ar/sitemap.xml

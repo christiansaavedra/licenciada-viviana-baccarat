@@ -132,4 +132,8 @@
   .subtitle {
     font-size: 1.1rem;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

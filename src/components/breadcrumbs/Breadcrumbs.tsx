@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Breadcrumbs.module.css";
 
-const BASE_URL = "https://licenciada-viviana-baccarat-o764.vercel.app";
+const BASE_URL = "https://sexualidadenfoco.com.ar";
 
 export type Crumb = {
   label: string;

@@ -139,13 +139,19 @@ const VideoPlayer = ({ src, className, transcript }: VideoPlayerProps) => {
 
       {/* Big play overlay when paused */}
       {!isPlaying && (
-        <button className={styles.bigPlay} onClick={togglePlay} aria-label="Reproducir">
+        <button
+          className={styles.bigPlay}
+          onClick={togglePlay}
+          aria-label="Reproducir"
+        >
           <PlayIcon />
         </button>
       )}
 
       {/* Bottom controls bar */}
-      <div className={`${styles.controls} ${showControls ? styles.controlsVisible : ""}`}>
+      <div
+        className={`${styles.controls} ${showControls ? styles.controlsVisible : ""}`}
+      >
         {/* Progress bar */}
         <div
           ref={progressRef}
@@ -158,19 +164,33 @@ const VideoPlayer = ({ src, className, transcript }: VideoPlayerProps) => {
           aria-valuemax={100}
         >
           <div className={styles.progressTrack}>
-            <div className={styles.progressFill} style={{ width: `${progress}%` }} />
-            <div className={styles.progressThumb} style={{ left: `${progress}%` }} />
+            <div
+              className={styles.progressFill}
+              style={{ width: `${progress}%` }}
+            />
+            <div
+              className={styles.progressThumb}
+              style={{ left: `${progress}%` }}
+            />
           </div>
         </div>
 
         <div className={styles.controlsRow}>
           {/* Play / Pause */}
-          <button className={styles.btn} onClick={togglePlay} aria-label={isPlaying ? "Pausar" : "Reproducir"}>
+          <button
+            className={styles.btn}
+            onClick={togglePlay}
+            aria-label={isPlaying ? "Pausar" : "Reproducir"}
+          >
             {isPlaying ? <PauseIcon /> : <PlayIcon />}
           </button>
 
           {/* Mute */}
-          <button className={styles.btn} onClick={toggleMute} aria-label={isMuted ? "Activar sonido" : "Silenciar"}>
+          <button
+            className={styles.btn}
+            onClick={toggleMute}
+            aria-label={isMuted ? "Activar sonido" : "Silenciar"}
+          >
             {isMuted ? <MuteIcon /> : <VolumeIcon />}
           </button>
 
@@ -182,7 +202,13 @@ const VideoPlayer = ({ src, className, transcript }: VideoPlayerProps) => {
           <div className={styles.spacer} />
 
           {/* Fullscreen */}
-          <button className={styles.btn} onClick={toggleFullscreen} aria-label={isFullscreen ? "Salir de pantalla completa" : "Pantalla completa"}>
+          <button
+            className={styles.btn}
+            onClick={toggleFullscreen}
+            aria-label={
+              isFullscreen ? "Salir de pantalla completa" : "Pantalla completa"
+            }
+          >
             {isFullscreen ? <ExitFullscreenIcon /> : <FullscreenIcon />}
           </button>
         </div>

@@ -4,7 +4,7 @@ import { getArticleBySlug } from "./articlesData";
 import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs";
 import styles from "./Article.module.css";
 
-const BASE_URL = "https://licenciada-viviana-baccarat-o764.vercel.app";
+const BASE_URL = "https://sexualidadenfoco.com.ar";
 
 const formatDate = (iso: string) => {
   const d = new Date(iso);
