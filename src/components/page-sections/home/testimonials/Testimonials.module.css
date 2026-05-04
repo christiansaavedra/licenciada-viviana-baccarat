@@ -161,14 +161,14 @@
 .prevButton {
   position: absolute;
   left: -60px;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 }
 
 .nextButton {
   position: absolute;
   right: -60px;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 }
 

@@ -47,6 +47,15 @@ const Hero = () => {
               bienestar. Aquí exploramos los motivos y los caminos para
               abordarlos.
             </p>
+
+            <p
+              className={clsx(
+                styles.description_paragraph,
+                styles.description_paragraph_bold,
+              )}
+            >
+              Atencion online en Argentina y en el exterior.
+            </p>
           </motion.div>
 
           <motion.div
