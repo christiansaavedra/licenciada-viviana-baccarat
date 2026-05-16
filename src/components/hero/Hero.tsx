@@ -22,19 +22,20 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className={styles.title}>Sexualidad en Foco</h1>
+            <h2 className={styles.title}>Sexualidad en Foco</h2>
             <h1 className={styles.title}>Terapia Sexual</h1>
           </motion.div>
 
-          <motion.p
+          <motion.h2
             className={styles.subtitle}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Lic. Viviana Baccarat · M.N. 56769 — Psicóloga, Sexóloga Clínica y
-            especialista en Gestión del Estrés
-          </motion.p>
+            Lic. Viviana Baccarat · M.N. 56769 — <strong>Psicóloga</strong>,{" "}
+            <strong>Sexóloga Clínica</strong> y especialista en{" "}
+            <strong>Gestión del Estrés</strong>
+          </motion.h2>
 
           <motion.div
             className={styles.description}
@@ -43,9 +44,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p className={styles.description_paragraph}>
-              Entender lo que te pasa es el primer paso para recuperar el
-              bienestar. Aquí exploramos los motivos y los caminos para
-              abordarlos.
+              Entender lo que te pasa es el primer paso para recuperar tu
+              bienestar. Aquí exploramos los motivos y los caminos para abordar
+              para abordar los <strong>conflictos de pareja</strong> y tu{" "}
+              <strong>salud sexual</strong>.
             </p>
 
             <p
@@ -54,7 +56,7 @@ const Hero = () => {
                 styles.description_paragraph_bold,
               )}
             >
-              Atencion online en Argentina y en el exterior.
+              <strong>Atencion online en Argentina y en el exterior.</strong>
             </p>
           </motion.div>
 

@@ -55,7 +55,7 @@ const Layout = () => {
               className={styles.logo}
               onClick={() => setIsMenuOpen(false)}
             >
-              <h1>Lic. Viviana Baccarat</h1>
+              <h2>Lic. Viviana Baccarat</h2>
               <p>Psicología · Sexología · Gestión del Estrés</p>
             </Link>
 
@@ -78,10 +78,7 @@ const Layout = () => {
               {navItems.map((item) => (
                 <li key={item.label}>
                   {item.path ? (
-                    <Link
-                      to={item.path}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
+                    <Link to={item.path} onClick={() => setIsMenuOpen(false)}>
                       {item.label}
                     </Link>
                   ) : (
@@ -108,9 +105,11 @@ const Layout = () => {
         <div className="container">
           <div className={styles.footerContent}>
             <p className={styles.footerCopy}>
-              © {new Date().getFullYear()} Lic. Viviana Baccarat — Psicóloga
-              M.N. 56769
+              © {new Date().getFullYear()}
+              <strong> Lic. Viviana Baccarat — Psicóloga M.N. 56769</strong>
             </p>
+            <strong>Psicología · Sexología · Gestión del Estrés</strong>
+
             <p className={styles.footerLinks}>
               <Link to="/politica-privacidad">Política de Privacidad</Link>
               <span className={styles.footerSep}>|</span>
