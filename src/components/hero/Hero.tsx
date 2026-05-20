@@ -46,7 +46,7 @@ const Hero = () => {
             <p className={styles.description_paragraph}>
               Entender lo que te pasa es el primer paso para recuperar tu
               bienestar. Aquí exploramos los motivos y los caminos para abordar
-              para abordar los <strong>conflictos de pareja</strong> y tu{" "}
+              los <strong>conflictos de pareja</strong> y tu{" "}
               <strong>salud sexual</strong>.
             </p>
 
