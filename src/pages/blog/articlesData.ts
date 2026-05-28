@@ -15,12 +15,15 @@ export type Article = {
 
 export const articles: Article[] = [
   {
-    slug: "cortisol-el-interruptor-del-deseo",
-    title: "Cortisol: el interruptor del deseo",
+    slug: "estres-cortisol-deseo-sexual",
+    oldSlug: "cortisol-el-interruptor-del-deseo",
+    title: "Cortisol y deseo sexual: por qué el estrés apaga el deseo sexual",
     subtitle:
       "Por qué tu cerebro apaga la respuesta sexual cuando detecta una amenaza externa.",
     excerpt:
       "El deseo no se enciende por voluntad. Cuando el cortisol se mantiene elevado, el cuerpo entra en un modo biológico donde la sexualidad simplemente no tiene lugar. Entender este mecanismo cambia cómo abordamos el problema.",
+    metaDescription:
+      "Cómo el cortisol y el estrés crónico apagan el deseo sexual. Descubrí el mecanismo biológico y qué hacer para recuperar la respuesta del cuerpo.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-17",
     readTime: "5 min",
@@ -36,12 +39,15 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "el-secuestro-de-la-dopamina",
-    title: "El secuestro de la dopamina",
+    slug: "porno-dopamina-deseo-sexual",
+    oldSlug: "el-secuestro-de-la-dopamina",
+    title: "Pornografía y falta de deseo: cómo afecta al cerebro",
     subtitle:
       "Cómo la hiperestimulación digital redefine tus umbrales de placer y te desconecta de la realidad.",
     excerpt:
-      "La pornografía online no es «más» sexualidad: es un estímulo que recalibra los circuitos de recompensa del cerebro. Entender qué pasa a nivel neurobiológico permite abordar el tema sin moralizar y con herramientas concretas.",
+      "La pornografía online no es «más» sexualidad: es un estímulo que recalibra los circuitos de recompensa del cerebro. Entender qué pasa a nivel neurobiológico permite abordar el tema con herramientas concretas.",
+    metaDescription:
+      "El consumo de pornografía altera la dopamina y reduce el deseo real. Por qué pasa y cómo recuperar la respuesta del cuerpo.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-15",
     readTime: "5 min",
@@ -57,12 +63,16 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "la-trampa-del-rendimiento",
-    title: "La trampa del rendimiento",
+    slug: "ansiedad-desempeno-sexual-tratamiento",
+    oldSlug: "la-trampa-del-rendimiento",
+    title:
+      "Ansiedad de desempeño sexual: por qué el control bloquea la respuesta sexual",
     subtitle:
       "El error biológico de intentar controlar con la mente un proceso que pertenece al cuerpo.",
     excerpt:
-      "Cuanto más se intenta «hacer bien», menos responde el cuerpo. La ansiedad de desempeño sigue una lógica circular que se puede romper entendiendo cómo funciona el sistema nervioso autónomo.",
+      "Cuanto más se intenta controlar el rendimiento, menos responde el cuerpo. La ansiedad de desempeño sigue una lógica circular que se puede romper entendiendo cómo funciona el sistema nervioso.",
+    metaDescription:
+      "Ansiedad de desempeño: cuanto más querés controlar la respuesta del cuerpo, menos responde. Cómo romper el círculo en terapia.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-12",
     readTime: "5 min",
@@ -78,12 +88,15 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "el-afrodisiaco-invisible",
-    title: "El afrodisíaco invisible",
+    slug: "seguridad-emocional-pareja-deseo",
+    oldSlug: "el-afrodisiaco-invisible",
+    title: "Seguridad emocional: el afrodisíaco invisible en la pareja",
     subtitle:
       "Por qué la seguridad emocional es la llave maestra que activa el sistema nervioso parasimpático.",
     excerpt:
-      "Ninguna técnica reemplaza la sensación de estar a salvo. La seguridad emocional es el factor que activa la entrega y la receptividad — una condición biológica, no una abstracción romántica.",
+      "El deseo sexual es una respuesta biológica a un contexto de confianza. Ninguna técnica sustituye la seguridad emocional: el vínculo hace posible la sexualidad.",
+    metaDescription:
+      "El deseo sexual no es un problema de habilidad técnica. Descubrí cómo la ansiedad y la falta de confianza en la pareja apagan el deseo.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-11",
     readTime: "5 min",
@@ -99,13 +112,16 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "estres-cronico-y-deseo-sexual",
+    slug: "estres-cronico-sexualidad-deseo",
+    oldSlug: "estres-cronico-y-deseo-sexual",
     title:
-      "Cuando el estrés toma las riendas: su impacto en el deseo y la respuesta sexual",
+      "Estrés crónico y sexualidad: cómo afecta el deseo, la excitación y la respuesta",
     subtitle:
       "Por qué el cuerpo deja de responder cuando la mente no se detiene, y qué podemos hacer al respecto.",
     excerpt:
-      "El estrés sostenido no solo afecta el ánimo o el descanso: tiene efectos directos sobre el deseo, la excitación y la respuesta sexual. Entender esta conexión es el primer paso para recuperar una sexualidad plena.",
+      "El estrés sostenido no solo afecta el ánimo o el descanso: tiene efectos directos sobre el deseo, la excitación y la respuesta sexual.",
+    metaDescription:
+      "El estrés crónico afecta el deseo, la excitación y la respuesta sexual. Cómo identificar su impacto en el cuerpo y recuperar una sexualidad plena.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-10",
     readTime: "5 min",
@@ -121,12 +137,14 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "el-cuerpo-tiene-memoria",
-    title:
-      "El cuerpo tiene memoria: Por qué la seguridad interna es la llave del placer",
+    slug: "nervio-vago-y-bloqueo-sexual",
+    oldSlug: "el-cuerpo-tiene-memoria",
+    title: "Bloqueo sexual: qué hace el nervio vago y cómo recuperar el placer",
     subtitle: 'El "freno" invisible: El Nervio Vago',
     excerpt:
-      "Tu cuerpo tiene memoria de cada vez que no se sintió seguro. El nervio vago es el guardián que decide si tu sexualidad puede fluir o si debe protegerte. Cuando recuperas esa seguridad interna, el deseo vuelve naturalmente.",
+      "Tu cuerpo tiene memoria de cada vez que no se sintió seguro. El nervio vago es el guardián que decide si tu sexualidad puede fluir o si debe protegerte. Cuando recuperás esa seguridad interna, el deseo vuelve naturalmente.",
+    metaDescription:
+      "Cuando la mente quiere pero el cuerpo se bloquea. Cómo el nervio vago regula la respuesta sexual y cómo el trabajo corporal ayuda a recuperar el placer.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-08",
     readTime: "5 min",
@@ -144,12 +162,15 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "la-ventana-de-tolerancia",
-    title: "La ventana de tolerancia",
+    slug: "eyaculacion-precoz-ventana-tolerancia",
+    oldSlug: "la-ventana-de-tolerancia",
+    title: "Eyaculación precoz: cómo ampliar tu ventana de tolerancia",
     subtitle:
       "Cómo ampliar el registro sensorial para evitar que el sistema nervioso colapse antes de tiempo.",
     excerpt:
       "La eyaculación precoz no es un problema de autocontrol, sino de la capacidad del sistema nervioso para sostener la activación sin desbordarse. Ampliar esa ventana es un entrenamiento concreto con resultados consistentes.",
+    metaDescription:
+      "Tratamiento de la eyaculación precoz: por qué no es un problema de autocontrol y cómo entrenar al sistema nervioso para responder diferente.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-05",
     readTime: "5 min",
@@ -165,12 +186,15 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "cuando-la-pelea-sigue-en-la-cama",
-    title: "Cuando la pelea sigue en la cama",
+    slug: "falta-deseo-pareja-conflictos",
+    oldSlug: "cuando-la-pelea-sigue-en-la-cama",
+    title: "Conflictos de pareja y vida sexual: cuando la pelea sigue en la cama",
     subtitle:
       "Cómo las discusiones no resueltas crean una barrera biológica que el cuerpo no puede ignorar.",
     excerpt:
       "Una discusión no resuelta deja una huella bioquímica que dura horas —a veces días. Reparar el vínculo no es solo un asunto emocional: es la condición fisiológica para que el deseo vuelva a aparecer.",
+    metaDescription:
+      "Cómo los conflictos no resueltos en la pareja bloquean la vida sexual. Por qué reparar el vínculo es la base biológica para que vuelva el deseo.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-03",
     readTime: "5 min",
