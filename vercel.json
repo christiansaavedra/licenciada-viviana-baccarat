@@ -1,46 +1,47 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "/blog/cortisol-el-interruptor-del-deseo",
-      "headers": { "Location": "/blog/estres-cortisol-deseo-sexual" },
-      "status": 301
+      "source": "/blog/cortisol-el-interruptor-del-deseo",
+      "destination": "/blog/estres-cortisol-deseo-sexual",
+      "permanent": true
     },
     {
-      "src": "/blog/el-secuestro-de-la-dopamina",
-      "headers": { "Location": "/blog/porno-dopamina-deseo-sexual" },
-      "status": 301
+      "source": "/blog/el-secuestro-de-la-dopamina",
+      "destination": "/blog/porno-dopamina-deseo-sexual",
+      "permanent": true
     },
     {
-      "src": "/blog/la-trampa-del-rendimiento",
-      "headers": { "Location": "/blog/ansiedad-desempeno-sexual-tratamiento" },
-      "status": 301
+      "source": "/blog/la-trampa-del-rendimiento",
+      "destination": "/blog/ansiedad-desempeno-sexual-tratamiento",
+      "permanent": true
     },
     {
-      "src": "/blog/el-afrodisiaco-invisible",
-      "headers": { "Location": "/blog/seguridad-emocional-pareja-deseo" },
-      "status": 301
+      "source": "/blog/el-afrodisiaco-invisible",
+      "destination": "/blog/seguridad-emocional-pareja-deseo",
+      "permanent": true
     },
     {
-      "src": "/blog/estres-cronico-y-deseo-sexual",
-      "headers": { "Location": "/blog/estres-cronico-sexualidad-deseo" },
-      "status": 301
+      "source": "/blog/estres-cronico-y-deseo-sexual",
+      "destination": "/blog/estres-cronico-sexualidad-deseo",
+      "permanent": true
     },
     {
-      "src": "/blog/el-cuerpo-tiene-memoria",
-      "headers": { "Location": "/blog/nervio-vago-y-bloqueo-sexual" },
-      "status": 301
+      "source": "/blog/el-cuerpo-tiene-memoria",
+      "destination": "/blog/nervio-vago-y-bloqueo-sexual",
+      "permanent": true
     },
     {
-      "src": "/blog/la-ventana-de-tolerancia",
-      "headers": { "Location": "/blog/eyaculacion-precoz-ventana-tolerancia" },
-      "status": 301
+      "source": "/blog/la-ventana-de-tolerancia",
+      "destination": "/blog/eyaculacion-precoz-ventana-tolerancia",
+      "permanent": true
     },
     {
-      "src": "/blog/cuando-la-pelea-sigue-en-la-cama",
-      "headers": { "Location": "/blog/falta-deseo-pareja-conflictos" },
-      "status": 301
-    },
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
+      "source": "/blog/cuando-la-pelea-sigue-en-la-cama",
+      "destination": "/blog/falta-deseo-pareja-conflictos",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
