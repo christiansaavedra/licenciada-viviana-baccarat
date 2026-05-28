@@ -44,4 +44,3 @@ React, Vite, Vike, CSS Modules, hosting en Vercel
 ## Notas adicionales
 
 - Hay una cuenta en Google Search Console y Google Analytics para este sitio. Es muy importante ir optimizando el sitio para aumentar el SEO y la expocisión en la web.
-- El sitio esta hosteado en Vercel. En Vercel hay un redirect configurado, ya que sin él, si el usuario escribe una subruta en el URL bar del navegador (por ejemplo: https://sexualidadenfoco.com.ar/blog) tira un error 404 page de Vercel.

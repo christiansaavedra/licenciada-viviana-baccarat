@@ -1,4 +1,6 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "dist/client",
   "redirects": [
     {
       "source": "/blog/cortisol-el-interruptor-del-deseo",
@@ -40,8 +42,5 @@
       "destination": "/blog/falta-deseo-pareja-conflictos",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
