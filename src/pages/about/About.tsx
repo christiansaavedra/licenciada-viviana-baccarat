@@ -1,5 +1,5 @@
-import VideoSrc from "../../assets/videos/sobre_mi.mp4";
-import VideoPlayer from "../../components/video-player/VideoPlayer";
+import VideoSrc from "@/assets/videos/sobre_mi.mp4";
+import VideoPlayer from "@/components/video-player/VideoPlayer";
 import styles from "./About.module.css";
 
 const About = () => {

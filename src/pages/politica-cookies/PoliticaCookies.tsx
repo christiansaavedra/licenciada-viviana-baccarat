@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
 import styles from "./PoliticaCookies.module.css";
 
 const PoliticaCookies = () => {
   return (
     <div className={styles.page}>
       <div className="container">
-        <Link to="/" className={styles.back}>← Volver al inicio</Link>
+        <a href="/" className={styles.back}>← Volver al inicio</a>
 
         <h1 className={styles.title}>Política de Cookies</h1>
         <p className={styles.updated}>Última actualización: mayo de 2026</p>

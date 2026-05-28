@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
 import styles from "./PoliticaPrivacidad.module.css";
 
 const PoliticaPrivacidad = () => {
   return (
     <div className={styles.page}>
       <div className="container">
-        <Link to="/" className={styles.back}>
+        <a href="/" className={styles.back}>
           ← Volver al inicio
-        </Link>
+        </a>
 
         <h1 className={styles.title}>Política de Privacidad</h1>
         <p className={styles.updated}>Última actualización: mayo de 2026</p>

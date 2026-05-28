@@ -1,8 +1,4 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import styles from "./Breadcrumbs.module.css";
-
-const BASE_URL = "https://sexualidadenfoco.com.ar";
 
 export type Crumb = {
   label: string;
@@ -14,34 +10,6 @@ type Props = {
 };
 
 const Breadcrumbs = ({ crumbs }: Props) => {
-  // Inyectar JSON-LD BreadcrumbList
-  useEffect(() => {
-    const id = "breadcrumb-jsonld";
-    const existing = document.getElementById(id);
-    if (existing) existing.remove();
-
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: crumbs.map((crumb, i) => ({
-        "@type": "ListItem",
-        position: i + 1,
-        name: crumb.label,
-        ...(crumb.to ? { item: `${BASE_URL}${crumb.to}` } : {}),
-      })),
-    };
-
-    const script = document.createElement("script");
-    script.id = id;
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-
-    return () => {
-      document.getElementById(id)?.remove();
-    };
-  }, [crumbs]);
-
   return (
     <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
       <ol className={styles.list}>
@@ -51,9 +19,9 @@ const Breadcrumbs = ({ crumbs }: Props) => {
             <li key={i} className={styles.item}>
               {!isLast && crumb.to ? (
                 <>
-                  <Link to={crumb.to} className={styles.link}>
+                  <a href={crumb.to} className={styles.link}>
                     {crumb.label}
-                  </Link>
+                  </a>
                   <span className={styles.sep} aria-hidden="true">
                     /
                   </span>

@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
 import { articles } from "./articlesData";
-import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs";
+import Breadcrumbs from "@/components/breadcrumbs/Breadcrumbs";
 import styles from "./Blog.module.css";
 
 const BLOG_CRUMBS = [
@@ -33,13 +32,14 @@ const Blog = () => {
         <div className={styles.grid}>
           {articles.map((article) => (
             <article key={article.slug} className={styles.card}>
-              <Link to={`/blog/${article.slug}`} className={styles.cardLink}>
+              <a href={`/blog/${article.slug}`} className={styles.cardLink}>
                 <div className={styles.imageWrapper}>
                   <img
                     src={article.image}
                     alt={article.imageAlt}
                     className={styles.cardImage}
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className={styles.cardContent}>
@@ -54,7 +54,7 @@ const Blog = () => {
                   <p className={styles.cardExcerpt}>{article.excerpt}</p>
                   <span className={styles.readMore}>Leer artículo →</span>
                 </div>
-              </Link>
+              </a>
             </article>
           ))}
         </div>

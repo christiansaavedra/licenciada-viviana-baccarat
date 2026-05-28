@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Outlet, Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import clsx from "clsx";
-import styles from "./Layout.module.css";
-import WhatsAppButton from "../whatsapp-button/WhatsAppButton";
+import { navigate } from "vike/client/router";
+import { usePageContext } from "vike-react/usePageContext";
+import styles from "@/components/layout/Layout.module.css";
+import WhatsAppButton from "@/components/whatsapp-button/WhatsAppButton";
+import "@/index.css";
 
 type NavItem = {
   label: string;
-  id?: string; // anchor dentro de Home
-  path?: string; // ruta independiente
+  id?: string;
+  path?: string;
 };
 
 const navItems: NavItem[] = [
@@ -20,28 +22,26 @@ const navItems: NavItem[] = [
   { label: "Blog", path: "/blog" },
 ];
 
-const Layout = () => {
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
+const scrollToSection = (sectionId: string) => {
+  document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+};
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const pageContext = usePageContext();
+  const pathname = pageContext.urlPathname;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleSectionClick = (
+  const handleSectionClick = async (
     e: React.MouseEvent<HTMLAnchorElement>,
     sectionId: string,
   ) => {
     e.preventDefault();
     setIsMenuOpen(false);
     if (pathname === "/") {
-      document
-        .getElementById(sectionId)
-        ?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(sectionId);
     } else {
-      navigate("/");
-      setTimeout(() => {
-        document
-          .getElementById(sectionId)
-          ?.scrollIntoView({ behavior: "smooth" });
-      }, 80);
+      await navigate("/");
+      setTimeout(() => scrollToSection(sectionId), 80);
     }
   };
 
@@ -50,14 +50,14 @@ const Layout = () => {
       <header className={styles.header}>
         <div className="container">
           <nav className={styles.nav}>
-            <Link
-              to="/"
+            <a
+              href="/"
               className={styles.logo}
               onClick={() => setIsMenuOpen(false)}
             >
               <h2>Lic. Viviana Baccarat</h2>
               <p>Psicología · Sexología · Gestión del Estrés</p>
-            </Link>
+            </a>
 
             <button
               type="button"
@@ -78,9 +78,9 @@ const Layout = () => {
               {navItems.map((item) => (
                 <li key={item.label}>
                   {item.path ? (
-                    <Link to={item.path} onClick={() => setIsMenuOpen(false)}>
+                    <a href={item.path} onClick={() => setIsMenuOpen(false)}>
                       {item.label}
-                    </Link>
+                    </a>
                   ) : (
                     <a
                       href={`#${item.id}`}
@@ -96,9 +96,7 @@ const Layout = () => {
         </div>
       </header>
 
-      <main>
-        <Outlet />
-      </main>
+      <main>{children}</main>
 
       <footer className={styles.footer}>
         <WhatsAppButton />
@@ -111,9 +109,9 @@ const Layout = () => {
             <strong>Psicología · Sexología · Gestión del Estrés</strong>
 
             <p className={styles.footerLinks}>
-              <Link to="/politica-privacidad">Política de Privacidad</Link>
+              <a href="/politica-privacidad">Política de Privacidad</a>
               <span className={styles.footerSep}>|</span>
-              <Link to="/politica-cookies">Política de Cookies</Link>
+              <a href="/politica-cookies">Política de Cookies</a>
               <span className={styles.footerSep}>|</span>
               <a
                 href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
@@ -129,6 +127,4 @@ const Layout = () => {
       </footer>
     </div>
   );
-};
-
-export default Layout;
+}

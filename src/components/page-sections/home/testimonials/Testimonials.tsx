@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Fade from "embla-carousel-fade";
-import { useViewport } from "../../../../common/hooks/useViewport";
+import { useViewport } from "@/common/hooks/useViewport";
 import styles from "./Testimonials.module.css";
 
 const testimonios = [

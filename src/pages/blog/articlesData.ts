@@ -1,8 +1,10 @@
 export type Article = {
   slug: string;
+  oldSlug?: string;
   title: string;
   subtitle: string;
   excerpt: string;
+  metaDescription?: string;
   author: string;
   date: string; // ISO format YYYY-MM-DD
   readTime: string; // ej: "5 min"

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styles from "./NotFound.module.css";
 
 const NotFound = () => {
@@ -11,9 +10,9 @@ const NotFound = () => {
           El enlace puede haber cambiado o la dirección fue escrita de forma
           incorrecta. No hay nada que temer — el inicio está a un clic.
         </p>
-        <Link to="/" className={styles.button}>
+        <a href="/" className={styles.button}>
           Volver al inicio
-        </Link>
+        </a>
       </div>
     </div>
   );

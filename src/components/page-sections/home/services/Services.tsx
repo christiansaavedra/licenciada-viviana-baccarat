@@ -171,6 +171,7 @@ const Services = () => {
                     alt={active.imageAlt}
                     className={styles.image}
                     loading="lazy"
+                    decoding="async"
                     style={{ objectPosition: active.imagePosition ?? "center" }}
                   />
                 ) : (
@@ -232,6 +233,7 @@ const Services = () => {
                     alt={activeDisfuncion.imageAlt}
                     className={styles.image}
                     loading="lazy"
+                    decoding="async"
                     style={{
                       objectPosition:
                         activeDisfuncion.imagePosition ?? "center",

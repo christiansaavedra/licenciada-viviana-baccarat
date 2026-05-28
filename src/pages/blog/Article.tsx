@@ -1,10 +1,6 @@
-import { useEffect } from "react";
-import { Link, useParams, Navigate } from "react-router-dom";
-import { getArticleBySlug } from "./articlesData";
-import Breadcrumbs from "../../components/breadcrumbs/Breadcrumbs";
+import Breadcrumbs from "@/components/breadcrumbs/Breadcrumbs";
+import type { Article as ArticleData } from "./articlesData";
 import styles from "./Article.module.css";
-
-const BASE_URL = "https://sexualidadenfoco.com.ar";
 
 const formatDate = (iso: string) => {
   const d = new Date(iso);
@@ -15,62 +11,11 @@ const formatDate = (iso: string) => {
   });
 };
 
-const Article = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const article = slug ? getArticleBySlug(slug) : undefined;
+type Props = {
+  article: ArticleData;
+};
 
-  // Article JSON-LD
-  useEffect(() => {
-    if (!article) return;
-    const id = "article-jsonld";
-    document.getElementById(id)?.remove();
-
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: article.title,
-      description: article.excerpt,
-      image: `${BASE_URL}${article.image}`,
-      datePublished: article.date,
-      dateModified: article.date,
-      author: {
-        "@type": "Person",
-        name: "Viviana Baccarat",
-        url: BASE_URL,
-        jobTitle: "Psicóloga y Sexóloga Clínica",
-      },
-      publisher: {
-        "@type": "Person",
-        name: "Lic. Viviana Baccarat",
-        url: BASE_URL,
-      },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": `${BASE_URL}/blog/${article.slug}`,
-      },
-      inLanguage: "es-AR",
-      keywords: article.title
-        .toLowerCase()
-        .split(/\s+/)
-        .filter((w) => w.length > 4)
-        .join(", "),
-    };
-
-    const script = document.createElement("script");
-    script.id = id;
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-
-    return () => {
-      document.getElementById(id)?.remove();
-    };
-  }, [article]);
-
-  if (!article) {
-    return <Navigate to="/blog" replace />;
-  }
-
+const Article = ({ article }: Props) => {
   const crumbs = [
     { label: "Inicio", to: "/" },
     { label: "Blog", to: "/blog" },
@@ -99,6 +44,8 @@ const Article = () => {
               src={article.image}
               alt={article.imageAlt}
               className={styles.image}
+              fetchPriority="high"
+              decoding="async"
             />
           </figure>
 
@@ -113,7 +60,7 @@ const Article = () => {
           <footer className={styles.footer}>
             <p className={styles.cta}>
               Si lo leído te resonó y querés trabajarlo en terapia, podés{" "}
-              <Link to="/#contacto">solicitar una consulta</Link>.
+              <a href="/#contacto">solicitar una consulta</a>.
             </p>
           </footer>
         </article>

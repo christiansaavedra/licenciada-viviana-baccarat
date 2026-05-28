@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import clsx from "clsx";
-import ProfilePic from "../../../public/viviana_baccarat.jpg";
-import ProfilePicSquare from "../../../public/viviana_baccarat_square.jpg";
-import { useViewport } from "../../common/hooks/useViewport";
+import { useViewport } from "@/common/hooks/useViewport";
 
 const Hero = () => {
   const { isMobile } = useViewport();
+
   return (
     <section className={styles.hero}>
       <div className={clsx("container", styles.container)}>
@@ -82,53 +81,15 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <img
-            src={isMobile ? ProfilePicSquare : ProfilePic}
+            src={isMobile ? "/viviana_baccarat_square.jpg" : "/viviana_baccarat.jpg"}
             className={styles.profile_pic}
             alt="Lic. Viviana Baccarat M.N 56769 - Especialista en Terapia Psicosexual y Abordaje
 del Estrés con atención online e internacional."
+            fetchPriority="high"
+            decoding="async"
           />
         </motion.div>
       </div>
-
-      {/* Floating shapes */}
-      {/*     <motion.div
-        className={clsx(styles.floatingShape, styles.shape1)}
-        animate={{
-          scale: [1, 1.1, 1],
-          rotate: [0, 180, 360],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      /> */}
-      {/* 
-      <motion.div
-        className={clsx(styles.floatingShape, styles.shape2)}
-        animate={{
-          scale: [1, 0.9, 1],
-          rotate: [0, -180, -360],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      />
-
-      <motion.div
-        className={clsx(styles.floatingShape, styles.shape3)}
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.1, 0.2, 0.1],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      /> */}
     </section>
   );
 };

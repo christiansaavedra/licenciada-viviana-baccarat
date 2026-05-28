@@ -1,8 +1,4 @@
 import styles from "./Formacion.module.css";
-import logoUCES from "../../../../../public/logos/UCES.png";
-import logoSLAMS from "../../../../../public/logos/SLAMS.png";
-import logoAASES from "../../../../../public/logos/AASES.jpg";
-import logoWestern from "../../../../../public/logos/WESTERNEUROPE.png";
 
 const formaciones = [
   {
@@ -38,22 +34,22 @@ const logos = [
   {
     id: "uces",
     alt: "Logo UCES - Diplomatura en Sexualidad y Calidad de Vida. Lic. Viviana Baccarat",
-    src: logoUCES,
+    src: "/logos/UCES.png",
   },
   {
     id: "slams",
     alt: "Sociedad Latinoamericana de Medicina Sexual - Aval institucional para terapia sexológica internacional",
-    src: logoSLAMS,
+    src: "/logos/SLAMS.png",
   },
   {
     id: "aases",
     alt: "Logo AASES - Asociación Argentina de Sexología y Educación Sexual - Especialista en salud sexual con atención online",
-    src: logoAASES,
+    src: "/logos/AASES.jpg",
   },
   {
     id: "western",
     alt: "Logo Western Europe University - Especialización universitaria de Postgrado con reconocimiento europeo",
-    src: logoWestern,
+    src: "/logos/WESTERNEUROPE.png",
   },
 ];
 
@@ -102,6 +98,7 @@ const Formacion = () => {
                     alt={logo.alt}
                     className={styles.logoImage}
                     loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <span className={styles.logoPlaceholder}>
