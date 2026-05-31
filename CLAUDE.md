@@ -25,6 +25,7 @@ React, Vite, Vike, CSS Modules, hosting en Vercel
 - Las imagenes deben tener texto alt.
 - Las imagenes deben tener lazy loading, utilizando el img tag nativo de html: or lazy loading: <img loading="lazy" decoding="async" />. Para hero o imagenes visibles ni bien el usuario entra en la pagina, usaremos loading="eager" fetchpriority="high" so LCP doesn't regress, which would hurt SEO; (2) always set width and height attributes to prevent layout shift (CLS).
 - Agregar <strong> tags donde sea necesario, sin abusra innecesariamente, con el proposito que sea para optimizar SEO.
+- Avoid unnecesary or redundant code comments.
 
 ## Comandos útiles
 

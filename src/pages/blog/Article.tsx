@@ -36,7 +36,6 @@ const Article = ({ article }: Props) => {
             </div>
             <h1 className={styles.title}>{article.title}</h1>
             <p className={styles.subtitle}>{article.subtitle}</p>
-            <p className={styles.author}>Por {article.author}</p>
           </header>
 
           <figure className={styles.figure}>
@@ -63,6 +62,35 @@ const Article = ({ article }: Props) => {
               <a href="/#contacto">solicitar una consulta</a>.
             </p>
           </footer>
+          <hr className={styles.divider} />
+          <aside className={styles.author_bio} aria-label="Sobre la autora">
+            <p className={styles.author_bio_label}>Sobre la autora</p>
+            <div className={styles.author_bio_content}>
+              <img
+                src="/viviana_baccarat_square.jpg"
+                alt="Foto de la Lic. Viviana Baccarat, Psicóloga M.N. 56769"
+                className={styles.author_bio_avatar}
+                loading="lazy"
+                decoding="async"
+                width="96"
+                height="96"
+              />
+              <div>
+                <p className={styles.author_bio_name}>
+                  <strong>Lic. Viviana Baccarat</strong>
+                </p>
+                <p className={styles.author_bio_creds}>
+                  Psicóloga | Especialista en{" "}
+                  <strong>Sexología Clínica y Terapia de Pareja</strong>
+                  <br />
+                  <span className={styles.author_bio_license}>M.N. 56769</span>
+                </p>
+                <a href="/#sobre-mi" className={styles.author_bio_link}>
+                  Ver perfil profesional completo →
+                </a>
+              </div>
+            </div>
+          </aside>
         </article>
       </div>
     </div>

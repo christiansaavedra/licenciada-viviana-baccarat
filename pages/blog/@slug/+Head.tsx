@@ -15,17 +15,8 @@ export default function Head() {
     image: `${BASE_URL}${article.image}`,
     datePublished: article.date,
     dateModified: article.date,
-    author: {
-      "@type": "Person",
-      name: "Viviana Baccarat",
-      url: BASE_URL,
-      jobTitle: "Psicóloga y Sexóloga Clínica",
-    },
-    publisher: {
-      "@type": "Person",
-      name: "Lic. Viviana Baccarat",
-      url: BASE_URL,
-    },
+    author: { "@id": `${BASE_URL}/#viviana-baccarat` },
+    publisher: { "@id": `${BASE_URL}/#viviana-baccarat` },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${BASE_URL}/blog/${article.slug}`,

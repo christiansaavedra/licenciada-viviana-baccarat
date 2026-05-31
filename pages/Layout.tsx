@@ -5,6 +5,7 @@ import { navigate } from "vike/client/router";
 import { usePageContext } from "vike-react/usePageContext";
 import styles from "@/components/layout/Layout.module.css";
 import WhatsAppButton from "@/components/whatsapp-button/WhatsAppButton";
+import PsychologyTodaySeal from "@/components/psychology-today-seal/PsychologyTodaySeal";
 import "@/index.css";
 
 type NavItem = {
@@ -107,6 +108,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <strong> Lic. Viviana Baccarat — Psicóloga M.N. 56769</strong>
             </p>
             <strong>Psicología · Sexología · Gestión del Estrés</strong>
+
+            <PsychologyTodaySeal />
 
             <p className={styles.footerLinks}>
               <a href="/politica-privacidad">Política de Privacidad</a>

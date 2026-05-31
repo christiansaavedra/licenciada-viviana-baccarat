@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.seal {
+  display: inline-block;
+  /* Reserve a sensible minimum so the anchor is clickable even before
+     the PT script populates it, and so layout doesn't shift much. */
+  min-width: 120px;
+  min-height: 60px;
+  line-height: 0;
+}
+
+/* PT injects an <img> (sometimes wrapped) into the anchor. Style any descendant
+   element so it scales correctly regardless of the exact markup PT returns. */
+.seal :global(img),
+.seal :global(div),
+.seal :global(span) {
+  display: block;
+  max-width: 160px;
+  height: auto;
+}

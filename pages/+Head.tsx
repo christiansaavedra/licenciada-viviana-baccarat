@@ -45,14 +45,22 @@ const localBusinessSchema = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": `${BASE_URL}/#viviana-baccarat`,
   name: "Viviana Baccarat",
   honorificPrefix: "Lic.",
   jobTitle: "Psicóloga, Sexóloga Clínica y Especialista en Gestión del Estrés",
   description:
     "Psicóloga con Matrícula Nacional N° 56769. Especialista en terapia psicosexual, disfunciones sexuales y abordaje del estrés crónico. Atención online e internacional.",
   url: `${BASE_URL}/`,
+  mainEntityOfPage: `${BASE_URL}/`,
   email: "licenciadavivianabaccarat@gmail.com",
-  image: `${BASE_URL}/og-image.jpg`,
+  image: `${BASE_URL}/viviana_baccarat_square.jpg`,
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "M.N.",
+    value: "56769",
+  },
+  sameAs: ["https://www.psychologytoday.com/profile/1006195"],
   worksFor: {
     "@type": "LocalBusiness",
     name: "Consultorio Lic. Viviana Baccarat",
@@ -165,12 +173,28 @@ const medicalBusinessSchema = {
 const isBlogArticlePath = (pathname: string) =>
   /^\/blog\/[^/]+\/?$/.test(pathname);
 
+const isHomePath = (pathname: string) => pathname === "/" || pathname === "";
+
+const profilePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": `${BASE_URL}/`,
+  url: `${BASE_URL}/`,
+  name: "Sobre mí — Lic. Viviana Baccarat",
+  description:
+    "Perfil profesional de la Lic. Viviana Baccarat (M.N. 56769): formación, credenciales, áreas de especialización y enfoque clínico.",
+  inLanguage: "es-AR",
+  mainEntity: { "@id": `${BASE_URL}/#viviana-baccarat` },
+  about: { "@id": `${BASE_URL}/#viviana-baccarat` },
+};
+
 export default function Head() {
   const pageContext = usePageContext();
   const canonical = `${BASE_URL}${pageContext.urlPathname}`;
   const ogType = isBlogArticlePath(pageContext.urlPathname)
     ? "article"
     : "website";
+  const isHome = isHomePath(pageContext.urlPathname);
 
   return (
     <>
@@ -216,6 +240,14 @@ gtag('config', '${GA_ID}');`,
           __html: JSON.stringify(medicalBusinessSchema),
         }}
       />
+      {isHome && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(profilePageSchema),
+          }}
+        />
+      )}
     </>
   );
 }
