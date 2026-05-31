@@ -32,7 +32,7 @@ export default function PsychologyTodaySeal() {
 
     // sxcallback must be defined BEFORE the JSONP script is appended.
     (window as any).sxcallback = function (data: any) {
-      anchor.setAttribute("target", "_top");
+      anchor.setAttribute("target", "_blank");
       anchor.style.display = "block";
       anchor.style.backgroundRepeat = "no-repeat";
       anchor.style.backgroundSize = "contain";
