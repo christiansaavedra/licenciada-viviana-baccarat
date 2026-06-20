@@ -81,6 +81,11 @@ const Hero = () => {
             <source
               media="(max-width: 768px)"
               srcSet="/viviana_baccarat_square.jpg"
+              type="image/jpeg"
+            />
+            <source
+              srcSet="/viviana_baccarat.webp"
+              type="image/webp"
             />
             <img
               src="/viviana_baccarat.jpg"
