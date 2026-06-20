@@ -52,7 +52,7 @@ const Hero = () => {
                 styles.description_paragraph_bold,
               )}
             >
-              <strong>Atencion online en Argentina y en el exterior.</strong>
+              <strong>Atención online en Argentina y en el exterior.</strong>
             </p>
           </motion.div>
 
