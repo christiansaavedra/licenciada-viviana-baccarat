@@ -88,8 +88,8 @@ const Hero = () => {
               alt="Lic. Viviana Baccarat M.N 56769 - Especialista en Terapia Psicosexual y Abordaje del Estrés con atención online e internacional."
               fetchPriority="high"
               decoding="async"
-              width={1215}
-              height={2160}
+              width={984}
+              height={1748}
             />
           </picture>
         </motion.div>
