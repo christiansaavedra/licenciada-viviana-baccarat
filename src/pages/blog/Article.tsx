@@ -68,15 +68,18 @@ const Article = ({ article }: Props) => {
           <aside className={styles.author_bio} aria-label="Sobre la autora">
             <p className={styles.author_bio_label}>Sobre la autora</p>
             <div className={styles.author_bio_content}>
-              <img
-                src="/viviana_baccarat_square.jpg"
-                alt="Foto de la Lic. Viviana Baccarat, Psicóloga M.N. 56769"
-                className={styles.author_bio_avatar}
-                loading="lazy"
-                decoding="async"
-                width="96"
-                height="96"
-              />
+              <picture>
+                <source srcSet="/viviana_baccarat_square.webp" type="image/webp" />
+                <img
+                  src="/viviana_baccarat_square.jpg"
+                  alt="Foto de la Lic. Viviana Baccarat, Psicóloga M.N. 56769"
+                  className={styles.author_bio_avatar}
+                  loading="lazy"
+                  decoding="async"
+                  width="96"
+                  height="96"
+                />
+              </picture>
               <div>
                 <p className={styles.author_bio_name}>
                   <strong>Lic. Viviana Baccarat</strong>
