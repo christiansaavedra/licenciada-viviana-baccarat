@@ -70,7 +70,8 @@ const areasData = [
     id: "terapia-sexual",
     label: "Terapia Sexual",
     image: "/servicios/terapia-sexual-individual.jpg",
-    imageWebp: "/servicios/terapia-sexual-individual_1x.webp 1x, /servicios/terapia-sexual-individual.webp 2x",
+    imageWebp: "/servicios/terapia-sexual-individual_1x.webp 625w, /servicios/terapia-sexual-individual.webp 1250w",
+    imageWebpSizes: "625px",
     imageAlt:
       "Terapia psicosexual para el tratamiento de dificultades sexuales y ansiedad de desempeño – Lic. Viviana Baccarat",
     text: "Cuando la sexualidad se vive bajo exigencia, miedo o tensión, el cuerpo deja de responder con naturalidad y la experiencia pierde conexión. La psicoterapia sexual permite comprender qué está sosteniendo ese malestar —ya sea en el deseo, la respuesta o el encuentro—, **integrando el impacto del estrés** para recuperar una vivencia más libre, confiada y en sintonía con uno mismo.",
@@ -169,7 +170,7 @@ const Services = () => {
                 {active.image ? (
                   <picture>
                     {active.imageWebp && (
-                      <source srcSet={active.imageWebp} type="image/webp" />
+                      <source srcSet={active.imageWebp} sizes={active.imageWebpSizes} type="image/webp" />
                     )}
                     <img
                       src={active.image}

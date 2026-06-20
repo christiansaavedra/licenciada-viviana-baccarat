@@ -89,7 +89,8 @@ const Hero = () => {
               type="image/jpeg"
             />
             <source
-              srcSet="/viviana_baccarat_1x.webp 1x, /viviana_baccarat.webp 2x"
+              srcSet="/viviana_baccarat_1x.webp 492w, /viviana_baccarat.webp 984w"
+              sizes="492px"
               type="image/webp"
             />
             <img

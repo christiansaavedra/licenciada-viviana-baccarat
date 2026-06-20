@@ -56,18 +56,6 @@ const testimonios = [
   },
 ];
 
-const StarIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-  </svg>
-);
-
 const QuoteIcon = () => (
   <svg
     width="32"
@@ -145,15 +133,6 @@ const Testimonials = () => {
                         <p className={styles.text}>{t.text}</p>
 
                         <div className={styles.footer}>
-                          <div
-                            className={styles.stars}
-                            role="img"
-                            aria-label={`${t.stars} estrellas`}
-                          >
-                            {Array.from({ length: t.stars }).map((_, i) => (
-                              <StarIcon key={i} />
-                            ))}
-                          </div>
                           <div className={styles.attribution}>
                             <span className={styles.author}>{t.author}</span>
                             <span className={styles.service}>{t.service}</span>
