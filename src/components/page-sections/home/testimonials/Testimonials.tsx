@@ -147,6 +147,7 @@ const Testimonials = () => {
                         <div className={styles.footer}>
                           <div
                             className={styles.stars}
+                            role="img"
                             aria-label={`${t.stars} estrellas`}
                           >
                             {Array.from({ length: t.stars }).map((_, i) => (

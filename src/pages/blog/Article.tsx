@@ -45,6 +45,8 @@ const Article = ({ article }: Props) => {
               className={styles.image}
               fetchPriority="high"
               decoding="async"
+              width={1280}
+              height={853}
             />
           </figure>
 

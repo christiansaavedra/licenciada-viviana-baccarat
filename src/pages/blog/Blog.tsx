@@ -40,6 +40,8 @@ const Blog = () => {
                     className={styles.cardImage}
                     loading="lazy"
                     decoding="async"
+                    width={1280}
+                    height={853}
                   />
                 </div>
                 <div className={styles.cardContent}>

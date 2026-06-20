@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import clsx from "clsx";
-import { useViewport } from "@/common/hooks/useViewport";
 
 const Hero = () => {
-  const { isMobile } = useViewport();
-
   return (
     <section className={styles.hero}>
       <div className={clsx("container", styles.container)}>
@@ -80,14 +77,21 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <img
-            src={isMobile ? "/viviana_baccarat_square.jpg" : "/viviana_baccarat.jpg"}
-            className={styles.profile_pic}
-            alt="Lic. Viviana Baccarat M.N 56769 - Especialista en Terapia Psicosexual y Abordaje
-del Estrés con atención online e internacional."
-            fetchPriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcSet="/viviana_baccarat_square.jpg"
+            />
+            <img
+              src="/viviana_baccarat.jpg"
+              className={styles.profile_pic}
+              alt="Lic. Viviana Baccarat M.N 56769 - Especialista en Terapia Psicosexual y Abordaje del Estrés con atención online e internacional."
+              fetchPriority="high"
+              decoding="async"
+              width={1215}
+              height={2160}
+            />
+          </picture>
         </motion.div>
       </div>
     </section>

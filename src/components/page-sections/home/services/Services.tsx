@@ -6,7 +6,7 @@ const disfuncionesData = [
   {
     id: "falta-deseo",
     label: "Falta de deseo",
-    image: "/servicios/FALTA DESEO.jpg",
+    image: "/servicios/falta-deseo.jpg",
     imagePosition: "top",
     imageAlt:
       "Foto: mujer con brazos cruzados. Tratamiento para la falta de deseo sexual y bajo libido, Lic. Viviana Baccarat, Argentina.",
@@ -15,7 +15,7 @@ const disfuncionesData = [
   {
     id: "eyaculacion-precoz",
     label: "Eyaculación Precoz",
-    image: "/servicios/Eyaculacion precoz.jpg",
+    image: "/servicios/eyaculacion-precoz.jpg",
     imagePosition: "top",
     imageAlt:
       "Foto: hombre joven. Tratamiento de la eyaculación precoz y control de la excitación, Lic. Viviana Baccarat, Argentina",
@@ -24,7 +24,7 @@ const disfuncionesData = [
   {
     id: "disfuncion-erectil",
     label: "Disfunción Eréctil",
-    image: "/servicios/DISFUNCION ERECTIL (1).jpg",
+    image: "/servicios/disfuncion-erectil.jpg",
     imageAlt:
       "Foto: hombre joven de perfil. Tratamiento de la disfunción eréctil y ansiedad por el desempeño, Lic. Viviana Baccarat, sexóloga clínica.",
     text: 'Es la dificultad para lograr o mantener una erección satisfactoria. Su origen puede ser orgánico o psicológico, pero el miedo a "no cumplir" suele agravar el síntoma al bloquear la respuesta natural.\n\nEl tratamiento se enfoca en eliminar la **ansiedad por el desempeño** y el estrés asociado, permitiendo que la erección vuelva a ser un proceso fluido y espontáneo.',
@@ -32,7 +32,7 @@ const disfuncionesData = [
   {
     id: "vaginismo",
     label: "Vaginismo",
-    image: "/servicios/VAGINISMO.jpg",
+    image: "/servicios/vaginismo.jpg",
     imageAlt:
       "Foto: mujer con brazos cruzados. Tratamiento del vaginismo y tensión pélvica involuntaria - Sexología clínica en Belgrano – Lic. Viviana Baccarat",
     text: "Es el espasmo involuntario de los músculos del suelo pélvico que bloquea la penetración, el uso de tampones o exámenes médicos. Actúa como un **mecanismo de defensa** que no responde al control voluntario.\n\nIntegramos el registro corporal y el manejo de la ansiedad para desactivar la respuesta de tensión de forma progresiva, recuperando el bienestar y el placer.",
@@ -40,7 +40,7 @@ const disfuncionesData = [
   {
     id: "dispareunia",
     label: "Dispareunia",
-    image: "/servicios/DISPAREUNIA.jpg",
+    image: "/servicios/dispareunia.jpg",
     imagePosition: "top",
     imageAlt:
       "Foto: mujer angustiada. Abordaje con la especialista en dispareunia y coito doloroso - Terapia psicosexual virtual e internacional – Lic. Viviana Baccarat",
@@ -49,7 +49,7 @@ const disfuncionesData = [
   {
     id: "anorgasmia",
     label: "Anorgasmia",
-    image: "/servicios/ANORGASMIA.jpg",
+    image: "/servicios/anorgasmia.jpg",
     imagePosition: "top",
     imageAlt:
       "Foto: mujer introspectiva. Tratamiento de la anorgasmia y ansiedad por el placer, Lic. Viviana Baccarat, sexóloga clínica. ",
@@ -58,7 +58,7 @@ const disfuncionesData = [
   {
     id: "pornografia-sexualidad",
     label: "Pornografía y sexualidad",
-    image: "/servicios/PORNOGRAFIA.jpg",
+    image: "/servicios/pornografia.jpg",
     imageAlt:
       "Foto: Imagen de rostro y luz: adicción a la pornografía y secuestro de la dopamina, Lic. Viviana Baccarat, sexóloga clínica.",
     text: "El consumo frecuente puede generar una **dependencia del estímulo visual**, habituando el deseo a la intensidad de una pantalla y dificultando la respuesta ante el encuentro real.\n\nReentrenamos la sensibilidad y la conexión con los sentidos para recuperar una sexualidad consciente y compartida.",
@@ -69,7 +69,7 @@ const areasData = [
   {
     id: "terapia-sexual",
     label: "Terapia Sexual",
-    image: "/servicios/TERAPIA_SEXUAL_INDIVIDUAL.jpg",
+    image: "/servicios/terapia-sexual-individual.jpg",
     imageAlt:
       "Terapia psicosexual para el tratamiento de dificultades sexuales y ansiedad de desempeño – Lic. Viviana Baccarat",
     text: "Cuando la sexualidad se vive bajo exigencia, miedo o tensión, el cuerpo deja de responder con naturalidad y la experiencia pierde conexión. La psicoterapia sexual permite comprender qué está sosteniendo ese malestar —ya sea en el deseo, la respuesta o el encuentro—, **integrando el impacto del estrés** para recuperar una vivencia más libre, confiada y en sintonía con uno mismo.",
@@ -86,7 +86,7 @@ const areasData = [
   {
     id: "estres-ansiedad",
     label: "Estrés y Ansiedad",
-    image: "/servicios/ESTRES.jpeg",
+    image: "/servicios/estres.jpg",
     imageAlt:
       "Terapia para ansiedad y estrés con abordaje psicológico integral – Lic. Viviana Baccarat",
     text: "Cuando el estrés se vuelve sostenido, el cuerpo permanece en alerta y afecta el descanso, el ánimo y la respuesta sexual. \n\nEl abordaje terapéutico permite comprender cómo se sostiene esa activación y trabajar en su regulación, favoreciendo una disminución de la tensión y la recuperación del equilibrio físico y emocional.",
@@ -94,7 +94,7 @@ const areasData = [
   {
     id: "practica-tai",
     label: "Práctica Tai",
-    image: "/servicios/PRACTICA TAI.jpg",
+    image: "/servicios/practica-tai.jpg",
     imageAlt:
       "Práctica Tai para la regulación del sistema nervioso y conciencia corporal en sexología – Lic. Viviana Baccarat",
     text: "¿Sentís tu cuerpo en modo defensa?  Como parte de nuestro abordaje integral, incorporamos la **práctica Tai**: una terapia que une la suavidad de la osteopatía con el ritmo del masaje tailandés. No buscamos solo 'relajar', sino decirle a tu sistema nervioso que está a salvo. Al recuperar la seguridad corporal, el deseo deja de ser un esfuerzo y vuelve a ser un proceso natural y fluido. \n\n (Recurso opcional coordinado por un profesional externo especializado).",
@@ -172,6 +172,8 @@ const Services = () => {
                     className={styles.image}
                     loading="lazy"
                     decoding="async"
+                    width={1280}
+                    height={1280}
                     style={{ objectPosition: active.imagePosition ?? "center" }}
                   />
                 ) : (
@@ -234,6 +236,8 @@ const Services = () => {
                     className={styles.image}
                     loading="lazy"
                     decoding="async"
+                    width={1280}
+                    height={1280}
                     style={{
                       objectPosition:
                         activeDisfuncion.imagePosition ?? "center",

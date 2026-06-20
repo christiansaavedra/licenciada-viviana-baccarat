@@ -48,7 +48,7 @@ export default function PsychologyTodaySeal() {
   }, []);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} aria-hidden="true">
       <a
         ref={anchorRef}
         href={PROFILE_URL}

@@ -35,21 +35,29 @@ const logos = [
     id: "uces",
     alt: "Logo UCES - Diplomatura en Sexualidad y Calidad de Vida. Lic. Viviana Baccarat",
     src: "/logos/UCES.png",
+    width: 388,
+    height: 221,
   },
   {
     id: "slams",
     alt: "Sociedad Latinoamericana de Medicina Sexual - Aval institucional para terapia sexológica internacional",
     src: "/logos/SLAMS.png",
+    width: 275,
+    height: 266,
   },
   {
     id: "aases",
     alt: "Logo AASES - Asociación Argentina de Sexología y Educación Sexual - Especialista en salud sexual con atención online",
     src: "/logos/AASES.jpg",
+    width: 389,
+    height: 386,
   },
   {
     id: "western",
     alt: "Logo Western Europe University - Especialización universitaria de Postgrado con reconocimiento europeo",
     src: "/logos/WESTERNEUROPE.png",
+    width: 636,
+    height: 360,
   },
 ];
 
@@ -99,6 +107,8 @@ const Formacion = () => {
                     className={styles.logoImage}
                     loading="lazy"
                     decoding="async"
+                    width={logo.width}
+                    height={logo.height}
                   />
                 ) : (
                   <span className={styles.logoPlaceholder}>
