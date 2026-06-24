@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 
@@ -6,31 +7,54 @@ const EMAILJS_SERVICE_ID = "service_77b5n2e";
 const EMAILJS_TEMPLATE_ID = "template_wwn5p4a";
 const EMAILJS_PUBLIC_KEY = "2tyhnNkjQwIXAOWEX";
 
+type FormValues = {
+  user_name: string;
+  user_phone: string;
+  user_email: string;
+  message: string;
+};
+
 type Status = "idle" | "sending" | "success" | "error";
 
 const Contact = () => {
-  const formRef = useRef<HTMLFormElement>(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    watch,
+    trigger,
+    formState: { errors, isSubmitting },
+  } = useForm<FormValues>({ mode: "onBlur" });
+
   const [status, setStatus] = useState<Status>("idle");
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formRef.current) return;
+  const watchPhone = watch("user_phone");
+  const watchEmail = watch("user_email");
 
+  const onSubmit = async (data: FormValues) => {
     setStatus("sending");
-
     try {
-      await emailjs.sendForm(
+      await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
-        formRef.current,
+        {
+          user_name: data.user_name,
+          user_phone: data.user_phone,
+          user_email: data.user_email,
+          message: data.message,
+        },
         EMAILJS_PUBLIC_KEY,
       );
       setStatus("success");
-      formRef.current.reset();
+      reset();
     } catch {
       setStatus("error");
     }
   };
+
+  const atLeastOneContact = () =>
+    !!watchPhone?.trim() || !!watchEmail?.trim() ||
+    "Ingresá al menos un teléfono o email para poder contactarte.";
 
   return (
     <section className={styles.section} id="contacto">
@@ -66,83 +90,91 @@ const Contact = () => {
                   licenciadavivianabaccarat@gmail.com
                 </a>
               </li>
-              {/* <li>
-                <a
-                  href="https://calendly.com/licenciadavivianabaccarat/sesion-con-la-lic-viviana-baccarat"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.contactLink}
-                >
-                  <CalendarIcon />
-                  Reservar turno online
-                </a>
-              </li> */}
             </ul>
           </div>
 
           {/* Right: form */}
           <form
-            ref={formRef}
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit(onSubmit)}
             className={styles.form}
             noValidate
           >
+            {/* Nombre — opcional */}
             <div className={styles.field}>
               <label htmlFor="user_name" className={styles.label}>
-                Nombre <span className={styles.required}>*</span>
+                Nombre
               </label>
               <input
                 id="user_name"
-                name="user_name"
                 type="text"
-                required
                 className={styles.input}
+                {...register("user_name")}
               />
             </div>
 
+            {/* Teléfono */}
             <div className={styles.field}>
               <label htmlFor="user_phone" className={styles.label}>
                 Teléfono <span className={styles.required}>*</span>
               </label>
               <input
                 id="user_phone"
-                name="user_phone"
                 type="tel"
-                required
-                className={styles.input}
+                className={`${styles.input} ${errors.user_phone ? styles.input_error : ""}`}
+                {...register("user_phone", {
+                  validate: atLeastOneContact,
+                  onChange: () => { if (errors.user_email) trigger("user_email"); },
+                })}
               />
+              {errors.user_phone && (
+                <p className={styles.field_error} role="alert">
+                  {errors.user_phone.message}
+                </p>
+              )}
             </div>
 
+            {/* Email */}
             <div className={styles.field}>
               <label htmlFor="user_email" className={styles.label}>
                 Email <span className={styles.required}>*</span>
               </label>
               <input
                 id="user_email"
-                name="user_email"
                 type="email"
-                required
-                className={styles.input}
+                className={`${styles.input} ${errors.user_email ? styles.input_error : ""}`}
+                {...register("user_email", {
+                  validate: atLeastOneContact,
+                  onChange: () => { if (errors.user_phone) trigger("user_phone"); },
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "Ingresá un email válido.",
+                  },
+                })}
               />
+              {errors.user_email && (
+                <p className={styles.field_error} role="alert">
+                  {errors.user_email.message}
+                </p>
+              )}
             </div>
 
+            {/* Mensaje — opcional */}
             <div className={styles.field}>
               <label htmlFor="message" className={styles.label}>
-                Mensaje <span className={styles.required}>*</span>
+                Mensaje
               </label>
               <textarea
                 id="message"
-                name="message"
-                required
                 rows={4}
                 placeholder="Contame brevemente tu consulta..."
                 className={styles.textarea}
+                {...register("message")}
               />
             </div>
 
             <button
               type="submit"
-              disabled={status === "sending"}
+              disabled={isSubmitting || status === "sending"}
               className={styles.submitButton}
             >
               {status === "sending" ? "Enviando..." : "Enviar mensaje"}
@@ -186,24 +218,6 @@ const MailIcon = () => (
   >
     <rect width="20" height="16" x="2" y="4" rx="2" />
     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-  </svg>
-);
-
-const CalendarIcon = () => (
-  <svg
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-    <line x1="16" x2="16" y1="2" y2="6" />
-    <line x1="8" x2="8" y1="2" y2="6" />
-    <line x1="3" x2="21" y1="10" y2="10" />
   </svg>
 );
 

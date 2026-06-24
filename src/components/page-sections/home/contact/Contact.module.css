@@ -160,6 +160,24 @@
   cursor: not-allowed;
 }
 
+.input_error,
+.textarea_error {
+  border-color: #dc2626;
+}
+
+.input_error:focus,
+.textarea_error:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #dc2626 12%, transparent);
+}
+
+.field_error {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: #dc2626;
+  margin: 0;
+}
+
 .successMsg {
   font-family: var(--font-body);
   font-size: 1.3rem;
