@@ -40,13 +40,19 @@ const PoliticaPrivacidad = () => {
         <section className={styles.section}>
           <h2>3. Datos que se recopilan</h2>
           <p>
-            A través del formulario de contacto de este sitio web se recopilan:
+            A través del formulario de contacto de este sitio web se puede
+            recopilar la siguiente información:
           </p>
           <ul>
-            <li>Nombre y apellido</li>
-            <li>Número de teléfono / WhatsApp</li>
-            <li>Dirección de correo electrónico</li>
-            <li>Mensaje o consulta libre</li>
+            <li>
+              Nombre <strong>(campo obligatorio)</strong>
+            </li>
+            <li>
+              Dirección de correo electrónico{" "}
+              <strong>(campo obligatorio)</strong>
+            </li>
+            <li>Número de teléfono / WhatsApp (opcional)</li>
+            <li>Mensaje o consulta libre (opcional)</li>
           </ul>
           <p>
             No se recopilan datos sensibles (en los términos del art. 2 de la

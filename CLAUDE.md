@@ -26,6 +26,7 @@ React, Vite, Vike, CSS Modules, hosting en Vercel
 - Las imagenes deben tener lazy loading, utilizando el img tag nativo de html: or lazy loading: <img loading="lazy" decoding="async" />. Para hero o imagenes visibles ni bien el usuario entra en la pagina, usaremos loading="eager" fetchpriority="high" so LCP doesn't regress, which would hurt SEO; (2) always set width and height attributes to prevent layout shift (CLS).
 - Agregar <strong> tags donde sea necesario, sin abusra innecesariamente, con el proposito que sea para optimizar SEO.
 - Avoid unnecesary or redundant code comments.
+- Mantener consistencia entre el código y lo que figura en los términos y condiciones y en la política del sitio. Por ej, si cambiamos algo relacionado al contact form, asegurarnos que quede relevante a lo que figuran en esos documentos.
 
 ## Comandos útiles
 

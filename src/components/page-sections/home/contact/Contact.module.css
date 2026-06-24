@@ -64,6 +64,22 @@
   color: var(--color-primary);
 }
 
+.submit_row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.privacy_note {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
 /* ── Form column ── */
 .form {
   display: flex;
