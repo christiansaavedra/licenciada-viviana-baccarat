@@ -27,6 +27,7 @@ React, Vite, Vike, CSS Modules, hosting en Vercel
 - Agregar <strong> tags donde sea necesario, sin abusra innecesariamente, con el proposito que sea para optimizar SEO.
 - Avoid unnecesary or redundant code comments.
 - Mantener consistencia entre el código y lo que figura en los términos y condiciones y en la política del sitio. Por ej, si cambiamos algo relacionado al contact form, asegurarnos que quede relevante a lo que figuran en esos documentos.
+- Antes de usar `dangerouslySetInnerHTML` (o agregar contenido a un uso existente), verificar que todo el contenido interpolado provenga de fuentes estáticas controladas por el código (archivos de datos del repo, constantes hardcodeadas) y nunca de input de usuario, query params, o datos externos sin sanitizar. Si alguna vez se necesita incluir datos de un formulario, input de URL, o fuente externa, hay que sanitizar el contenido antes de inyectarlo.
 
 ## Comandos útiles
 
