@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import * as Popover from "@radix-ui/react-popover";
+import { trackEvent } from "@/common/analytics";
 import styles from "./WhatsAppButton.module.css";
 
 const WhatsAppButton = () => {
@@ -32,6 +33,9 @@ const WhatsAppButton = () => {
           target="_blank"
           rel="noopener noreferrer"
           className={styles.whatsappButton}
+          onClick={() =>
+            trackEvent("whatsapp_click", { location: "floating_button" })
+          }
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{

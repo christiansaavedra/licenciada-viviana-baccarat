@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { trackEvent } from "@/common/analytics";
 import styles from "./Contact.module.css";
 
 const EMAILJS_SERVICE_ID = "service_77b5n2e";
@@ -41,6 +42,7 @@ const Contact = () => {
         EMAILJS_PUBLIC_KEY,
       );
       setStatus("success");
+      trackEvent("generate_lead", { method: "contact_form" });
       reset();
     } catch {
       setStatus("error");
@@ -67,6 +69,9 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.contactLink}
+                  onClick={() =>
+                    trackEvent("whatsapp_click", { location: "contact_section" })
+                  }
                 >
                   <WhatsAppIcon />
                   (+54 911) 5593‑6542
@@ -76,6 +81,9 @@ const Contact = () => {
                 <a
                   href="mailto:licenciadavivianabaccarat@gmail.com"
                   className={styles.contactLink}
+                  onClick={() =>
+                    trackEvent("email_click", { location: "contact_section" })
+                  }
                 >
                   <MailIcon />
                   licenciadavivianabaccarat@gmail.com
