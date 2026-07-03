@@ -1,4 +1,5 @@
 import { usePageContext } from "vike-react/usePageContext";
+import { faqs } from "@/components/page-sections/home/faq/faqData";
 import { BASE_URL } from "./+config";
 
 const GA_ID = "G-J2PRKE208R";
@@ -188,6 +189,21 @@ const profilePageSchema = {
   about: { "@id": `${BASE_URL}/#viviana-baccarat` },
 };
 
+const stripMarkdown = (text: string) => text.replace(/\*\*/g, "");
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: stripMarkdown(faq.answer),
+    },
+  })),
+};
+
 export default function Head() {
   const pageContext = usePageContext();
   const canonical = `${BASE_URL}${pageContext.urlPathname}`;
@@ -246,6 +262,12 @@ gtag('config', '${GA_ID}');`,
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(profilePageSchema),
           }}
+        />
+      )}
+      {isHome && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
     </>
