@@ -115,7 +115,7 @@ export const articles: Article[] = [
     slug: "estres-cronico-sexualidad-deseo",
     oldSlug: "estres-cronico-y-deseo-sexual",
     title:
-      "Estrés crónico y sexualidad: cómo afecta el deseo, la excitación y la respuesta",
+      "Estrés crónico y sexualidad: cómo afecta al deseo, la excitación y la respuesta sexual.",
     subtitle:
       "Por qué el cuerpo deja de responder cuando la mente no se detiene, y qué podemos hacer al respecto.",
     excerpt:
@@ -188,7 +188,8 @@ export const articles: Article[] = [
   {
     slug: "falta-deseo-pareja-conflictos",
     oldSlug: "cuando-la-pelea-sigue-en-la-cama",
-    title: "Conflictos de pareja y vida sexual: cuando la pelea sigue en la cama",
+    title:
+      "Conflictos de pareja y vida sexual: cuando la pelea sigue en la cama",
     subtitle:
       "Cómo las discusiones no resueltas crean una barrera biológica que el cuerpo no puede ignorar.",
     excerpt:
