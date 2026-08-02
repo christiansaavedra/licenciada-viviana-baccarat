@@ -1,20 +1,12 @@
 import { articles } from "./articlesData";
 import Breadcrumbs from "@/components/breadcrumbs/Breadcrumbs";
+import ArticleCard from "@/components/article-card/ArticleCard";
 import styles from "./Blog.module.css";
 
 const BLOG_CRUMBS = [
   { label: "Inicio", to: "/" },
   { label: "Blog" },
 ];
-
-const formatDate = (iso: string) => {
-  const d = new Date(iso);
-  return d.toLocaleDateString("es-AR", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-};
 
 const Blog = () => {
   return (
@@ -31,33 +23,7 @@ const Blog = () => {
 
         <div className={styles.grid}>
           {articles.map((article) => (
-            <article key={article.slug} className={styles.card}>
-              <a href={`/blog/${article.slug}`} className={styles.cardLink}>
-                <div className={styles.imageWrapper}>
-                  <img
-                    src={article.image}
-                    alt={article.imageAlt}
-                    className={styles.cardImage}
-                    loading="lazy"
-                    decoding="async"
-                    width={1280}
-                    height={853}
-                  />
-                </div>
-                <div className={styles.cardContent}>
-                  <div className={styles.meta}>
-                    <time dateTime={article.date}>
-                      {formatDate(article.date)}
-                    </time>
-                    <span className={styles.dot}>·</span>
-                    <span>{article.readTime} de lectura</span>
-                  </div>
-                  <h2 className={styles.cardTitle}>{article.title}</h2>
-                  <p className={styles.cardExcerpt}>{article.excerpt}</p>
-                  <span className={styles.readMore}>Leer artículo →</span>
-                </div>
-              </a>
-            </article>
+            <ArticleCard key={article.slug} article={article} />
           ))}
         </div>
       </div>

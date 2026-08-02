@@ -50,12 +50,14 @@ const Contact = () => {
   };
 
   return (
-    <section className={styles.section} id="contacto">
+    <section className={styles.section}>
       <div className="container">
         <div className={styles.grid}>
           {/* Left: info */}
           <div className={styles.info}>
-            <h2 className={styles.sectionLabel}>Contacto</h2>
+            <h2 className={styles.sectionLabel} id="contacto">
+              Contacto
+            </h2>
             <h3 className={styles.sectionTitle}>¿Hablamos?</h3>
             <p className={styles.infoText}>
               Si querés agendar una sesión o hacer una consulta, podés

@@ -18,11 +18,11 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h2 className={styles.title}>Sexualidad en Foco</h2>
+            <p className={styles.title}>Sexualidad en Foco</p>
             <h1 className={styles.title}>Terapia Sexual</h1>
           </motion.div>
 
-          <motion.h2
+          <motion.p
             className={styles.subtitle}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ const Hero = () => {
             Lic. Viviana Baccarat · M.N. 56769 — <strong>Psicóloga</strong>,{" "}
             <strong>Sexóloga Clínica</strong> y especialista en{" "}
             <strong>Gestión del Estrés</strong>
-          </motion.h2>
+          </motion.p>
 
           <motion.div
             className={styles.description}

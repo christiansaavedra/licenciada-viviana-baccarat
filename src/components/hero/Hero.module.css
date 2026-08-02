@@ -26,6 +26,8 @@
 .title {
   background-clip: text;
   font-weight: 700;
+  font-family: var(--font-heading);
+  line-height: 1.2;
 }
 
 .title:nth-child(1) {
