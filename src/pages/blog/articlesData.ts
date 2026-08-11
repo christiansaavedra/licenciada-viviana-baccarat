@@ -4,6 +4,9 @@ export type ContentBlock = string | { heading: string } | { cta: string };
 // `relatedSlugs` y en los links internos dentro de `content`, para que un typo
 // en un slug rompa el build (TS) en vez de generar un link roto en producción.
 export const SLUGS = {
+  discrepanciaDeseo: "discrepancia-deseo-pareja",
+  disfuncionErectil: "disfuncion-erectil-cuando-el-problema-no-es-el-cuerpo",
+  pornografiaCerebro: "uso-problematico-pornografia-falta-deseo-cerebro",
   cortisol: "estres-cortisol-deseo-sexual",
   dopamina: "porno-dopamina-deseo-sexual",
   ansiedad: "ansiedad-desempeno-sexual-tratamiento",
@@ -34,6 +37,96 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: SLUGS.discrepanciaDeseo,
+    title:
+      "Cuando uno quiere y el otro no: la trampa de la presión y el rechazo",
+    subtitle:
+      "Por qué la diferencia de deseo no significa que alguien esté mal ni que exija de más.",
+    excerpt:
+      "En casi todas las parejas el deseo deja de estar sincronizado: uno quiere más que el otro. No significa que alguien esté roto ni que el otro exija de más. Entender el deseo responsivo cambia todo.",
+    metaDescription:
+      "Discrepancia de deseo en la pareja: por qué uno quiere más que el otro, qué es el deseo responsivo y cómo salir de la trampa presión-rechazo.",
+    author: "Lic. Viviana Baccarat",
+    date: "2026-08-09",
+    readTime: "4 min",
+    image: "/blog/DESEO_DISCREPANTE_HORIZONTAL.jpg",
+    imageAlt:
+      "Pareja joven sentada espalda con espalda, mirando en direcciones opuestas, que ilustra la diferencia de deseo en la pareja.",
+    content: [
+      "En casi todas las parejas llega un momento en que el deseo deja de estar sincronizado. Uno busca y el otro no; uno se siente rechazado, el otro presionado. Y aparece la pregunta equivocada: «¿cuál de los dos está mal?». La respuesta suele ser: ninguno. La discrepancia de deseo no es señal de que algo se rompió, sino lo más esperable cuando dos personas distintas comparten una vida sexual.",
+      { heading: "Qué es el deseo responsivo" },
+      "Hay una idea muy instalada de que el deseo «normal» surge solo, como un impulso espontáneo. En algunas personas funciona así. Pero en muchísimas otras —y con frecuencia en quien desea «menos»— el deseo es responsivo: no aparece antes del encuentro, sino durante, una vez que el cuerpo entra en clima. No es falta de deseo, es otra forma de desear: el problema no es tener menos ganas, sino esperar que los dos funcionen igual.",
+      { heading: "La trampa de la presión y el rechazo" },
+      `Cuando esa diferencia no se entiende, se arma una [trampa](/blog/${SLUGS.ansiedad}) conocida: el que desea más insiste, el que desea menos se retrae, y cada intento refuerza el patrón. La insistencia se vive como presión, la presión apaga el deseo responsivo, y el rechazo confirma el miedo del otro. Nadie tiene mala intención y, sin embargo, terminan más lejos.`,
+      "Del lado del que insiste también hay una trampa. Después de varios «ahora no», muchos llegan a un «ya no lo intento»: si no busco, no me expongo al rechazo. Pero retirarse apaga el propio deseo, que pasa a depender de que el otro diga que sí. Una salida es mostrarlo como algo propio y no como un pedido: no es lo mismo «¿querés?» —que necesita un sí— que «me gustás, tengo ganas de vos», que sigue siendo tuyo aunque el otro no responda.",
+      {
+        cta: "Si esta dinámica de presión y rechazo se instaló en tu pareja, en terapia podemos trabajar la diferencia de deseo sin que nadie tenga que resignarse.",
+      },
+      `Salir de ahí no pasa por «tener más ganas» ni por «resignarse», sino por mirar la diferencia de a dos: entender qué necesita cada uno para entrar en clima, sacar la presión del resultado y cuidar la [intimidad](/blog/${SLUGS.seguridad}) que no depende del sexo. Cuando deja de sentirse como rechazo o como exigencia, el deseo vuelve a tener lugar.`,
+    ],
+    relatedSlugs: [SLUGS.seguridad, SLUGS.ansiedad, SLUGS.conflictosPareja],
+  },
+  {
+    slug: SLUGS.disfuncionErectil,
+    title: "Disfunción eréctil: por qué a solas sí y en pareja no",
+    subtitle:
+      "Una pregunta simple ordena todo el panorama, y casi nadie se anima a hacerla.",
+    excerpt:
+      "Si a solas funciona y con otra persona no, el problema rara vez está en el cuerpo: aparece frente al otro, cuando el encuentro se vuelve un examen. Por qué la ansiedad bloquea la erección y por qué tiene muy buen pronóstico.",
+    metaDescription:
+      "Si a solas funciona y con tu pareja no, la disfunción eréctil rara vez está en el cuerpo. Por qué la ansiedad la bloquea y por qué se revierte.",
+    author: "Lic. Viviana Baccarat",
+    date: "2026-08-06",
+    readTime: "4 min",
+    image: "/blog/DISFUNCION_ERECTIL_HORIZONTAL.jpg",
+    imageAlt:
+      "Retrato en penumbra de un hombre joven cabizbajo y pensativo: disfunción eréctil y ansiedad — Lic. Viviana Baccarat, sexóloga clínica.",
+    content: [
+      "Antes de seguir buscando el problema en el cuerpo, hacete una pregunta: cuando estás a solas, ¿funciona?",
+      "Si la respuesta es sí, ya tenés lo más importante. El cuerpo puede y sabe cómo; la prueba es que a solas responde sin dificultad. Eso corre el foco: lo que interrumpe la respuesta tiene menos que ver con el cuerpo que con lo que se activa frente a otra persona.",
+      "Por eso tantos varones llegan a la consulta con los estudios en la mano y la misma frase: «está todo bien, pero con mi pareja no responde». Cuando el cuerpo puede pero algo interfiere, y ese algo aparece solo frente al otro, hablamos de disfunción eréctil psicológica.",
+      { heading: "Qué cambia cuando hay otro delante" },
+      "Frente a alguien que —creemos— nos evalúa, el encuentro deja de ser un encuentro y se vuelve un examen. Y el cuerpo responde a los exámenes como responde a las amenazas: se pone en alerta. En alerta, la sangre va a los músculos, a lo que sirve para reaccionar rápido, no a los genitales. La erección necesita justo lo contrario: es un permiso que el sistema nervioso da cuando lee que no hay peligro, con el cuerpo en calma, presente y sin mantener la guardia.",
+      { heading: "El que se mira desde afuera" },
+      `A la alarma se le suma otra cosa. En lugar de estar en la escena, la persona se mira actuar: «¿voy a poder?», «¿la estará pasando bien?». La atención se va de las sensaciones al control, y no se puede regular algo que no se está sintiendo. Entonces el miedo enciende la [alarma](/blog/${SLUGS.nervioVago}), la alarma bloquea la respuesta, la dificultad confirma el miedo, y el miedo llega más grande a la próxima vez.`,
+      {
+        cta: "Si esto te pasa y sentís que el cuerpo se bloquea solo frente al otro, en terapia sexual se trabaja con muy buen pronóstico.",
+      },
+      { heading: "El punto que más alivia" },
+      "Tu cuerpo no está fallando: está haciendo lo correcto para un contexto que lee como amenaza. No es una falla de virilidad, es un sistema nervioso haciendo su trabajo. Y esto no es un consuelo, es parte del tratamiento: mientras se viva como falla, esa lectura alimenta la misma alarma que la produce. Lo que se aprende, se desaprende, y es de los cuadros con mejor pronóstico cuando se consulta a tiempo.",
+    ],
+    relatedSlugs: [SLUGS.ansiedad, SLUGS.nervioVago, SLUGS.seguridad],
+  },
+  {
+    slug: SLUGS.pornografiaCerebro,
+    title: "Uso problemático de pornografía: por qué el cuerpo se desconecta",
+    subtitle:
+      "Cómo el circuito de recompensa se reentrena para responder al «clic» y no al contacto real.",
+    excerpt:
+      "La pornografía entrena al cerebro para responder al clic, no al encuentro real. Cuando el circuito de recompensa se satura, el contacto con otra persona queda por debajo del umbral y el deseo se apaga.",
+    metaDescription:
+      "Uso problemático de pornografía: por qué el encuentro real queda corto, cómo se apaga el deseo y de qué modo se recalibra en terapia sexual.",
+    author: "Lic. Viviana Baccarat",
+    date: "2026-08-02",
+    readTime: "4 min",
+    image: "/blog/PORNOGRAFIA_CEREBRO_HORIZONTAL.jpg",
+    imageAlt:
+      "Ilustración conceptual del circuito de recompensa cerebral y la respuesta sexual frente a la hiperestimulación digital.",
+    content: [
+      `La pornografía funciona como un estímulo de alta intensidad, donde cada búsqueda, cada cambio de escena dispara una [descarga de dopamina](/blog/${SLUGS.dopamina}), y el cerebro se acostumbra rápido: para sentir lo mismo, empieza a pedir más novedad e intensidad. No es una falla de voluntad, es adaptación química.`,
+      { heading: "Cómo se instala el circuito" },
+      "Con la repetición se instala un circuito rígido: búsqueda, estímulo y descarga. El cuerpo responde fácil porque no hay nadie más: no hay que cumplir expectativas, no hay exposición emocional, no hay miedo al juicio del otro. Es placer sin vulnerabilidad.",
+      { heading: "Por qué el encuentro real queda corto" },
+      "El problema aparece al pasar al encuentro real. El sistema recalibró sus umbrales: el cuerpo de la pareja, el contacto, la intimidad quedan por debajo de lo que la pantalla acostumbró, y el sexo compartido empieza a parecer «insuficiente» o aburrido. No es que no quieras a la otra persona: es que el cuerpo perdió el hábito del intercambio sensorial pausado.",
+      {
+        cta: "Si te cuesta conectar con el deseo real y sentís que la pantalla te desconectó del encuentro, en terapia sexual podemos reentrenarlo juntos.",
+      },
+      "Muchas veces no hay una función que se perdió, sino una que nunca se terminó de aprender: quien se apoyó siempre en la pantalla pudo saltearse la calma y la entrega con otro. No es que algo se rompió; falta desarrollarlo por primera vez, y eso sí se puede trabajar.",
+      `Si el sistema nervioso aprendió a responder solo al «clic», también puede aprender otra cosa. Ese es el trabajo de una terapia sexual: no «consumir menos» a fuerza de voluntad, sino reentrenar cómo el cuerpo registra el placer —bajar la exigencia, recuperar el ritmo humano y las pausas, reconectar el deseo con el presente—. Si te cuesta conectar con el deseo real, no estás defectuoso: es un sistema nervioso entrenado para otro estímulo, y se puede recalibrar.`,
+    ],
+    relatedSlugs: [SLUGS.dopamina, SLUGS.ansiedad, SLUGS.seguridad],
+  },
+  {
     slug: SLUGS.cortisol,
     oldSlug: "cortisol-el-interruptor-del-deseo",
     title: "Cortisol y deseo sexual: por qué el estrés apaga el deseo sexual",
@@ -51,7 +144,10 @@ export const articles: Article[] = [
       "Foto de interruptor: falta de deseo sexual, abordaje clínico por Lic. Viviana Baccarat, sexóloga clínica.",
     content: [
       "Muchas personas llegan a consulta diciendo «quiero desear, pero no pasa nada». Detrás de esa frase hay frustración, culpa, y la sensación de que algo en uno mismo está fallando. Lo que en realidad sucede es que el cuerpo entró en un modo biológico donde el deseo, literalmente, no tiene cabida.",
-      { heading: "Cortisol: qué pasa en el cuerpo cuando el estrés se cronifica" },
+      {
+        heading:
+          "Cortisol: qué pasa en el cuerpo cuando el estrés se cronifica",
+      },
       "El cortisol es la hormona central de la respuesta al estrés. Cuando el cerebro detecta una amenaza —real o simbólica— el eje hipotálamo-hipófisis-suprarrenal la libera para preparar al cuerpo para actuar. En dosis cortas es útil e incluso adaptativa. El problema aparece cuando el estrés se cronifica —trabajo, hiperconectividad, conflictos sostenidos, exigencias múltiples— y el cortisol permanece elevado de forma sostenida.",
       `A nivel biológico, el cortisol crónico inhibe la producción de hormonas sexuales (testosterona, estrógenos), suprime la activación parasimpática —la que permite la excitación y la entrega— y mantiene al [sistema nervioso en estado de vigilancia](/blog/${SLUGS.nervioVago}). En ese contexto, el cerebro interpreta cualquier función no vinculada a la supervivencia como prescindible. Y el sexo, desde el punto de vista evolutivo, lo es.`,
       { heading: "Por qué el deseo sexual no vuelve por esfuerzo" },
@@ -182,7 +278,10 @@ export const articles: Article[] = [
       "Vivimos en una época en la que el estrés se ha naturalizado. Dormir poco, responder mensajes a cualquier hora, sostener múltiples roles y exigencias: todo eso deja marcas en el cuerpo que, tarde o temprano, aparecen en la esfera íntima. El deseo se apaga, la respuesta sexual se vuelve inconsistente, y muchas personas llegan a consulta con la sensación de que algo está fallando en ellas, cuando en realidad lo que falla es el contexto en el que intentan desear.",
       { heading: "Los dos modos del sistema nervioso autónomo" },
       "Desde la perspectiva de la biología del estrés, el sistema nervioso autónomo tiene dos modos principales: uno de activación (asociado al rendimiento, la alerta y la supervivencia) y otro de recuperación (vinculado al descanso, la digestión y también a la sexualidad). Cuando el estrés se vuelve crónico, el cuerpo permanece en modo de alerta la mayor parte del tiempo, y el acceso al modo de recuperación se reduce. La sexualidad requiere presencia, entrega, conexión con las sensaciones — todas funciones del segundo modo.",
-      { heading: "Por qué el deseo necesita un estado fisiológico que lo habilite" },
+      {
+        heading:
+          "Por qué el deseo necesita un estado fisiológico que lo habilite",
+      },
       `Por eso no alcanza con «querer» desear: el deseo necesita un estado fisiológico que lo habilite. Si el cuerpo está en alerta, el deseo no encuentra lugar. Y si el deseo aparece pero se acompaña de [ansiedad de desempeño](/blog/${SLUGS.ansiedad}), la respuesta también se ve afectada: dificultades de erección, anorgasmia, [eyaculación precoz](/blog/${SLUGS.eyaculacionPrecoz}), vaginismo, dolor. El síntoma no es el problema en sí, sino la expresión de un sistema que necesita ser regulado.`,
       { heading: "Cómo se aborda el estrés crónico en terapia sexual" },
       "En el trabajo terapéutico, abordamos esta conexión desde dos frentes simultáneos. Por un lado, identificamos qué sostiene la activación —exigencias, pensamientos, ritmos, vínculos— y trabajamos sobre la regulación emocional. Por otro, intervenimos sobre la experiencia sexual específica, buscando reentrenar la respuesta del cuerpo sin la presión del rendimiento.",
@@ -221,7 +320,10 @@ export const articles: Article[] = [
       {
         cta: "Si tu cuerpo se bloquea aunque la cabeza quiera, el trabajo corporal y terapéutico puede ayudarte a destrabarlo. Consultemos juntos.",
       },
-      { heading: "El placer no se logra: aparece cuando el cuerpo se siente seguro" },
+      {
+        heading:
+          "El placer no se logra: aparece cuando el cuerpo se siente seguro",
+      },
       "Cambiar la mirada es fundamental: el placer no es algo que debas «lograr», sino algo que ocurre cuando el cuerpo se siente seguro. Cuando el nervio vago recupera su tono, el deseo deja de ser una tarea pendiente y vuelve a ser lo que siempre debió ser: un proceso natural, fluido y presente.",
     ],
     relatedSlugs: [SLUGS.eyaculacionPrecoz, SLUGS.cortisol, SLUGS.seguridad],
