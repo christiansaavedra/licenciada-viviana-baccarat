@@ -4,6 +4,9 @@ export type ContentBlock = string | { heading: string } | { cta: string };
 // `relatedSlugs` y en los links internos dentro de `content`, para que un typo
 // en un slug rompa el build (TS) en vez de generar un link roto en producción.
 export const SLUGS = {
+  disfuncionesSexuales: "disfunciones-sexuales-por-que-el-cuerpo-no-responde",
+  faltaDeseoPareja: "falta-de-deseo-en-la-pareja",
+  orgasmo: "por-que-no-llego-al-orgasmo",
   discrepanciaDeseo: "discrepancia-deseo-pareja",
   disfuncionErectil: "disfuncion-erectil-cuando-el-problema-no-es-el-cuerpo",
   pornografiaCerebro: "uso-problematico-pornografia-falta-deseo-cerebro",
@@ -23,6 +26,7 @@ export type Article = {
   slug: Slug;
   oldSlug?: string;
   title: string;
+  metaTitle?: string;
   subtitle: string;
   excerpt: string;
   metaDescription?: string;
@@ -36,6 +40,115 @@ export type Article = {
 };
 
 export const articles: Article[] = [
+  {
+    slug: SLUGS.disfuncionesSexuales,
+    title: "Disfunciones sexuales: cuándo y por qué el cuerpo deja de responder",
+    metaTitle: "Disfunciones sexuales: por qué el cuerpo no responde",
+    subtitle:
+      "En la mayoría de los casos el cuerpo no está fallando: está respondiendo al contexto.",
+    excerpt:
+      "Hay algo que comparten la disfunción eréctil, la eyaculación precoz, el bajo deseo y la dificultad para llegar al orgasmo: en la mayoría de los casos el cuerpo no está fallando. Está respondiendo.",
+    metaDescription:
+      "Disfunción eréctil, eyaculación precoz, anorgasmia o bajo deseo: casi siempre el cuerpo no falla, responde al contexto. Qué hay detrás y qué ayuda.",
+    author: "Lic. Viviana Baccarat",
+    date: "2026-10-21",
+    readTime: "3 min",
+    image: "/blog/DISFUNCIONES_SEXUALES_HORIZONTAL.jpg",
+    imageAlt:
+      "Hombre joven sentado solo en el sillón con postura cerrada y expresión pensativa: el sistema nervioso en alerta bloquea la respuesta sexual.",
+    content: [
+      `Hay algo que comparten la [disfunción eréctil](/blog/${SLUGS.disfuncionErectil}), la [eyaculación precoz](/blog/${SLUGS.eyaculacionPrecoz}), el bajo deseo y la [dificultad para llegar al orgasmo](/blog/${SLUGS.orgasmo}): en la mayoría de los casos, el cuerpo no está fallando. Está respondiendo.`,
+      `El sistema nervioso tiene una función prioritaria: proteger. Cuando detecta una amenaza, real o imaginaria, activa el modo alerta. Sube el [cortisol](/blog/${SLUGS.cortisol}), se tensa la musculatura, la atención se afila hacia el peligro. En ese estado, la excitación sexual no tiene lugar. No porque algo esté fallando, sino porque el cuerpo está haciendo exactamente lo que aprendió a hacer.`,
+      { heading: "¿Qué cuenta como amenaza en la sexualidad?" },
+      "No hace falta un peligro real. Alcanza con la presión de rendir, la mirada imaginaria del otro, el miedo a decepcionar o el recuerdo de una vez que no salió bien. El sistema nervioso no distingue entre una amenaza externa y una interna: responde igual. Y cuando responde así, la erección no aparece, el orgasmo no llega, el deseo se apaga o el cuerpo se dispara antes de tiempo.",
+      `A eso se suma el círculo que se arma después: la experiencia refuerza el miedo, el miedo anticipa el próximo encuentro, y el cuerpo llega ya en alerta. El patrón se instala solo. Es la [ansiedad de desempeño](/blog/${SLUGS.ansiedad}).`,
+      { heading: "¿Por qué cuanto más se intenta es peor?" },
+      "Porque el intento activa el control, y el control es lo contrario de lo que el cuerpo necesita para responder. La erección no se ordena: se permite. No responde a la voluntad, responde a la confianza. Y la confianza no se exige: se construye.",
+      "Lo mismo vale para el orgasmo y para el deseo: ninguno obedece a la voluntad. Suceden cuando el sistema nervioso percibe que está a salvo. En la eyaculación precoz la lógica es la misma pero al revés: durar más no es el objetivo, disfrutar el recorrido sí, y eso es algo que se aprende.",
+      {
+        cta: "Si sentís que tu cuerpo dejó de responder como antes, en terapia sexual trabajamos sobre el contexto que lo bloquea.",
+      },
+      { heading: "¿Qué cambia con acompañamiento?" },
+      "El trabajo no es sobre la disfunción en sí, sino sobre el contexto que la produce: entender qué activa la alarma, entrenar al sistema nervioso en otra respuesta y recuperar la presencia en el cuerpo. En la mayoría de los casos, cuando cambia el contexto, el cuerpo vuelve a responder.",
+    ],
+    relatedSlugs: [
+      SLUGS.disfuncionErectil,
+      SLUGS.eyaculacionPrecoz,
+      SLUGS.orgasmo,
+    ],
+  },
+  {
+    slug: SLUGS.faltaDeseoPareja,
+    title: "Falta de deseo en la pareja: por qué se apaga aunque haya amor",
+    metaTitle: "Falta de deseo en la pareja: por qué se apaga | Sexóloga",
+    subtitle:
+      "El amor crece con la cercanía; el deseo necesita algo de distancia y de misterio.",
+    excerpt:
+      "Nos llevamos bien, nos queremos, somos compañeros, pero el sexo desapareció. Por qué el deseo se apaga en la pareja aunque haya amor y cómo abrir la distancia que necesita para volver a aparecer.",
+    metaDescription:
+      "Nos queremos, nos llevamos bien, pero el deseo se apagó. Por qué pasa en la pareja y cómo volver a abrir espacio para el deseo.",
+    author: "Lic. Viviana Baccarat",
+    date: "2026-10-21",
+    readTime: "4 min",
+    image: "/blog/FALTA_DESEO_PAREJA_HORIZONTAL.jpg",
+    imageAlt:
+      "Pareja sentada espalda con espalda en el sillón, cada uno en su pantalla: el deseo se apaga en la pareja aunque haya amor.",
+    content: [
+      "«Nos llevamos bien, nos queremos, somos compañeros… pero el sexo desapareció». Es una de las frases que más se repiten en la consulta de pareja, y casi siempre viene con culpa y desconcierto: si está todo bien, ¿por qué no hay deseo? Que el deseo baje no significa que el amor se haya terminado.",
+      { heading: "¿Por qué se apaga el deseo si nos queremos?" },
+      "El amor y el deseo no funcionan con la misma lógica. El amor crece con la cercanía y la certeza: saber que el otro está y va a estar. El deseo necesita algo distinto: una cuota de distancia, de novedad, de misterio; un otro que siga siendo, en algún punto, un enigma.",
+      { heading: "Cuando la pareja se vuelve un equipo" },
+      "Con los años, la balanza se inclina hacia la certeza. La pareja se vuelve un equipo eficiente: quién hace las compras, quién lleva a los chicos, quién paga qué. Todo previsible, todo resuelto. Cuando el otro se vuelve completamente conocido y los días se llenan de logística, el deseo pierde el espacio de tensión y sorpresa del que se alimenta.",
+      `No es la confianza ni la seguridad lo que lo apaga: esas son la base que permite entregarse (lo desarrollo en [seguridad emocional en la pareja](/blog/${SLUGS.seguridad})). Lo que lo apaga es la fusión total: dejar de ser dos para volverse una sola maquinaria doméstica.`,
+      `Esta es una de las causas frecuentes, no la única. [El estrés y el cortisol](/blog/${SLUGS.cortisol}), [los conflictos sin resolver](/blog/${SLUGS.conflictosPareja}), algunos medicamentos, el posparto o la menopausia también pueden bajar el deseo. Si querés ver qué pasa cuando uno quiere y el otro no, leé [discrepancia de deseo](/blog/${SLUGS.discrepanciaDeseo}).`,
+      { heading: "Cómo se vuelve a abrir espacio para el deseo" },
+      "No se trata de recuperar lo que había, sino de abrir de nuevo una distancia donde el deseo pueda aparecer. Y no se consigue forzando el encuentro ni agendándolo como una obligación más: la exigencia es lo contrario de la disponibilidad que el deseo necesita.",
+      "La salida pasa por recuperar algo del misterio que la convivencia fue borrando: dejar de dar al otro por completamente sabido y seguir siendo alguien no del todo descifrable. Eso se sostiene con vida propia: intereses, proyectos, un espacio que no se comparte. Cuando cada uno vuelve a ser un poco enigmático para el otro, el deseo encuentra de nuevo por dónde aparecer. Porque el deseo no se recupera: se cultiva.",
+      {
+        cta: "Si en tu pareja hay amor pero el deseo se apagó, en terapia sexual de pareja podemos trabajar el contexto que lo fue apagando.",
+      },
+      { heading: "¿Cuándo conviene consultar?" },
+      "Si hace meses que no se buscan, si esto les genera angustia o distancia, vale la pena consultar. La terapia sexual de pareja trabaja exactamente esto: no el síntoma aislado, sino el contexto que fue apagando el deseo —la dinámica, el espacio que cada uno ocupa, lo que se fue perdiendo con la convivencia—. En muchos casos, con acompañamiento, el deseo vuelve a aparecer.",
+    ],
+    relatedSlugs: [
+      SLUGS.discrepanciaDeseo,
+      SLUGS.seguridad,
+      SLUGS.conflictosPareja,
+    ],
+  },
+  {
+    slug: SLUGS.orgasmo,
+    title: "Por qué no llego al orgasmo: lo que el cuerpo necesita para soltarse",
+    metaTitle: "Por qué no llego al orgasmo | Lic. Viviana Baccarat",
+    subtitle:
+      "El orgasmo no se ejecuta: sucede cuando el sistema nervioso puede soltar el control.",
+    excerpt:
+      "Hay deseo, hay excitación, hay ganas. Y sin embargo el orgasmo no llega. Qué pasa en el sistema nervioso cuando el cuerpo no se suelta, y qué ayuda a que el orgasmo llegue.",
+    metaDescription:
+      "Hay deseo y excitación, pero el orgasmo no llega. Qué pasa en el sistema nervioso, por qué el control lo bloquea y qué ayuda a que suceda.",
+    author: "Lic. Viviana Baccarat",
+    date: "2026-10-21",
+    readTime: "3 min",
+    image: "/blog/NO_LLEGO_ORGASMO_HORIZONTAL.jpg",
+    imageAlt:
+      "Mujer sola con expresión pensativa y postura cerrada: el control y la presión bloquean el orgasmo aunque haya deseo.",
+    content: [
+      "Hay deseo, hay excitación, hay ganas. Y sin embargo el orgasmo no llega. La excitación sube, se sostiene y se apaga sin descargar. Eso es anorgasmia, y es un motivo frecuente de consulta.",
+      `Lo que pocos saben es que el orgasmo no se ejecuta: simplemente sucede. Y lo hace cuando el sistema nervioso entra en un estado muy específico, el de la conexión, la presencia en el cuerpo, la entrega. No es voluntad ni técnica. Es regulación. El [sistema nervioso ventral](/blog/${SLUGS.nervioVago}), el que gobierna la calma y el vínculo, tiene que estar activo. Cuando está en modo alerta o en modo desconexión, el orgasmo no llega aunque haya excitación.`,
+      { heading: "¿Por qué no llego al orgasmo?" },
+      "La primera trampa es tratar el orgasmo como una meta. Cuanto más se lo persigue, más se activa el control, y el control es exactamente lo contrario de lo que el cuerpo necesita para soltarse. Es el mismo mecanismo que el sueño: cuanto más se intenta, más se escapa.",
+      `A eso se suma estar más pendiente de la reacción del otro o del [propio desempeño](/blog/${SLUGS.ansiedad}) que de lo que se siente. Cuando la atención sale del cuerpo, se pierde el hilo del placer. El orgasmo necesita presencia, no evaluación.`,
+      "También pesan los malentendidos sobre cómo funciona el cuerpo. En las mujeres, creer que el orgasmo tiene que llegar solo con la penetración: en la mayoría de los cuerpos no es así, y no es un defecto. En los varones, que el cuerpo tiene que responder siempre y rápido. En ambos casos faltó algo previo: la excitación se construye, y buena parte se enciende antes del contacto y por fuera de lo genital —la fantasía, la anticipación, el clima erótico—.",
+      { heading: "¿Qué ayuda?" },
+      "Conocer el propio cuerpo, explorar sin objetivo ni presión. Sacar la meta y darle tiempo al erotismo. Si el cambio fue brusco o coincide con una medicación —algunos antidepresivos afectan la respuesta orgásmica—, consultarlo con un médico. Con acompañamiento terapéutico, en muchos casos mejora.",
+      {
+        cta: "Si no llegar al orgasmo te genera angustia o te lleva a evitar los encuentros, en terapia sexual podemos trabajarlo.",
+      },
+      { heading: "¿Es imprescindible llegar al orgasmo?" },
+      "No. El orgasmo es una parte del placer, no su medida. Hay encuentros muy plenos sin orgasmo. Si no genera malestar, no hay nada que consultar. Si genera angustia o evitación, sí vale la pena consultarlo.",
+    ],
+    relatedSlugs: [SLUGS.ansiedad, SLUGS.nervioVago, SLUGS.disfuncionesSexuales],
+  },
   {
     slug: SLUGS.discrepanciaDeseo,
     title:
