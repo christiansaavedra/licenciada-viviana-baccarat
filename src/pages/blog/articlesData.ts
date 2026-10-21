@@ -129,13 +129,13 @@ export const articles: Article[] = [
   {
     slug: SLUGS.cortisol,
     oldSlug: "cortisol-el-interruptor-del-deseo",
-    title: "Cortisol y deseo sexual: por qué el estrés apaga el deseo sexual",
+    title: "Estrés y falta de deseo sexual: el rol del cortisol",
     subtitle:
       "Por qué tu cerebro apaga la respuesta sexual cuando detecta una amenaza externa.",
     excerpt:
       "El deseo no se enciende por voluntad. Cuando el cortisol se mantiene elevado, el cuerpo entra en un modo biológico donde la sexualidad simplemente no tiene lugar. Entender este mecanismo cambia cómo abordamos el problema.",
     metaDescription:
-      "Cómo el cortisol y el estrés crónico apagan el deseo sexual. Descubrí el mecanismo biológico y qué hacer para recuperar la respuesta del cuerpo.",
+      "¿El estrés te quitó las ganas? Cómo el cortisol elevado apaga el deseo sexual, por qué no vuelve a fuerza de voluntad y qué ayuda a recuperarlo.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-17",
     readTime: "5 min",
@@ -225,19 +225,19 @@ export const articles: Article[] = [
   {
     slug: SLUGS.seguridad,
     oldSlug: "el-afrodisiaco-invisible",
-    title: "Seguridad emocional: el afrodisíaco invisible en la pareja",
+    title: "Seguridad emocional en la pareja: la clave del deseo",
     subtitle:
       "Por qué la seguridad emocional es la llave maestra que activa el sistema nervioso parasimpático.",
     excerpt:
       "El deseo sexual es una respuesta biológica a un contexto de confianza. Ninguna técnica sustituye la seguridad emocional: el vínculo hace posible la sexualidad.",
     metaDescription:
-      "El deseo sexual no es un problema de habilidad técnica. Descubrí cómo la ansiedad y la falta de confianza en la pareja apagan el deseo.",
+      "Sin confianza no hay deseo. Por qué la seguridad emocional en la pareja es la condición del deseo sexual y cómo construirla en el día a día.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-11",
     readTime: "5 min",
     image: "/blog/AFRODISIACO_HORZONTAL.jpg",
     imageAlt:
-      "Foto de nudo Ansiedad de desempeño, miedo al fracaso y ansiedad sexual, Lic. Viviana Baccarat, sexóloga clínica",
+      "Seguridad emocional y deseo sexual en la pareja – Lic. Viviana Baccarat, sexóloga clínica",
     content: [
       "Hay algo que ninguna técnica, ningún juguete ni ninguna sustancia puede reemplazar: la sensación de estar a salvo. La seguridad emocional es el afrodisíaco invisible, el que activa el sistema nervioso parasimpático —el responsable de la excitación, la entrega y la conexión.",
       { heading: "Neurocepción: cómo el cuerpo detecta si está a salvo" },
@@ -362,14 +362,13 @@ export const articles: Article[] = [
   {
     slug: SLUGS.conflictosPareja,
     oldSlug: "cuando-la-pelea-sigue-en-la-cama",
-    title:
-      "Conflictos de pareja y vida sexual: cuando la pelea sigue en la cama",
+    title: "Peleas de pareja y falta de deseo sexual: por qué pasa",
     subtitle:
       "Cómo las discusiones no resueltas crean una barrera biológica que el cuerpo no puede ignorar.",
     excerpt:
       "Una discusión no resuelta deja una huella bioquímica que dura horas —a veces días. Reparar el vínculo no es solo un asunto emocional: es la condición fisiológica para que el deseo vuelva a aparecer.",
     metaDescription:
-      "Cómo los conflictos no resueltos en la pareja bloquean la vida sexual. Por qué reparar el vínculo es la base biológica para que vuelva el deseo.",
+      "¿Discuten y después no hay ganas? Las peleas no resueltas dejan al cuerpo en alerta y apagan el deseo. Por qué pasa y cómo recuperar la intimidad.",
     author: "Lic. Viviana Baccarat",
     date: "2026-04-03",
     readTime: "5 min",

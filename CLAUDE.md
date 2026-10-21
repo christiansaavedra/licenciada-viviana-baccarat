@@ -21,7 +21,7 @@ React, Vite, Vike, CSS Modules, hosting en Vercel
 
 - Los estilos van en CSS modules, uno por componente. Las classNames van en minusculas separadas por \_ (Ejemplo: styles.text_container)
 - Existe un index.css principal que contiene las variables de CSS.
-- Cada página debe tener su propio meta title (50-60 caracteres, keyword al inicio, formato "Beneficio/Tema: Subtema clarificador" o "Tema concreto | Marca), meta description (Reglas: 3-5 palabras, keyword principal, sin stop-words, relacionados al input que un usuario podria escribir en un buscador), y cualquier atributo relacionado al head para potenciar el SEO.
+- Cada página debe tener su propio meta title (50-60 caracteres, keyword al inicio, formato "Beneficio/Tema: Subtema clarificador" o "Tema concreto | Marca), meta description (Reglas: 140-155 caracteres, keyword principal al inicio en las palabras que un usuario escribiría en un buscador, que diga qué va a encontrar el lector y lo invite a hacer clic), y cualquier atributo relacionado al head para potenciar el SEO.
 - Las imagenes deben tener texto alt.
 - Las imagenes deben tener lazy loading, utilizando el img tag nativo de html: or lazy loading: <img loading="lazy" decoding="async" />. Para hero o imagenes visibles ni bien el usuario entra en la pagina, usaremos loading="eager" fetchpriority="high" so LCP doesn't regress, which would hurt SEO; (2) always set width and height attributes to prevent layout shift (CLS).
 - Agregar <strong> tags donde sea necesario, sin abusra innecesariamente, con el proposito que sea para optimizar SEO.

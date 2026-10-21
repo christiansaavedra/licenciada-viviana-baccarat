@@ -9,7 +9,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Lic. Viviana Baccarat — Psicóloga y Sexóloga Clínica",
   description:
-    "Psicoterapia sexual y gestión del estrés. Tratamiento de disfunciones sexuales, terapia de pareja y abordaje del estrés crónico. Atención online e internacional.",
+    "Psicoterapia sexual y gestión del estrés. Tratamiento de disfunciones sexuales, terapia sexual de pareja y abordaje del estrés crónico. Atención online e internacional.",
   url: `${BASE_URL}/`,
   email: "licenciadavivianabaccarat@gmail.com",
   image: `${BASE_URL}/og-image.jpg`,
@@ -34,7 +34,7 @@ const localBusinessSchema = {
   ],
   serviceType: [
     "Terapia Sexual",
-    "Terapia de Pareja",
+    "Terapia Sexual de Pareja",
     "Gestión del Estrés y Ansiedad",
     "Psicoterapia Online",
   ],
@@ -128,7 +128,7 @@ const personSchema = {
     "Dispareunia",
     "Anorgasmia",
     "Falta de Deseo Sexual",
-    "Terapia de Pareja",
+    "Terapia Sexual de Pareja",
     "Gestión del Estrés",
     "Ansiedad de Desempeño",
     "Sistema Nervioso Autónomo",
@@ -140,7 +140,7 @@ const medicalBusinessSchema = {
   "@type": "MedicalBusiness",
   name: "Lic. Viviana Baccarat — Terapia Sexual y Psicología",
   description:
-    "Consultorio de psicoterapia sexual y gestión del estrés. Especialista en disfunciones sexuales, terapia de pareja y ansiedad. Sesiones online e internacionales.",
+    "Consultorio de psicoterapia sexual y gestión del estrés. Especialista en disfunciones sexuales, terapia sexual de pareja y ansiedad. Sesiones online e internacionales.",
   url: `${BASE_URL}/`,
   medicalSpecialty: ["MentalHealth", "SexualHealthMedicine"],
   availableService: [
@@ -152,7 +152,7 @@ const medicalBusinessSchema = {
     },
     {
       "@type": "MedicalTherapy",
-      name: "Terapia de Pareja",
+      name: "Terapia Sexual de Pareja",
       description:
         "Trabajo terapéutico sobre comunicación, intimidad y vida sexual en pareja.",
     },
@@ -223,7 +223,14 @@ export default function Head() {
           __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${GA_ID}');`,
+var internal = false;
+try {
+  if (location.hostname !== '${new URL(BASE_URL).hostname}' || /(^|\\.)vercel\\.com$/.test(document.referrer ? new URL(document.referrer).hostname : '')) {
+    localStorage.setItem('ga_internal', '1');
+  }
+  internal = localStorage.getItem('ga_internal') === '1';
+} catch (e) {}
+gtag('config', '${GA_ID}', internal ? { traffic_type: 'internal' } : {});`,
         }}
       />
 

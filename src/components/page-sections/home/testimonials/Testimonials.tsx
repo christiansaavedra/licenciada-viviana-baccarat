@@ -16,7 +16,7 @@ const testimonios = [
     id: 2,
     text: "Empezamos terapia por falta de comunicación y desconexión sexual. Hoy nos entendemos mucho mejor y seguimos trabajando en el vínculo. Viviana genera un espacio cómodo, sin tabúes ni juicios. Nos sentimos acompañados y la recomendamos ",
     author: "L y E",
-    service: "Terapia de Pareja",
+    service: "Terapia Sexual de Pareja",
     stars: 5,
   },
   {

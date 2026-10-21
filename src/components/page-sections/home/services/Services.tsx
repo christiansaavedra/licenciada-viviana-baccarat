@@ -78,12 +78,12 @@ const areasData = [
   },
   {
     id: "terapia-pareja",
-    label: "Terapia de Pareja",
+    label: "Terapia Sexual de Pareja",
     image: "/servicios/pareja.jpg",
     imagePosition: "top",
     imageAlt:
-      "Terapia de pareja para dificultades sexuales, falta de deseo y conflictos en la relación – Lic. Viviana Baccarat",
-    text: "Cuando la comunicación se dificulta o el deseo se apaga, el vínculo puede volverse tenso, distante o repetitivo. La terapia de pareja permite comprender qué está generando esa desconexión —ya sea en la comunicación, la intimidad o la vida sexual— y trabajar sobre los patrones que la sostienen. El objetivo es **reducir la tensión, reconstruir el encuentro** y recuperar una forma más genuina y placentera de estar juntos.",
+      "Terapia sexual de pareja para dificultades sexuales, falta de deseo y conflictos en la relación – Lic. Viviana Baccarat",
+    text: "Cuando la comunicación se dificulta o el deseo se apaga, el vínculo puede volverse tenso, distante o repetitivo. La **terapia sexual de pareja** permite comprender qué está generando esa desconexión —ya sea en la comunicación, la intimidad o la vida sexual— y trabajar sobre los patrones que la sostienen. El objetivo es **reducir la tensión, reconstruir el encuentro** y recuperar una forma más genuina y placentera de estar juntos.",
   },
   {
     id: "estres-ansiedad",
