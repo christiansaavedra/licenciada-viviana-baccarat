@@ -1,18 +1,31 @@
 import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDown } from "lucide-react";
 import { faqs } from "./faqData";
+import { trackEvent } from "@/common/analytics";
+import { whatsappURL } from "@/common/phone";
 import styles from "./FAQ.module.css";
 
 const renderText = (text: string) =>
-  text
-    .split(/(\*\*.*?\*\*)/g)
-    .map((part, i) =>
-      part.startsWith("**") && part.endsWith("**") ? (
-        <strong key={i}>{part.slice(2, -2)}</strong>
-      ) : (
-        part
-      ),
-    );
+  text.split(/(\*\*.*?\*\*|\[[^\]]+\]\(whatsapp\))/g).map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i}>{part.slice(2, -2)}</strong>;
+    }
+    const link = part.match(/^\[([^\]]+)\]\(whatsapp\)$/);
+    if (link) {
+      return (
+        <a
+          key={i}
+          href={whatsappURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => trackEvent("whatsapp_click", { location: "faq" })}
+        >
+          {link[1]}
+        </a>
+      );
+    }
+    return part;
+  });
 
 const FAQ = () => {
   return (

@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { trackEvent } from "@/common/analytics";
 import styles from "./Contact.module.css";
+import { whatsappURL } from "../../../../common/phone";
 
 const EMAILJS_SERVICE_ID = "service_77b5n2e";
 const EMAILJS_TEMPLATE_ID = "template_wwn5p4a";
@@ -61,7 +62,14 @@ const Contact = () => {
             <h3 className={styles.sectionTitle}>¿Hablamos?</h3>
             <p className={styles.infoText}>
               Si querés agendar una sesión o hacer una consulta, podés
-              escribirme por WhatsApp o completar el formulario.
+              escribirme{" "}
+              <a
+                href={whatsappURL}
+                style={{ textDecoration: "underline", textUnderlineOffset: 4 }}
+              >
+                por WhatsApp
+              </a>{" "}
+              o completar el formulario.
             </p>
 
             <ul className={styles.contactList}>
@@ -72,7 +80,9 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className={styles.contactLink}
                   onClick={() =>
-                    trackEvent("whatsapp_click", { location: "contact_section" })
+                    trackEvent("whatsapp_click", {
+                      location: "contact_section",
+                    })
                   }
                 >
                   <WhatsAppIcon />
@@ -109,7 +119,9 @@ const Contact = () => {
                 id="user_name"
                 type="text"
                 className={`${styles.input} ${errors.user_name ? styles.input_error : ""}`}
-                {...register("user_name", { required: "El nombre es obligatorio." })}
+                {...register("user_name", {
+                  required: "El nombre es obligatorio.",
+                })}
               />
               {errors.user_name && (
                 <p className={styles.field_error} role="alert">
@@ -179,7 +191,8 @@ const Contact = () => {
               </button>
               <p className={styles.privacy_note}>
                 <LockIcon />
-                Tus datos son confidenciales y están protegidos por secreto profesional.
+                Tus datos son confidenciales y están protegidos por secreto
+                profesional.
               </p>
             </div>
 

@@ -45,7 +45,7 @@ export const faqs: FAQItem[] = [
     id: "faq-8",
     question: "¿Cuánto cuesta una consulta?",
     answer:
-      "El valor se informa **por WhatsApp** al momento de consultar.",
+      "El valor se informa [por WhatsApp](whatsapp) al momento de consultar.",
   },
   {
     id: "faq-6",

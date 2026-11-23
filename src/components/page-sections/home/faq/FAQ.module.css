@@ -90,6 +90,12 @@
   margin: 0;
 }
 
+.accordionBody a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 @keyframes slideDown {
   from {
     height: 0;

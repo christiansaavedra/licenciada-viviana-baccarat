@@ -3,16 +3,10 @@ import { motion } from "framer-motion";
 import * as Popover from "@radix-ui/react-popover";
 import { trackEvent } from "@/common/analytics";
 import styles from "./WhatsAppButton.module.css";
+import { whatsappURL } from "../../common/phone";
 
 const WhatsAppButton = () => {
   const [open, setOpen] = useState(false);
-
-  const phoneNumber = "5491155936542";
-  const message =
-    "Hola, me gustaría solicitar una consulta con la Lic. Viviana";
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message,
-  )}`;
 
   useEffect(() => {
     const handleScroll = () => {

@@ -165,7 +165,7 @@ const profilePageSchema = {
   about: { "@id": `${BASE_URL}/#viviana-baccarat` },
 };
 
-const stripMarkdown = (text: string) => text.replace(/\*\*/g, "");
+const stripMarkdown = (text: string) => text.replace(/\*\*/g, "").replace(/\[([^\]]+)\]\(whatsapp\)/g, "$1");
 
 const faqSchema = {
   "@context": "https://schema.org",
