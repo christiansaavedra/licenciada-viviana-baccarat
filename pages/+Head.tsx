@@ -4,33 +4,34 @@ import { BASE_URL } from "./+config";
 
 const GA_ID = "G-J2PRKE208R";
 
+const BUSINESS_ID = `${BASE_URL}/#consultorio`;
+const PERSON_ID = `${BASE_URL}/#viviana-baccarat`;
+
+const GOOGLE_BUSINESS_URL = "https://maps.app.goo.gl/8Nbf6bJpHzodEEMLA";
+
+const SAME_AS = [
+  "https://www.psychologytoday.com/ar/psicologos/viviana-baccarat-sexologa-buenos-aires-ba/1006195",
+  "https://psicologiaymente.com/psicologos/2104373/viviana-baccarat",
+  "https://www.linkedin.com/in/viviana-b-4324b61b9",
+];
+
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Lic. Viviana Baccarat — Psicóloga y Sexóloga Clínica",
+  "@type": ["LocalBusiness", "MedicalBusiness"],
+  "@id": BUSINESS_ID,
+  name: "Sexualidad en Foco",
+  alternateName: "Lic. Viviana Baccarat — Psicóloga y Sexóloga Clínica",
   description:
-    "Psicoterapia sexual y gestión del estrés. Tratamiento de disfunciones sexuales, terapia sexual de pareja y abordaje del estrés crónico. Atención online e internacional.",
+    "Psicoterapia sexual individual y de pareja. Tratamiento de ansiedad de rendimiento, disfunciones sexuales y estrés. Atención presencial en Buenos Aires y online.",
   url: `${BASE_URL}/`,
+  telephone: "+5491155936542",
   email: "licenciadavivianabaccarat@gmail.com",
   image: `${BASE_URL}/og-image.jpg`,
   priceRange: "$$",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Belgrano",
-    addressRegion: "Buenos Aires",
-    addressCountry: "AR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -34.5617,
-    longitude: -58.4564,
-  },
+  founder: { "@id": PERSON_ID },
   areaServed: [
-    { "@type": "Country", name: "Argentina" },
-    {
-      "@type": "AdministrativeArea",
-      name: "Internacional — sesiones online por videollamada",
-    },
+    { "@type": "AdministrativeArea", name: "Ciudad Autónoma de Buenos Aires" },
+    "Online",
   ],
   serviceType: [
     "Terapia Sexual",
@@ -38,15 +39,35 @@ const localBusinessSchema = {
     "Gestión del Estrés y Ansiedad",
     "Psicoterapia Online",
   ],
-  sameAs: [
-    "https://calendly.com/licenciadavivianabaccarat/sesion-con-la-lic-viviana-baccarat",
+  hasMap: GOOGLE_BUSINESS_URL,
+  sameAs: [...SAME_AS, GOOGLE_BUSINESS_URL],
+  medicalSpecialty: ["MentalHealth", "SexualHealthMedicine"],
+  availableService: [
+    {
+      "@type": "MedicalTherapy",
+      name: "Terapia Sexual Individual",
+      description:
+        "Abordaje de disfunciones sexuales: eyaculación precoz, disfunción eréctil, vaginismo, dispareunia, anorgasmia y falta de deseo.",
+    },
+    {
+      "@type": "MedicalTherapy",
+      name: "Terapia Sexual de Pareja",
+      description:
+        "Trabajo terapéutico sobre comunicación, intimidad y vida sexual en pareja.",
+    },
+    {
+      "@type": "MedicalTherapy",
+      name: "Gestión del Estrés y Ansiedad",
+      description:
+        "Regulación del sistema nervioso autónomo y abordaje del estrés crónico con impacto en la sexualidad.",
+    },
   ],
 };
 
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": `${BASE_URL}/#viviana-baccarat`,
+  "@id": PERSON_ID,
   name: "Viviana Baccarat",
   honorificPrefix: "Lic.",
   jobTitle: "Psicóloga, Sexóloga Clínica y Especialista en Gestión del Estrés",
@@ -61,17 +82,8 @@ const personSchema = {
     propertyID: "M.N.",
     value: "56769",
   },
-  sameAs: ["https://www.psychologytoday.com/profile/1006195"],
-  worksFor: {
-    "@type": "LocalBusiness",
-    name: "Consultorio Lic. Viviana Baccarat",
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Belgrano",
-    addressRegion: "Buenos Aires",
-    addressCountry: "AR",
-  },
+  sameAs: SAME_AS,
+  worksFor: { "@id": BUSINESS_ID },
   hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
@@ -102,7 +114,7 @@ const personSchema = {
     },
     {
       "@type": "EducationalOccupationalCredential",
-      name: "Especialización en Abordaje Integrativo del Estrés Crónico",
+      name: "Diplomatura en Abordaje Integrativo del Estrés Crónico: regulación del sistema nervioso autónomo y eje HPA",
       credentialCategory: "postgraduate",
       recognizedBy: {
         "@type": "Organization",
@@ -133,42 +145,6 @@ const personSchema = {
     "Ansiedad de Desempeño",
     "Sistema Nervioso Autónomo",
   ],
-};
-
-const medicalBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  name: "Lic. Viviana Baccarat — Terapia Sexual y Psicología",
-  description:
-    "Consultorio de psicoterapia sexual y gestión del estrés. Especialista en disfunciones sexuales, terapia sexual de pareja y ansiedad. Sesiones online e internacionales.",
-  url: `${BASE_URL}/`,
-  medicalSpecialty: ["MentalHealth", "SexualHealthMedicine"],
-  availableService: [
-    {
-      "@type": "MedicalTherapy",
-      name: "Terapia Sexual Individual",
-      description:
-        "Abordaje de disfunciones sexuales: eyaculación precoz, disfunción eréctil, vaginismo, dispareunia, anorgasmia y falta de deseo.",
-    },
-    {
-      "@type": "MedicalTherapy",
-      name: "Terapia Sexual de Pareja",
-      description:
-        "Trabajo terapéutico sobre comunicación, intimidad y vida sexual en pareja.",
-    },
-    {
-      "@type": "MedicalTherapy",
-      name: "Gestión del Estrés y Ansiedad",
-      description:
-        "Regulación del sistema nervioso autónomo y abordaje del estrés crónico con impacto en la sexualidad.",
-    },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Belgrano",
-    addressRegion: "Buenos Aires",
-    addressCountry: "AR",
-  },
 };
 
 const isBlogArticlePath = (pathname: string) =>
@@ -256,12 +232,6 @@ gtag('config', '${GA_ID}', internal ? { traffic_type: 'internal' } : {});`,
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(medicalBusinessSchema),
-        }}
       />
       {isHome && (
         <script

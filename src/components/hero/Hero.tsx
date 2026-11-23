@@ -23,6 +23,17 @@ const Hero = () => {
           </motion.div>
 
           <motion.p
+            className={styles.tagline}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <strong>Psicóloga y sexóloga clínica en Buenos Aires.</strong>{" "}
+            Atiendo de forma presencial y online, en Argentina y en el
+            exterior.
+          </motion.p>
+
+          <motion.p
             className={styles.subtitle}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -44,15 +55,6 @@ const Hero = () => {
               bienestar. Aquí exploramos los motivos y los caminos para abordar
               los <strong>conflictos de pareja</strong> y tu{" "}
               <strong>salud sexual</strong>.
-            </p>
-
-            <p
-              className={clsx(
-                styles.description_paragraph,
-                styles.description_paragraph_bold,
-              )}
-            >
-              <strong>Atención online en Argentina y en el exterior.</strong>
             </p>
           </motion.div>
 

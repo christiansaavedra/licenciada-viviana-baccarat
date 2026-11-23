@@ -8,9 +8,9 @@ const formaciones = [
   },
   {
     id: 2,
-    title: "Abordaje Integrativo del Estrés Crónico",
+    title: "Diplomatura en Abordaje Integrativo del Estrés Crónico",
     institution:
-      "Regulación del Sistema Nervioso Autónomo y el Eje HPA — Facultad de Medicina Integrativa Regenera, Barcelona",
+      "Regulación del sistema nervioso autónomo y eje HPA — Facultad de Medicina Integrativa Regenera, Barcelona",
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const logos = [
   },
   {
     id: "western",
-    alt: "Logo Western Europe University - Especialización universitaria de Postgrado con reconocimiento europeo",
+    alt: "Logo Western Europe University - Diplomatura certificada con reconocimiento europeo",
     src: "/logos/WESTERNEUROPE.png",
     width: 636,
     height: 360,
@@ -72,10 +72,10 @@ const Formacion = () => {
 
         <div className={styles.introBlock}>
           <p className={styles.intro}>
-            Cuento con una especialización universitaria de{" "}
+            Cuento con una <strong>diplomatura</strong> certificada por la{" "}
             <strong>
-              posgrado certificada por la Western Europe University y la
-              Facultad de Medicina Integrativa Regenera (Barcelona, España)
+              Western Europe University y la Facultad de Medicina Integrativa
+              Regenera (Barcelona, España)
             </strong>
             , con reconocimiento europeo.
           </p>

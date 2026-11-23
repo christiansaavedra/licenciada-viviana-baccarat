@@ -11,9 +11,9 @@ export default {
   prerender: true,
   lang: "es",
   title:
-    "Terapia Sexual Online | Lic. Viviana Baccarat | Argentina e Internacional",
+    "Terapia Sexual en Buenos Aires y Online | Lic. Viviana Baccarat",
   description:
-    "Terapia sexual y de pareja con la Lic. Viviana Baccarat (M.N. 56769). Especialista en disfunciones, falta de deseo, vínculos y gestión del estrés. Atención online para Argentina y el exterior. Recuperá tu bienestar sexual.",
+    "Terapia sexual y de pareja en Buenos Aires y online con la Lic. Viviana Baccarat, psicóloga y sexóloga. Conocé cómo trabajo y pedí tu primera consulta.",
   favicon: "/favicon.svg",
   image: `${BASE_URL}/viviana_baccarat_square.jpg`,
 } satisfies Config;

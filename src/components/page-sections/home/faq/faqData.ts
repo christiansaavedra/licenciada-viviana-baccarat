@@ -7,15 +7,15 @@ export type FAQItem = {
 export const faqs: FAQItem[] = [
   {
     id: "faq-1",
-    question: "¿Cómo es la primera sesión?",
+    question: "¿Cómo es la primera consulta?",
     answer:
       "Es un encuentro inicial para conocernos y entender tu motivo de consulta. **No hay nada que preparar**: simplemente contás lo que está pasando y desde ahí empezamos a pensar juntos cómo abordarlo.",
   },
   {
     id: "faq-2",
-    question: "¿Puedo consultar solo/a o en pareja?",
+    question: "¿Se puede venir solo, sin pareja?",
     answer:
-      "Ambas opciones son posibles. Evaluamos juntos cuál es la modalidad más adecuada según tu situación y lo que querés trabajar.",
+      "Sí. Podés consultar **solo o en pareja**, según lo que necesites. En la consulta individual trabajamos con lo que te pasa a vos; en la de pareja, con los dos.",
   },
   {
     id: "faq-3",
@@ -31,10 +31,21 @@ export const faqs: FAQItem[] = [
   },
   {
     id: "faq-5",
-    question:
-      "¿Las sesiones online son igual de efectivas que las presenciales?",
+    question: "¿Funciona la terapia sexual online?",
     answer:
-      "Sí. La evidencia clínica muestra que la psicoterapia online es **igual de efectiva** que la presencial. En el caso de la terapia sexual, muchas personas encuentran que la comodidad y privacidad del entorno propio favorecen una mayor apertura. Las sesiones se realizan por videollamada y siguen exactamente el mismo proceso clínico.",
+      "Sí. Trabajamos por **videollamada de Zoom**, en un espacio privado, y lo que practicás entre sesiones lo hacés en tu casa, que es donde pasa tu vida sexual. Muchas personas la eligen por comodidad, por privacidad o porque viven lejos. La evidencia clínica muestra que la psicoterapia online es igual de efectiva que la presencial.",
+  },
+  {
+    id: "faq-7",
+    question: "¿Cuánto dura un tratamiento?",
+    answer:
+      "Depende de cada persona y de cada consulta, por eso **no hay un número fijo de sesiones**. Cada sesión dura 50 minutos. En la primera consulta vemos tu situación y te cuento cómo podemos trabajar.",
+  },
+  {
+    id: "faq-8",
+    question: "¿Cuánto cuesta una consulta?",
+    answer:
+      "El valor se informa **por WhatsApp** al momento de consultar.",
   },
   {
     id: "faq-6",

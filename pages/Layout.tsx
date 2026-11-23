@@ -124,7 +124,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Defensa de las y los Consumidores
               </a>
             </p>
-            <p className={styles.footerCity}>Buenos Aires, Argentina</p>
+            <p className={styles.footerCity}>
+              Lic. Viviana Baccarat · Psicóloga y sexóloga clínica · Buenos
+              Aires, Argentina · Atención presencial y online, en Argentina y
+              en el exterior
+            </p>
           </div>
         </div>
       </footer>

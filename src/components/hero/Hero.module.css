@@ -52,12 +52,11 @@
   font-size: 1.19rem;
 }
 
-.description_paragraph_bold {
-  color: var(--color-text) !important;
-
-  @media (min-width: 768px) {
-    margin-bottom: 0rem !important;
-  }
+.tagline {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
 }
 
 .subtitle {

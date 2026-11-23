@@ -17,7 +17,9 @@ const About = () => {
 
           <div className={styles.textContainer}>
             <p className={styles.text}>
-              Acompaño a personas y parejas que buscan{" "}
+              Soy Viviana Baccarat, psicóloga y sexóloga clínica en{" "}
+              <strong>Buenos Aires</strong>. Acompaño a personas y parejas que
+              buscan{" "}
               <strong>
                 mejorar su salud sexual y gestionar el estrés y la ansiedad
               </strong>{" "}
